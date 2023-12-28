@@ -1,7 +1,9 @@
+import { FilterType } from "./FilterType"
+
 interface Company {
     name: string,
     logo: string | null,
-    link: string | undefined,
+    link: string | undefined | null,
     via?: Company,
     type: "contract" | "perm" | null,
 }
@@ -35,4 +37,5 @@ export interface Section {
     repositories: Repository[],
     media: MediaLink | null,
     live: string | null,
+    filter?: FilterType[]
 }

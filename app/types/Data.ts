@@ -1,3 +1,4 @@
+import { FilterType } from './FilterType';
 import { Section } from './SectionType';
 
 export const Data: Section[] = [
@@ -38,6 +39,17 @@ export const Data: Section[] = [
         repositories: [],
         media: null,
         live: null,
+        filter: [
+            FilterType.Angular, 
+            FilterType.Node, 
+            FilterType.MongoDB, 
+            FilterType.CSS, 
+            FilterType.UnitTest, 
+            FilterType.SocketIO, 
+            FilterType.JavaScript,
+            FilterType.Frontend,
+            FilterType.Backend,
+            FilterType.UIUX,        ],
     },
 
     // UNIQA
@@ -96,6 +108,15 @@ export const Data: Section[] = [
         repositories: [],
         media: null,
         live: "https://www.uniqa.at/reiseversicherung/",
+        filter: [
+            FilterType.Angular, 
+            FilterType.CSS, 
+            FilterType.UnitTest, 
+            FilterType.Scrum, 
+            FilterType.E2E, 
+            FilterType.JavaScript,
+            FilterType.Frontend,
+        ],
     },
 
     // VARDEN 
@@ -145,7 +166,17 @@ export const Data: Section[] = [
             }
         ],
         "media": null,
-        "live": null
+        "live": null,
+        "filter": [
+            FilterType.Frontend,
+            FilterType.Angular, 
+            FilterType.CSS, 
+            FilterType.UnitTest, 
+            FilterType.Scrum, 
+            FilterType.E2E, 
+            FilterType.JavaScript,
+            FilterType.UIUX,
+        ],
     },
 
     //SWISSRE
@@ -165,7 +196,6 @@ export const Data: Section[] = [
                 "link": "",
                 "logo": null,
                 "type": "contract",
-                "via": null
             }
         },
         "projects": [
@@ -187,7 +217,14 @@ export const Data: Section[] = [
         ],
         "repositories": [],
         "media": null,
-        "live": null
+        "live": null,
+        "filter": [
+            FilterType.Frontend,
+            FilterType.Angular, 
+            FilterType.CSS, 
+            FilterType.UnitTest, 
+            FilterType.JavaScript, 
+            FilterType.Scrum],
     },
 
     //SOLAR
@@ -228,7 +265,16 @@ export const Data: Section[] = [
         ],
         "repositories": [],
         "media": null,
-        "live": null
+        "live": null,
+        "filter": [
+            FilterType.Angular, 
+            FilterType.CSS, 
+            FilterType.UnitTest, 
+            FilterType.E2E, 
+            FilterType.JavaScript, 
+            FilterType.Scrum,
+            FilterType.UIUX,
+        ],
     },
 
     //INNOGY
@@ -253,7 +299,7 @@ export const Data: Section[] = [
         "projects": [
             {
                 "name": "Greenfield Angular Apps",
-                "description": "Developed 2 simple applications from scratch" 
+                "description": "Developed 2 simple applications from scratch"
             },
             {
                 "name": "AngularJS to Angular2+ Migration",
@@ -270,7 +316,16 @@ export const Data: Section[] = [
         "challenges": [],
         "repositories": [],
         "media": null,
-        "live": null
+        "live": null,
+        filter: [
+            FilterType.Frontend,
+            FilterType.Angular, 
+            FilterType.CSS, 
+            FilterType.UnitTest, 
+            FilterType.JavaScript, 
+            FilterType.Scrum,
+            FilterType.UIUX,
+        ],
     },
 
     //ADITO
@@ -305,7 +360,12 @@ export const Data: Section[] = [
         "challenges": [],
         "repositories": [],
         "media": null,
-        "live": null
+        "live": null,
+        "filter": [
+            FilterType.SQL, 
+            FilterType.JavaScript, 
+            FilterType.Scrum
+        ],
     },
 
     // WEBDEV
@@ -320,6 +380,10 @@ export const Data: Section[] = [
             {
                 "name": "Landing Pages Development",
                 "description": "Developed efficient landing pages for various clients using modern web technologies."
+            },
+            {
+                "name": "Exploring Angular and React",
+                "description": "Engaged in self-directed learning to understand the fundamentals of Angular and React. Developed several simple applications by following tutorials and official documentation."
             }
         ],
         "tools": [
@@ -335,7 +399,15 @@ export const Data: Section[] = [
         "challenges": [],
         "repositories": [],
         "media": null,
-        "live": null
+        "live": null,
+        "filter": [
+            FilterType.Frontend,
+            FilterType.CSS, 
+            FilterType.JavaScript,
+            FilterType.UIUX,
+            FilterType.Angular,
+            FilterType.React,
+        ],
     },
 
     // WORDPRESS
@@ -364,7 +436,13 @@ export const Data: Section[] = [
         "challenges": [],
         "repositories": [],
         "media": null,
-        "live": null
+        "live": null,
+        "filter": [
+            FilterType.CSS, 
+            FilterType.PHP, 
+            FilterType.JavaScript,
+            FilterType.UIUX,
+        ],
     },
 
     // ALLIANZ
@@ -393,7 +471,10 @@ export const Data: Section[] = [
         "challenges": [],
         "repositories": [],
         "media": null,
-        "live": null
+        "live": null,
+        "filter": [
+            FilterType.UIUX,
+        ],
     },
 
     // TAX
@@ -424,7 +505,10 @@ export const Data: Section[] = [
         "challenges": [],
         "repositories": [],
         "media": null,
-        "live": null
+        "live": null,
+        "filter": [
+            FilterType.SQL
+        ],
     },
 
     // FLASH
@@ -453,7 +537,14 @@ export const Data: Section[] = [
         "challenges": [],
         "repositories": [],
         "media": null,
-        "live": null
+        "live": null,
+        "filter": [
+            FilterType.CSS, 
+            FilterType.PHP, 
+            FilterType.JavaScript, 
+            FilterType.SQL,
+            FilterType.UIUX,
+        ],
     },
 
 
@@ -475,7 +566,7 @@ export const Data: Section[] = [
         "challenges": [],
         "repositories": [],
         "media": null,
-        "live": null
+        "live": null,
     },
 
     // PROCOM

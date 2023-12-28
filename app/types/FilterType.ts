@@ -1,0 +1,18 @@
+export enum FilterType { 
+    All = "All",
+    Angular = "Angular",
+    React = "React", 
+    Frontend = "Frontend", 
+    Backend = "Backend",
+    MongoDB = "MongoDB",
+    Node = "Node",
+    CSS = "CSS",
+    UIUX = "UI/UX",
+    UnitTest = "Unit Test",
+    SocketIO = "SocketIO",
+    Scrum = "Scrum",
+    E2E = "E2E",
+    SQL = "SQL",
+    JavaScript = "JavaScript",
+    PHP = "PHP",
+}
