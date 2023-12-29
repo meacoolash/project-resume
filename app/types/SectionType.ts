@@ -8,11 +8,6 @@ interface Company {
     type: "contract" | "perm" | null,
 }
 
-interface Project { 
-    name: string,
-    description: string,
-}
-
 interface Repository { 
     name: string,
     description: string,
@@ -24,7 +19,12 @@ interface MediaLink {
     video: string,
 }
 
-export interface Section {
+export interface ProjectType { 
+    name: string,
+    description: string,
+}
+
+export interface SectionType {
     id: string,
     title: string,
     start: string,
@@ -32,7 +32,7 @@ export interface Section {
     duration: string,
     company: Company | null,
     challenges?: string[],
-    projects?: Project []
+    projects?: ProjectType[],
     tools: string[],
     repositories: Repository[],
     media: MediaLink | null,
