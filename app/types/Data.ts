@@ -1,7 +1,7 @@
 import { FilterType } from './FilterType';
-import { Section } from './SectionType';
+import { SectionType } from './SectionType';
 
-export const Data: Section[] = [
+export const Data: SectionType[] = [
     //OANDA
     {
         id: "oanda",
@@ -40,16 +40,16 @@ export const Data: Section[] = [
         media: null,
         live: null,
         filter: [
-            FilterType.Angular, 
-            FilterType.Node, 
-            FilterType.MongoDB, 
-            FilterType.CSS, 
-            FilterType.UnitTest, 
-            FilterType.SocketIO, 
+            FilterType.Angular,
+            FilterType.Node,
+            FilterType.MongoDB,
+            FilterType.CSS,
+            FilterType.UnitTest,
+            FilterType.SocketIO,
             FilterType.JavaScript,
             FilterType.Frontend,
             FilterType.Backend,
-            FilterType.UIUX,        ],
+            FilterType.UIUX,],
     },
 
     // UNIQA
@@ -109,11 +109,11 @@ export const Data: Section[] = [
         media: null,
         live: "https://www.uniqa.at/reiseversicherung/",
         filter: [
-            FilterType.Angular, 
-            FilterType.CSS, 
-            FilterType.UnitTest, 
-            FilterType.Scrum, 
-            FilterType.E2E, 
+            FilterType.Angular,
+            FilterType.CSS,
+            FilterType.UnitTest,
+            FilterType.Scrum,
+            FilterType.E2E,
             FilterType.JavaScript,
             FilterType.Frontend,
         ],
@@ -169,11 +169,11 @@ export const Data: Section[] = [
         "live": null,
         "filter": [
             FilterType.Frontend,
-            FilterType.Angular, 
-            FilterType.CSS, 
-            FilterType.UnitTest, 
-            FilterType.Scrum, 
-            FilterType.E2E, 
+            FilterType.Angular,
+            FilterType.CSS,
+            FilterType.UnitTest,
+            FilterType.Scrum,
+            FilterType.E2E,
             FilterType.JavaScript,
             FilterType.UIUX,
         ],
@@ -220,10 +220,10 @@ export const Data: Section[] = [
         "live": null,
         "filter": [
             FilterType.Frontend,
-            FilterType.Angular, 
-            FilterType.CSS, 
-            FilterType.UnitTest, 
-            FilterType.JavaScript, 
+            FilterType.Angular,
+            FilterType.CSS,
+            FilterType.UnitTest,
+            FilterType.JavaScript,
             FilterType.Scrum],
     },
 
@@ -267,11 +267,11 @@ export const Data: Section[] = [
         "media": null,
         "live": null,
         "filter": [
-            FilterType.Angular, 
-            FilterType.CSS, 
-            FilterType.UnitTest, 
-            FilterType.E2E, 
-            FilterType.JavaScript, 
+            FilterType.Angular,
+            FilterType.CSS,
+            FilterType.UnitTest,
+            FilterType.E2E,
+            FilterType.JavaScript,
             FilterType.Scrum,
             FilterType.UIUX,
         ],
@@ -319,10 +319,10 @@ export const Data: Section[] = [
         "live": null,
         filter: [
             FilterType.Frontend,
-            FilterType.Angular, 
-            FilterType.CSS, 
-            FilterType.UnitTest, 
-            FilterType.JavaScript, 
+            FilterType.Angular,
+            FilterType.CSS,
+            FilterType.UnitTest,
+            FilterType.JavaScript,
             FilterType.Scrum,
             FilterType.UIUX,
         ],
@@ -362,8 +362,8 @@ export const Data: Section[] = [
         "media": null,
         "live": null,
         "filter": [
-            FilterType.SQL, 
-            FilterType.JavaScript, 
+            FilterType.SQL,
+            FilterType.JavaScript,
             FilterType.Scrum
         ],
     },
@@ -402,7 +402,7 @@ export const Data: Section[] = [
         "live": null,
         "filter": [
             FilterType.Frontend,
-            FilterType.CSS, 
+            FilterType.CSS,
             FilterType.JavaScript,
             FilterType.UIUX,
             FilterType.Angular,
@@ -438,8 +438,8 @@ export const Data: Section[] = [
         "media": null,
         "live": null,
         "filter": [
-            FilterType.CSS, 
-            FilterType.PHP, 
+            FilterType.CSS,
+            FilterType.PHP,
             FilterType.JavaScript,
             FilterType.UIUX,
         ],
@@ -539,9 +539,9 @@ export const Data: Section[] = [
         "media": null,
         "live": null,
         "filter": [
-            FilterType.CSS, 
-            FilterType.PHP, 
-            FilterType.JavaScript, 
+            FilterType.CSS,
+            FilterType.PHP,
+            FilterType.JavaScript,
             FilterType.SQL,
             FilterType.UIUX,
         ],

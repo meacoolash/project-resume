@@ -4,6 +4,7 @@ import { Data } from './types/Data'
 import { FilterType } from './types/FilterType'
 import SectionComponent from './components/SectionComponent';
 import FilterComponent from './components/FilterComponent';
+import HeaderComponent from './components/HeaderComponent';
 
 
 export default function Home() {
@@ -19,6 +20,10 @@ export default function Home() {
 
   return (
     <main className='m-6'>
+      
+      
+      <HeaderComponent />
+     
 
       {/* FILTER */}
       <FilterComponent onFilterChange={filterData} />

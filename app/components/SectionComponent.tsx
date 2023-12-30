@@ -10,6 +10,7 @@ const SectionComponent: React.FC<SectionComponentProps> = ({ filteredData }) => 
 
     return (
         <div className="space-y-8">
+
             {filteredData.map((section) => (
                 <div key={section.id} className="bg-gray-50 hover:bg-gray-100 shadow-md overflow-hidden sm:rounded-lg p-6">
 
@@ -28,6 +29,36 @@ const SectionComponent: React.FC<SectionComponentProps> = ({ filteredData }) => 
                             </>
                         )}
                     </div>
+
+
+{/* 
+                    <div
+                        key="asdf"
+                        className={`flex flex-col md:flex-row ${true ? 'md:flex-row-reverse' : ''
+                            } items-center`}
+                    >
+                        <div className="w-full md:w-1/2 m-6 max-w-md">
+                            <img src="img.png" alt="" className="w-full" />
+                        </div>
+                        <div className="w-full md:w-1/2 p-4">
+                            <p>asdfasdf</p>
+                        </div>
+                    </div>
+
+
+                    <div
+                        key="asdf"
+                        className={`flex flex-col md:flex-row ${false ? 'md:flex-row-reverse' : ''
+                            } items-center`}
+                    >
+                        <div className="w-full md:w-1/2 m-6">
+                            <img src="img.png" alt="" className="w-full max-w-md" />
+                        </div>
+                        <div className="w-full md:w-1/2 p-4">
+                            <p>asdfasdf</p>
+                        </div>
+                    </div>
+ */}
 
 
                     {/* PROJECTS */}
