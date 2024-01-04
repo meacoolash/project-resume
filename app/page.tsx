@@ -19,13 +19,9 @@ export default function Home() {
   };
 
   return (
-    <main className='m-6'>
-      
-      
+    <main className='bg-background'>
       <HeaderComponent />
-     
 
-      {/* FILTER */}
       <FilterComponent onFilterChange={filterData} />
 
       {/* FILTER DETAIL */}
@@ -35,6 +31,18 @@ export default function Home() {
 
       {/* SECTION */}
       <SectionComponent filteredData={filteredData} />
+
+      <div className='flex'>
+        <div className='bg-background aspect-video h-10'></div>
+        <div className='bg-text aspect-video h-10'></div>
+        <div className='bg-primary aspect-video h-10'></div>
+        <div className='bg-secondary aspect-video h-10'></div>
+        <div className='bg-accent aspect-video h-10'></div>
+        
+
+      </div>
+
+
 
     </main>
   )

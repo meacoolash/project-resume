@@ -26,7 +26,7 @@ const ThemeToggle = () => {
     return (
         <>
             <button
-                className="p-4 border-2 bg-primary text-secondary animate-pulse"
+                className="bg-accent text-secondary"
                 onClick={() => toggleTheme()}
             >TOGGLE FROM {theme}</button>
         </>

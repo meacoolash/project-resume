@@ -2,3 +2,20 @@
 @tailwind components;
 @tailwind utilities;
 
+@layer base {
+    :root {
+        --color-background: 247 247 245; 
+        --color-text: 10 10 10; 
+        --color-primary: 107 144 155;
+        --color-secondary: 235 143 104;
+        --color-accent: 255 165 0;
+    }
+    
+    .dark {
+        --color-background: 0 10 20;
+        --color-text: 255 255 255;
+        --color-primary: 21 97 110;
+        --color-secondary: 120 41 15;
+        --color-accent: 255 125 0;
+    }
+}

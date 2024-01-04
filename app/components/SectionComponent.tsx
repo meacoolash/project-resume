@@ -7,10 +7,9 @@ interface SectionComponentProps {
 
 const SectionComponent: React.FC<SectionComponentProps> = ({ filteredData }) => {
     return (
-        <div className="space-y-8 bg-slate-800 text-white font-modern"> 
-
+        <div className="space-y-8"> 
             {filteredData.map((section, idx) => (
-                <div key={section.id} className="bg-dark-blue hover:bg-darker-blue shadow-md overflow-hidden sm:rounded-lg p-6"> 
+                <div key={section.id} className="shadow-md overflow-hidden sm:rounded-lg p-6"> 
 
                     {/* HEADER */}
                     <div className="text-center border-b pb-4">
@@ -23,7 +22,7 @@ const SectionComponent: React.FC<SectionComponentProps> = ({ filteredData }) => 
                         <div className="pt-4 flex justify-center">
                             <div className="flex flex-wrap gap-2">
                                 {section.tools.map((tool, toolIdx) => (
-                                    <span key={toolIdx} className="bg-gray-700 text-gray-300 text-xs font-semibold px-2.5 py-0.5 rounded">
+                                    <span key={toolIdx} className="text-xs bg-primary font-semibold px-2.5 py-0.5 rounded">
                                         {tool}
                                     </span>
                                 ))}
@@ -39,7 +38,7 @@ const SectionComponent: React.FC<SectionComponentProps> = ({ filteredData }) => 
                                     {section.projects.map((project, projectIdx) => (
                                         <li key={projectIdx} className='list-none'>
                                             <strong>{project.name}</strong> 
-                                            <p className='text-yellow-200'>{project.description}</p>
+                                            <p>{project.description}</p>
                                         </li>
                                     ))}
                                 </ul>
@@ -61,7 +60,7 @@ const SectionComponent: React.FC<SectionComponentProps> = ({ filteredData }) => 
                     {/* PREVIEW */}
                     {section.live && (
                         <div className="pt-4">
-                            <a href={section.live} className="text-blue-400 hover:underline">View Live Project</a>
+                            <a href={section.live} className="hover:underline">View Live Project</a>
                         </div>
                     )}
                 </div>
