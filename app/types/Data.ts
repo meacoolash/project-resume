@@ -37,7 +37,10 @@ export const Data: SectionType[] = [
             "Ended the project in Dec 2023, as trading strategies proved non - profitable"
         ],
         repositories: [],
-        media: null,
+        media: {
+            type: "image", 
+            url: "/oanda.jpg"
+        },
         live: null,
         filter: [
             FilterType.Angular,
@@ -106,7 +109,10 @@ export const Data: SectionType[] = [
             "Built complex components based on Angular CDK"
         ],
         repositories: [],
-        media: null,
+        media: {
+            type: "video",
+            url: "/uniqa.mp4"
+        },
         live: "https://www.uniqa.at/reiseversicherung/",
         filter: [
             FilterType.Angular,
@@ -165,7 +171,10 @@ export const Data: SectionType[] = [
                 "link": "REQUEST",
             }
         ],
-        "media": null,
+        "media": {
+            type: "video",
+            url: "/varden.mp4"
+        },
         "live": null,
         "filter": [
             FilterType.Frontend,
@@ -216,7 +225,7 @@ export const Data: SectionType[] = [
             "Developed a user-friendly Drag and Drop feature from scratch in vanilla JS"
         ],
         "repositories": [],
-        "media": null,
+        "media": {type: "video", url: "gin.mp4"},
         "live": null,
         "filter": [
             FilterType.Frontend,
@@ -249,7 +258,7 @@ export const Data: SectionType[] = [
         "projects": [
             {
                 "name": "Admin Portal",
-                "description": "Led the development of the Admin Portal's frontend from scratch."
+                "description": "Developed an advanced administration system for sales support, focusing on offshore oil platforms equipped with solar turbines."
             }
         ],
         "tools": [
@@ -264,7 +273,10 @@ export const Data: SectionType[] = [
             "Completing an initial version of the project solo that was initially planned for a multi-developer team."
         ],
         "repositories": [],
-        "media": null,
+        "media": {
+            type: "image",
+            url: "/solar2.jpg"
+        },
         "live": null,
         "filter": [
             FilterType.Angular,
@@ -315,7 +327,10 @@ export const Data: SectionType[] = [
         ],
         "challenges": [],
         "repositories": [],
-        "media": null,
+        "media": {
+            type: "video",
+            url: "/innogy.mp4"
+        },
         "live": null,
         filter: [
             FilterType.Frontend,
@@ -359,7 +374,10 @@ export const Data: SectionType[] = [
         ],
         "challenges": [],
         "repositories": [],
-        "media": null,
+        "media": {
+            type: "image",
+            url: "/adito.jpg"
+        },
         "live": null,
         "filter": [
             FilterType.SQL,
@@ -398,7 +416,10 @@ export const Data: SectionType[] = [
         ],
         "challenges": [],
         "repositories": [],
-        "media": null,
+        "media": {
+            type: "video",
+            url: "/webdev.mp4"
+        },
         "live": null,
         "filter": [
             FilterType.Frontend,
@@ -435,7 +456,10 @@ export const Data: SectionType[] = [
         ],
         "challenges": [],
         "repositories": [],
-        "media": null,
+        "media": {
+            type: "video",
+            url: "/wordpress.mp4"
+        },
         "live": null,
         "filter": [
             FilterType.CSS,
@@ -470,7 +494,10 @@ export const Data: SectionType[] = [
         ],
         "challenges": [],
         "repositories": [],
-        "media": null,
+        "media": {
+            type: "image",
+            url: "/allianz.jpg"
+        },
         "live": null,
         "filter": [
             FilterType.UIUX,
@@ -504,7 +531,10 @@ export const Data: SectionType[] = [
         ],
         "challenges": [],
         "repositories": [],
-        "media": null,
+        "media": {
+            type: "image",
+            url: "/informix.jpg"
+        },
         "live": null,
         "filter": [
             FilterType.SQL
@@ -536,7 +566,10 @@ export const Data: SectionType[] = [
         ],
         "challenges": [],
         "repositories": [],
-        "media": null,
+        "media": {
+            type: "video",
+            url: "/flash.mp4"        
+        },
         "live": null,
         "filter": [
             FilterType.CSS,
@@ -565,7 +598,10 @@ export const Data: SectionType[] = [
         "tools": [],
         "challenges": [],
         "repositories": [],
-        "media": null,
+        "media": {
+            type: "image",
+            url: "/university.jpg"
+        },
         "live": null,
     },
 
@@ -593,7 +629,10 @@ export const Data: SectionType[] = [
         ],
         "challenges": [],
         "repositories": [],
-        "media": null,
+        "media": {
+            type: "image",
+            url: "/procom.jpg"
+        },
         "live": null
     }
 

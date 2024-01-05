@@ -25,7 +25,7 @@ export default function Home() {
 
 
 
-
+      
       <div className='sm:px-10'>
         <div className='py-2'>
           <FilterComponent onFilterChange={filterData} />
@@ -37,8 +37,9 @@ export default function Home() {
         </div>
 
         {/* SECTION */}
-        <SectionLoopComponent filteredData={filteredData} />
-
+        <div className='flex items-center'>
+          <SectionLoopComponent filteredData={filteredData} />
+        </div>
       </div>
 
 

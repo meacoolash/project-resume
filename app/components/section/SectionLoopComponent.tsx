@@ -1,17 +1,30 @@
-import React from 'react';
+import React, { useRef, useState } from 'react';
 import { SectionType } from '../../types/SectionType';
-import { FaCheck } from 'react-icons/fa';
+import { FaCheck, FaPlayCircle } from 'react-icons/fa';
 import CompanyComponent from './CompanyComponent';
+import Image from 'next/image';
 
 interface SectionComponentProps {
     filteredData: Array<SectionType>;
+}
+
+function RoundendImage({ src, alt }: { src: string, alt: string }) {
+    return (
+        <Image
+            src={src}
+            alt={alt}
+            width="1000"
+            height="1000"
+            className="rounded-xl shadow-md"
+        />
+    )
 }
 
 const SectionLoopComponent: React.FC<SectionComponentProps> = ({ filteredData }) => {
     return (
         <div className='space-y-8'>
             {filteredData.map((section, idx) => (
-                <div key={section.id} className="shadow-md sm:rounded-lg p-6">
+                <div key={section.id} className="sm:rounded-lg p-6 shadow-md bg-primary/30">
 
 
                     <div className=''>
@@ -27,7 +40,6 @@ const SectionLoopComponent: React.FC<SectionComponentProps> = ({ filteredData })
 
                                 {/* COMPANY DETAILS */}
                                 <CompanyComponent section={section} />
-
 
                             </div>
 
@@ -101,8 +113,25 @@ const SectionLoopComponent: React.FC<SectionComponentProps> = ({ filteredData })
 
 
                         {/* MEDIA */}
-                        <div className="w-full md:w-1/3 m-6" >
-                            <img src="img.png" alt="" className="w-full" />
+                        <div className="w-full md:w-1/2 mx-6 mt-6 relative">
+                            {section.media ? (
+                                section.media.type === 'video' ? (
+                                    <div className="relative">
+                                        {/* The video */}
+                                        <video
+                                            className="w-full rounded-xl"
+                                            src={section.media.url}
+                                            controls
+                                        />
+                                    </div>
+
+                                ) : (
+                                    <RoundendImage src={section.media.url} alt={section.title} />
+                                )
+                            ) : (
+                                <RoundendImage src="/img.png" alt="" />
+                            )
+                            }
                         </div>
 
                     </div>
