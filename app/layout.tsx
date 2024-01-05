@@ -1,10 +1,28 @@
-import type { Metadata } from 'next'
-import { Inter } from 'next/font/google'
 import './globals.css'
+import type { Metadata } from 'next'
 import { Providers } from './provider'
-import { use } from 'react'
+import { Montserrat, Inter, Playfair_Display, Signika_Negative } from 'next/font/google'
 
-const inter = Inter({ subsets: ['latin'] })
+const inter = Inter({
+   subsets: ['latin'] 
+  })
+
+const montserrat = Montserrat({
+  subsets: ['latin'],
+  variable: '--font-monsterrat',
+})
+
+const playfair_Display = Playfair_Display({
+  variable: '--font-playfair-display',
+  subsets: ['latin'],
+})
+
+const signika_Negative = Signika_Negative({
+  variable: '--font-signika-negative',
+  subsets: ['latin'],
+})
+
+
 
 export const metadata: Metadata = {
   title: 'Create Next App',
@@ -18,7 +36,7 @@ export default function RootLayout({
 }) {
   return (
     <html suppressHydrationWarning lang="en">
-      <body className={`bg-background text-text ${inter.className}`}>
+      <body className={`bg-background text-text ${montserrat.variable} ${playfair_Display.variable} ${signika_Negative.variable} ${inter.className}`}>
         <Providers>
           {children}
         </Providers>

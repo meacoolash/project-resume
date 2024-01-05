@@ -15,7 +15,7 @@ const FilterComponent: React.FC<FilterComponentProps> = ({ onFilterChange }) => 
     };
 
     return (
-        <div className="flex flex-wrap gap-2 mb-6">
+        <div className="flex flex-wrap gap-2 mb-2">
             {Object.values(FilterType).map((filter) => (
                 <button
                     key={filter}

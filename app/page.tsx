@@ -2,9 +2,9 @@
 import React from 'react';
 import { Data } from './types/Data'
 import { FilterType } from './types/FilterType'
-import SectionComponent from './components/SectionComponent';
+import SectionLoopComponent from './components/section/SectionLoopComponent';
 import FilterComponent from './components/FilterComponent';
-import HeaderComponent from './components/HeaderComponent';
+import HeaderComponent from './components/header/HeaderComponent';
 
 
 export default function Home() {
@@ -20,25 +20,24 @@ export default function Home() {
 
   return (
     <main className='bg-background'>
+
       <HeaderComponent />
 
-      <FilterComponent onFilterChange={filterData} />
 
-      {/* FILTER DETAIL */}
-      <div className='text-orange-500 mb-3 text-xs'>
-        <p>Selected Sections: {filteredData.length}</p>
-      </div>
 
-      {/* SECTION */}
-      <SectionComponent filteredData={filteredData} />
 
-      <div className='flex'>
-        <div className='bg-background aspect-video h-10'></div>
-        <div className='bg-text aspect-video h-10'></div>
-        <div className='bg-primary aspect-video h-10'></div>
-        <div className='bg-secondary aspect-video h-10'></div>
-        <div className='bg-accent aspect-video h-10'></div>
-        
+      <div className='sm:px-10'>
+        <div className='py-2'>
+          <FilterComponent onFilterChange={filterData} />
+        </div>
+
+        {/* FILTER DETAIL */}
+        <div className='text-secondary mb-6 text-xs'>
+          <p>Selected Sections: {filteredData.length}</p>
+        </div>
+
+        {/* SECTION */}
+        <SectionLoopComponent filteredData={filteredData} />
 
       </div>
 

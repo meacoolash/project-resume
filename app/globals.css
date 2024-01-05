@@ -4,18 +4,19 @@
 
 @layer base {
     :root {
-        --color-background: 247 247 245; 
-        --color-text: 10 10 10; 
-        --color-primary: 107 144 155;
-        --color-secondary: 235 143 104;
-        --color-accent: 255 165 0;
+        --color-background: 255 255 255;
+        --color-text: 0 0 0;
+        --color-primary: 200 220 255;
+        --color-secondary: 40 167 69;
+        --color-accent: 200 20 230;
     }
     
     .dark {
-        --color-background: 0 10 20;
+        --color-background: 0 0 0;
         --color-text: 255 255 255;
-        --color-primary: 21 97 110;
-        --color-secondary: 120 41 15;
-        --color-accent: 255 125 0;
+        --color-primary: 0 123 255;
+        --color-secondary: 40 167 69;
+        --color-accent: 200 20 230;
     }
+    
 }

@@ -1,5 +1,5 @@
 import React from 'react'
-import { ProjectType, SectionType } from '../types/SectionType'
+import { ProjectType, SectionType } from '../../types/SectionType'
 import { Project } from 'next/dist/build/swc'
 
 interface ProjectsComponentProps {

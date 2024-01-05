@@ -2,6 +2,7 @@
 import React from 'react'
 import { useTheme } from 'next-themes'
 import { useState, useEffect } from 'react'
+import { FaSun } from 'react-icons/fa'
 
 const ThemeToggle = () => {
 
@@ -24,13 +25,7 @@ const ThemeToggle = () => {
 
 
     return (
-        <>
-            <button
-                className="bg-accent text-secondary"
-                onClick={() => toggleTheme()}
-            >TOGGLE FROM {theme}</button>
-        </>
-
+        <button onClick={() => toggleTheme()}><FaSun /></button>
     )
 }
 

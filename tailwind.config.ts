@@ -16,6 +16,12 @@ const config: Config = {
         text: 'rgb(var(--color-text) / <alpha-value>)',
         accent: 'rgb(var(--color-accent) / <alpha-value>)',
       },  
+      fontFamily: {
+        monsterrat: ["var(--font-monsterrat)"],
+        playfair: ["var(--font-playfair-display)"],
+        signika: ["var(--font-signika-negative)"],
+        sans: ["var(--font-monsterrat)"],
+      },
     }
   },
   plugins: [],

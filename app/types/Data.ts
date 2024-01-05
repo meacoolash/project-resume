@@ -5,7 +5,7 @@ export const Data: SectionType[] = [
     //OANDA
     {
         id: "oanda",
-        title: "MEAN Stack Personal Project",
+        title: "MEAN Stack",
         start: "2017",
         end: "2022",
         duration: "5 yrs",
@@ -55,7 +55,7 @@ export const Data: SectionType[] = [
     // UNIQA
     {
         id: "uniqa",
-        title: "Angular 13 Developer",
+        title: "Angular 13",
         start: "Nov 2021",
         end: "Dec 2022",
         duration: "1 yr 2 mos",
@@ -122,12 +122,12 @@ export const Data: SectionType[] = [
     // VARDEN 
     {
         "id": "varden",
-        "title": "Angular 11 Developer",
+        "title": "Angular 11",
         "start": "11/2020",
         "end": "11/2021",
         "duration": "1 yr",
         "company": {
-            "name": "VARDEN",
+            "name": "VARDEN.se (Sweden)",
             "link": null,
             "logo": null,
             "type": "contract",
@@ -182,7 +182,7 @@ export const Data: SectionType[] = [
     //SWISSRE
     {
         "id": "swissre",
-        "title": "Angular 8 Developer",
+        "title": "Angular 8",
         "start": "12/2019",
         "end": "12/2020",
         "duration": "1 yr",
@@ -230,7 +230,7 @@ export const Data: SectionType[] = [
     //SOLAR
     {
         "id": "solar",
-        "title": "Angular 6 Developer",
+        "title": "Angular 6",
         "start": "08/2018",
         "end": "01/2020",
         "duration": "1 yr 6 mos",
@@ -280,7 +280,7 @@ export const Data: SectionType[] = [
     //INNOGY
     {
         "id": "innogy",
-        "title": "AngularJS/Angular 2+ Developer",
+        "title": "AngularJS/Angular 2+",
         "start": "01/2018",
         "end": "08/2018",
         "duration": "8 mos",
@@ -331,7 +331,7 @@ export const Data: SectionType[] = [
     //ADITO
     {
         "id": "adito-gmbh",
-        "title": "JavaScript/SQL Developer",
+        "title": "JavaScript/SQL",
         "start": "2017",
         "end": "2017",
         "duration": "1 yr",
@@ -371,7 +371,7 @@ export const Data: SectionType[] = [
     // WEBDEV
     {
         "id": "webdev",
-        "title": "Web Developer",
+        "title": "HTML/CSS/JS WEB",
         "start": "2014",
         "end": "2017",
         "duration": "3 yrs",
