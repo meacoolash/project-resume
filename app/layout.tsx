@@ -36,7 +36,7 @@ export default function RootLayout({
 }) {
   return (
     <html suppressHydrationWarning lang="en">
-      <body className={`bg-background text-text ${montserrat.variable} ${playfair_Display.variable} ${signika_Negative.variable} ${inter.className}`}>
+      <body className={`bg-black text-text ${montserrat.variable} ${playfair_Display.variable} ${signika_Negative.variable} ${inter.className}`}>
         <Providers>
           {children}
         </Providers>

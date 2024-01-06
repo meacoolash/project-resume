@@ -40,7 +40,7 @@ export const Data: SectionType[] = [
         ],
         challenges: [
             "Explore the trends of contemporary web development",
-            "Understand React and Next.js, Tailwind CSS, and other modern tools",
+            "Fully understand the mindset of Next.js, Tailwind CSS, and other modern tools",
             "Effectively use AI and Copilot to speed up development",
             "Learn about current cloud technologies and deployment strategies",
         ],
@@ -73,7 +73,7 @@ export const Data: SectionType[] = [
             "Angular 17",            
         ],
         challenges: [
-            "Learning about course creation, production",
+            "Learning about course creation and video production",
             "Learning about web builders, SEO, marketing",
             "While the course for junior developers was a promising project, I realized that my passion lies more in continuing my own education and working on projects, rather than teaching. Despite my love for teaching, I chose to focus on advancing my skills as a full-stack developer. I'm still available to lend a hand and offer guidance, but my primary focus is on my personal growth and work."
         ],

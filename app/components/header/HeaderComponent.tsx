@@ -5,8 +5,8 @@ import ThemeToggle from './ThemeToggle'
 
 const HeaderComponent = () => {
     return (
-        <header className='bg-background flex justify-between items-center p-4 mb-4'>
-            <div className='text-lg font-bold'>Mikuláš Štec <span>Full-Stack Developer</span></div>
+        <header className='flex justify-between items-center p-4 mb-4 text-xl'>
+            <div className='font-signika'>Mikuláš Štec <span>Full-Stack Developer</span></div>
             <div className='flex space-x-4'>
 
                 <ThemeToggle />

@@ -4,19 +4,17 @@
 
 @layer base {
     :root {
-        --color-background: 230 230 230;
-        --color-text: 0 0 0;
-        --color-primary: 200 200 200;
-        --color-secondary: 40 40 40;
-        --color-accent: 100 100 100;
+        --color-text: #222222;
+        --color-background: #f4f9fb;
+
+        --color-effect--1: #ff52e8;
+        --color-effect--2: #52f1ff;
+        --color-orange: #f14e32;
     }
     
     .dark {
-        --color-background: 0 0 0;
-        --color-text: 255 255 255;
-        --color-primary: 0 123 255;
-        --color-secondary: 40 167 69;
-        --color-accent: 200 20 230;
+        --color-text: #f4f9fb;
+        --color-background: blue;
     }
     
 }

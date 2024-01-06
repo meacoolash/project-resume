@@ -15,6 +15,9 @@ function alternatedColumnsClass(idx: number): string {
     ${idx % 2 !== 0 && 'md:flex-row-reverse'}`
 }
 
+const sectionBorderClass = 'shadow-2xl shadow-cyan-200 rounded-3xl bg-green-300/15'
+const connectionLineClass = 'bg-gradient-to-b from-indigo-700/5 via-purple-200 to-indigo-700/5 to-90%'
+
 
 /* 
 NOTE: 
@@ -25,11 +28,15 @@ Refactor if section would be too big or dynamic (CSR)
 
 const SectionLoopComponent: React.FC<SectionComponentProps> = ({ filteredData }) => {
     return (
-        <div className='space-y-8'>
+        <div className=''>
             {filteredData.map((section, idx) => (
-                <div key={section.id} className="sm:rounded-lg p-6 shadow-md bg-primary/30">
+                <div key={section.id} className="relative p-6 mb-20 ">
 
-                    <div className="text-center border-b pb-4 relative">
+                    {idx !== 0 && (
+                        <div className={`absolute left-1/2 transform -top-20 w-0.5 h-20 ${connectionLineClass}`}></div>
+                    )}
+
+                    <div className="text-center pb-4 relative">
                         <TitleComponent section={section} />
                         <ToolsComponent section={section} />
                     </div>

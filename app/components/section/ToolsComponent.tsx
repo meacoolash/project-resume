@@ -12,7 +12,7 @@ const ToolsComponent: React.FC<ToolsComponentProps> = ({ section }) => {
                 <div className="pt-4 flex justify-center">
                     <div className="flex flex-wrap gap-2">
                         {section.tools.map((tool, toolIdx) => (
-                            <span key={toolIdx} className="text-xs bg-primary font-semibold px-2.5 py-0.5 rounded">
+                            <span key={toolIdx} className="text-sm bg-pink-300/45  px-2.5 py-0.5 rounded">
                                 {tool}
                             </span>
                         ))}

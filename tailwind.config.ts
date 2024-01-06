@@ -10,17 +10,21 @@ const config: Config = {
   theme: {
     extend: {
       colors: {
-        primary: 'rgb(var(--color-primary) / <alpha-value>)',
-        secondary: 'rgb(var(--color-secondary) / <alpha-value>)',
-        background: 'rgb(var(--color-background) / <alpha-value>)',
-        text: 'rgb(var(--color-text) / <alpha-value>)',
-        accent: 'rgb(var(--color-accent) / <alpha-value>)',
+        background: 'var(--color-background)',
+        text: 'var(--color-text)',       
+        effect1: 'var(--color-effect--1)',
+        effect2: 'var(--color-effect--2)',
+        orange: 'var(--color-orange)',
       },  
       fontFamily: {
         monsterrat: ["var(--font-monsterrat)"],
         playfair: ["var(--font-playfair-display)"],
         signika: ["var(--font-signika-negative)"],
         sans: ["var(--font-monsterrat)"],
+      },
+      animation: {
+        "spin-slower": "spin 25s ease infinite",
+        "spin-slow": "spin 15s ease-in-out infinite reverse",
       },
     }
   },

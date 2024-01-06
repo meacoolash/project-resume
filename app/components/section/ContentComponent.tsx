@@ -10,7 +10,6 @@ const ContentComponent: React.FC<ContentComponentProps> = ({ section }) => {
     return (
 
         <>
-
             {/* PROJECT */}
             <div className="py-4">
                 {section.projects && section.projects.length > 0 && (
@@ -18,10 +17,10 @@ const ContentComponent: React.FC<ContentComponentProps> = ({ section }) => {
                         <ul className="list-disc list-inside">
                             {section.projects.map((project, projectIdx) => (
                                 <li key={projectIdx} className='list-none pb-2'>
-                                    <p className='font-bold'>{project.name}</p>
+                                    <p className='text-xl font-signika font-semibold'>{project.name}</p>
                                     <p>{project.description}</p>
                                     {project.repository && (
-                                        <button className='flex mt-1 p-2 bg-orange-500 text-white rounded'>
+                                        <button className='flex mt-1 p-2 bg-orange text-white rounded'>
                                             <FaGithub />
                                             <span className='pl-2 text-sm'>Public GIT</span>
                                         </button>
@@ -36,16 +35,13 @@ const ContentComponent: React.FC<ContentComponentProps> = ({ section }) => {
 
 
             {section.challenges && section.challenges.length > 0 && (
-                <div>
-                    <h3 className="font-semibold">Highlights:</h3>
-                    <ul className="list-inside text-sm">
-                        {section.challenges.map((challenge, challengeIdx) => (
-                            <li className='flex gap-2' key={challengeIdx}>
-                                <span className='pt-1 text-primary'><FaCheck /></span>{challenge}
-                            </li>
-                        ))}
-                    </ul>
-                </div>
+                <ul className="list-inside text-sm">
+                    {section.challenges.map((challenge, challengeIdx) => (
+                        <li className='flex gap-2' key={challengeIdx}>
+                            <span className='pt-1 text-cyan-300 text-xs'><FaCheck /></span>{challenge}
+                        </li>
+                    ))}
+                </ul>
             )}
             {/* PREVIEW */}
             {section.live && (
