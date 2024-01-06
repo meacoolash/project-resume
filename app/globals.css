@@ -4,11 +4,11 @@
 
 @layer base {
     :root {
-        --color-background: 255 255 255;
+        --color-background: 230 230 230;
         --color-text: 0 0 0;
-        --color-primary: 200 220 255;
-        --color-secondary: 40 167 69;
-        --color-accent: 200 20 230;
+        --color-primary: 200 200 200;
+        --color-secondary: 40 40 40;
+        --color-accent: 100 100 100;
     }
     
     .dark {

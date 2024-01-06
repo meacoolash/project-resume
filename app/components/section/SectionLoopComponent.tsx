@@ -1,6 +1,6 @@
 import React, { useRef, useState } from 'react';
 import { SectionType } from '../../types/SectionType';
-import { FaCheck, FaPlayCircle } from 'react-icons/fa';
+import {FaGit, FaGithub,  FaCheck, FaPlayCircle, FaGithubAlt, FaGithubSquare } from 'react-icons/fa';
 import CompanyComponent from './CompanyComponent';
 import Image from 'next/image';
 
@@ -36,7 +36,7 @@ const SectionLoopComponent: React.FC<SectionComponentProps> = ({ filteredData })
                             {/* TITLE */}
                             <div className='text-accent'>
                                 <p className="text-3xl font-signika">{section.start} - {section.end}</p> {/* Year first */}
-                                <p className="text-2xl font-signika text-accent font-bold">{section.title}</p>
+                                <p className="text-2xl font-signika text-secondary font-bold">{section.title}</p>
 
                                 {/* COMPANY DETAILS */}
                                 <CompanyComponent section={section} />
@@ -79,9 +79,16 @@ const SectionLoopComponent: React.FC<SectionComponentProps> = ({ filteredData })
                                     <div>
                                         <ul className="list-disc list-inside">
                                             {section.projects.map((project, projectIdx) => (
-                                                <li key={projectIdx} className='list-none'>
-                                                    <p className='font-playfair font-bold text-3xl py-2'>{project.name}</p>
+                                                <li key={projectIdx} className='list-none pb-2'>
+                                                    <p className='font-bold'>{project.name}</p>
                                                     <p>{project.description}</p>
+                                                    {project.repository && (
+                                                        <button className='flex mt-1 p-2 bg-orange-500 text-white rounded'>
+                                                            <FaGithub />
+                                                            <span className='pl-2 text-sm'>Public GIT</span>
+                                                        </button>
+                                                            
+                                                    )}
                                                 </li>
                                             ))}
                                         </ul>
@@ -92,11 +99,11 @@ const SectionLoopComponent: React.FC<SectionComponentProps> = ({ filteredData })
 
                             {section.challenges && section.challenges.length > 0 && (
                                 <div>
-                                    <h3 className="font-semibold">Challenges:</h3>
-                                    <ul className="list-inside">
+                                    <h3 className="font-semibold">Highlights:</h3>
+                                    <ul className="list-inside text-sm">
                                         {section.challenges.map((challenge, challengeIdx) => (
-                                            <li className='flex items-center gap-2' key={challengeIdx}>
-                                                <span className='text-primary'><FaCheck /></span>{challenge}
+                                            <li className='flex gap-2' key={challengeIdx}>
+                                                <span className='pt-1 text-primary'><FaCheck /></span>{challenge}
                                             </li>
                                         ))}
                                     </ul>
@@ -108,6 +115,8 @@ const SectionLoopComponent: React.FC<SectionComponentProps> = ({ filteredData })
                                     <a href={section.live} className="hover:underline">View Live Project</a>
                                 </div>
                             )}
+
+
 
                         </div>
 
