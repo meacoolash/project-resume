@@ -22,6 +22,7 @@ interface MediaLink {
 export interface ProjectType { 
     name: string,
     description: string,
+    repository?: Repository | null,
 }
 
 export interface SectionType {
@@ -34,7 +35,6 @@ export interface SectionType {
     challenges?: string[],
     projects?: ProjectType[],
     tools: string[],
-    repositories: Repository[],
     media: MediaLink | null,
     live: string | null,
     filter?: FilterType[]

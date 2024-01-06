@@ -2,6 +2,88 @@ import { FilterType } from './FilterType';
 import { SectionType } from './SectionType';
 
 export const Data: SectionType[] = [
+    //2024
+    {
+        id: "react",
+        title: "React/NodeJS Fullstack",
+        start: "late 2023",
+        end: "2024",
+        duration: "1 yr",
+        company: null,
+        projects: [
+            {
+                name: "This Website Portfolio",
+                description: "Next.js portfolio website, an interactive resume.",
+                repository:
+                {
+                    name: "Portfolio",
+                    description: "Next.js portfolio website, an interactive resume.",
+                    link: "https://github.com/meacoolash/project-resume"
+                }
+            },
+            {
+                name: "Full-stack simple CRM system",
+                description: "A simple CRM system with a React frontend and a NodeJS/MongoDB backend."
+            }
+        ],
+        tools: [
+            "React",
+            "Next.js",
+            "Tailwind CSS",
+            "NodeJS",
+            "Express",
+            "Express",
+            "MongoDB",
+            "Jest",
+            "Netlify",
+            "Vercel",
+        ],
+        challenges: [
+            "Explore the trends of contemporary web development",
+            "Understand React and Next.js, Tailwind CSS, and other modern tools",
+            "Effectively use AI and Copilot to speed up development",
+            "Learn about current cloud technologies and deployment strategies",
+        ],
+        media: {
+            type: "image",
+            url: "/react.jpg"
+        },
+        live: null,
+    },
+
+    // Angular17
+    {
+        id: "angular17",
+        title: "Angular 17 Mentorship",
+        start: "Autumn 2023",
+        end: "?",
+        duration: "1 yr",
+        company: null,
+        projects: [
+            {
+                name: "Angular 17",
+                description: "Update knowledge of Angular to the latest version"
+            },
+            {
+                name: "Mentorship",
+                description: "Mentorship of junior developers trought spiralcoder.com"
+            }
+        ],
+        tools: [
+            "Angular 17",            
+        ],
+        challenges: [
+            "Learning about course creation, production",
+            "Learning about web builders, SEO, marketing",
+            "While the course for junior developers was a promising project, I realized that my passion lies more in continuing my own education and working on projects, rather than teaching. Despite my love for teaching, I chose to focus on advancing my skills as a full-stack developer. I'm still available to lend a hand and offer guidance, but my primary focus is on my personal growth and work."
+        ],
+        media: {
+            type: "image",
+            url: "/angular.jpg"
+        },
+        live: null,
+    },
+
     //OANDA
     {
         id: "oanda",
@@ -36,9 +118,8 @@ export const Data: SectionType[] = [
             "Dealt with challenges involving timezones and time- sensitive data processing",
             "Ended the project in Dec 2023, as trading strategies proved non - profitable"
         ],
-        repositories: [],
         media: {
-            type: "image", 
+            type: "image",
             url: "/oanda.jpg"
         },
         live: null,
@@ -108,7 +189,6 @@ export const Data: SectionType[] = [
             "Learned about Scully, Storyblock, Storybook",
             "Built complex components based on Angular CDK"
         ],
-        repositories: [],
         media: {
             type: "video",
             url: "/uniqa.mp4"
@@ -145,8 +225,13 @@ export const Data: SectionType[] = [
             },
             {
                 "name": "Booking system",
-                "description": "Calendar booking system built from scratch, including API Design and custom styles."
-            },
+                "description": "Calendar booking system built from scratch, including API Design and custom styles.",
+                repository:     {
+                    "name": "Booking System",
+                    "description": "Calendar booking system built from scratch, including API Design and custom styles.",
+                    "link": "REQUEST",
+                }
+             },
             {
                 "name": "Admin Portal",
                 "description": "A custom-built user management tool, where I actively contributed to its architectural design (Greenfield project)."
@@ -163,13 +248,6 @@ export const Data: SectionType[] = [
         "challenges": [
             "Developed a booking system from scratch, including an API design and custom styles.",
             "Optimized performance"
-        ],
-        "repositories": [
-            {
-                "name": "Booking System",
-                "description": "Calendar booking system built from scratch, including API Design and custom styles.",
-                "link": "REQUEST",
-            }
         ],
         "media": {
             type: "video",
@@ -225,7 +303,7 @@ export const Data: SectionType[] = [
             "Developed a user-friendly Drag and Drop feature from scratch in vanilla JS"
         ],
         "repositories": [],
-        "media": {type: "video", url: "gin.mp4"},
+        "media": { type: "video", url: "gin.mp4" },
         "live": null,
         "filter": [
             FilterType.Frontend,
@@ -326,7 +404,6 @@ export const Data: SectionType[] = [
             "Bootstrap"
         ],
         "challenges": [],
-        "repositories": [],
         "media": {
             type: "video",
             url: "/innogy.mp4"
@@ -373,7 +450,6 @@ export const Data: SectionType[] = [
             "JavaScript"
         ],
         "challenges": [],
-        "repositories": [],
         "media": {
             type: "image",
             url: "/adito.jpg"
@@ -415,7 +491,6 @@ export const Data: SectionType[] = [
             "Photoshop"
         ],
         "challenges": [],
-        "repositories": [],
         "media": {
             type: "video",
             url: "/webdev.mp4"
@@ -455,7 +530,6 @@ export const Data: SectionType[] = [
             "Photoshop"
         ],
         "challenges": [],
-        "repositories": [],
         "media": {
             type: "video",
             url: "/wordpress.mp4"
@@ -493,7 +567,6 @@ export const Data: SectionType[] = [
             "LotusScript"
         ],
         "challenges": [],
-        "repositories": [],
         "media": {
             type: "image",
             url: "/allianz.jpg"
@@ -530,7 +603,6 @@ export const Data: SectionType[] = [
             "MS Word Templates"
         ],
         "challenges": [],
-        "repositories": [],
         "media": {
             type: "image",
             url: "/informix.jpg"
@@ -565,10 +637,9 @@ export const Data: SectionType[] = [
             "ActionScript"
         ],
         "challenges": [],
-        "repositories": [],
         "media": {
             type: "video",
-            url: "/flash.mp4"        
+            url: "/flash.mp4"
         },
         "live": null,
         "filter": [
@@ -597,7 +668,6 @@ export const Data: SectionType[] = [
         "projects": [],
         "tools": [],
         "challenges": [],
-        "repositories": [],
         "media": {
             type: "image",
             url: "/university.jpg"
@@ -628,12 +698,55 @@ export const Data: SectionType[] = [
             "Windows 95", "Vacuum Cleaner (they were pretty dusty)"
         ],
         "challenges": [],
-        "repositories": [],
         "media": {
             type: "image",
             url: "/procom.jpg"
         },
         "live": null
+    },
+    {
+        id: "commodore",
+        title: "First Touch",
+        start: "1986",
+        end: "1990",
+        duration: "4 yrs",
+        company: null,
+        projects: [
+            {
+                name: "Basic Programming",
+                description: "Learned to program in Basic"
+            }
+        ],
+        tools: [
+            "Basic",
+            "Karol"
+        ],
+        challenges: [],
+        media: {
+            type: "image",
+            url: "/commodore.jpg"
+        },
+        live: null
+    },
+    {
+        id: "life",
+        title: "Life",
+        start: "1981",
+        end: "?",
+        duration: "",
+        company: null,
+        projects: [
+        
+        ],
+        tools: [
+        
+        ],
+        challenges: [],
+        media: {
+            type: "image",
+            url: "/mikinko.jpg"
+        },
+        live: null
     }
 
 ]
