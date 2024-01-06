@@ -8,10 +8,10 @@ interface CompanyComponentProps {
 
 const TitleComponent: React.FC<CompanyComponentProps> = ({ section }) => {
     return (
-        <div className='text-accent'>
-            <p className="text-3xl font-signika">{section.start} - {section.end}</p> {/* Year first */}
-            <p className="text-2xl font-signika text-sky-400">{section.title}</p>
-            {/* COMPANY DETAILS */}
+        <div className=''>
+            <p className="text-3xl font-signika">{section.start} - {section.end}</p> 
+            <p className="text-2xl font-signika text-text-accent">{section.title}</p>
+            
             <CompanyComponent section={section} />
         </div>
 

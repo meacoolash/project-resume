@@ -10,10 +10,18 @@ const config: Config = {
   theme: {
     extend: {
       colors: {
-        background: 'var(--color-background)',
-        text: 'var(--color-text)',       
-        effect1: 'var(--color-effect--1)',
-        effect2: 'var(--color-effect--2)',
+        primary: 'rgba(var(--color-primary) , <alpha-value>)',
+        background: {
+          body: 'var(--color-bg-body)',
+          from: 'var(--color-bg-from)',
+          via: 'var(--color-bg-via)',
+          to: 'var(--color-bg-to)',
+        },
+        text: {
+          DEFAULT: 'var(--color-text)', 
+          accent: 'var(--color-text-accent)',      
+        },
+        accent: 'rgba(var(--color-accent) , <alpha-value>)',
         orange: 'var(--color-orange)',
       },  
       fontFamily: {

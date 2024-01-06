@@ -4,17 +4,34 @@
 
 @layer base {
     :root {
-        --color-text: #222222;
-        --color-background: #f4f9fb;
+        --color-bg-body: white;
+        --color-bg-from: #fee2e2; /* red 100 */ 
+        --color-bg-via: #f0fdf4; /* green 50 */ 
+        --color-bg-to: #e0e7ff;  /* indigo 100 */
+        --color-text: #4c0519;
+        --color-text-accent: #17a3df; /* sky-400 */
 
-        --color-effect--1: #ff52e8;
-        --color-effect--2: #52f1ff;
         --color-orange: #f14e32;
+        
+        --color-primary: 246, 226, 246;
+        --color-accent: 249, 168, 212;
     }
     
     .dark {
-        --color-text: #f4f9fb;
-        --color-background: blue;
+        --color-bg-body: black;
+        --color-bg-from: #1e1b4b; /* indigo-950 */
+        --color-bg-via: #6b21a8; /* purple-800 */
+        --color-bg-to: #1e1b4b; /* pink-500 */
+
+        --color-text: white;
+        --color-text-accent: #38bdf8; /* sky-400 */
+    
+        --color-orange: #f14e32;
+
+        --color-primary: 30, 27, 75;
+        --color-accent: 249, 168, 212;     
+     
+        
     }
     
 }

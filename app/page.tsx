@@ -1,5 +1,5 @@
 "use client"
-import React, { useRef } from 'react';
+import React, { useEffect, useRef, useState } from 'react';
 import { Data } from './types/Data'
 import { FilterType } from './types/FilterType'
 import SectionLoopComponent from './components/section/SectionLoopComponent';
@@ -10,6 +10,35 @@ import HeaderComponent from './components/header/HeaderComponent';
 export default function Home() {
 
   const [filteredData, setFilteredData] = React.useState(Data);
+  const [showNav, setShowNav] = useState(false);
+  const heroRef = useRef(null);
+
+  useEffect(() => {
+    const observer = new IntersectionObserver(
+      ([entry]) => {
+        console.log(entry.isIntersecting);
+        // If the hero section is not intersecting (visible), show the nav
+        setShowNav(!entry.isIntersecting);
+      },
+      {
+        root: null, // viewport
+        threshold: 0, // trigger callback when hero is completely out of view
+      }
+    );
+
+    const currentHeroRef = heroRef.current;
+
+    if (currentHeroRef) {
+      observer.observe(currentHeroRef);
+    }
+
+    return () => {
+      if (currentHeroRef) {
+        observer.unobserve(currentHeroRef);
+      }
+    };
+  }, []);
+
 
   const filterData = (filter: FilterType) => {
     const newData = filter === FilterType.All
@@ -28,7 +57,7 @@ export default function Home() {
 
 
   return (
-    <main className='bg-gradient-to-br from-indigo-950 via-purple-800 to-indigo-950'>
+    <main className='bg-gradient-to-br from-background-from via-background-via to-background-to'>
 
       <div className="isolate overflow-hidden relative">
         <div
@@ -41,7 +70,7 @@ export default function Home() {
         <div className='absolute top-0 w-full'>
           <HeaderComponent />
         </div>
-        <div className="w-12 h-12 sm:w-8 sm:h-8 absolute bottom-10 left-1/2">
+        <div ref={heroRef} className="w-12 h-12 sm:w-8 sm:h-8 absolute bottom-10 left-1/2">
           <button className='-translate-x-8' onClick={scrollToSection}>
             <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" className="w-full h-full">
               <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="1" d="M19 9l-7 7-7-7" />
@@ -49,7 +78,6 @@ export default function Home() {
           </button>
         </div>
       </div>
-
 
       <div className='sm:px-10 mt-6 w-full flex flex-col items-center'>
         {/* 
@@ -64,13 +92,22 @@ export default function Home() {
         </div>
         */}
 
+
+
         {/* SECTION */}
-        <div ref={myRef}/>
+        <div ref={myRef} />
         <div className='w-4/5'>
+          {showNav}
           <SectionLoopComponent filteredData={filteredData} />
         </div>
       </div>
 
+
+      {showNav && (
+        <div className='bg-primary/60 fixed top-0 w-full h-14 border-b border-b-background-via'>
+          <HeaderComponent />
+        </div>
+      )}
 
 
     </main>
