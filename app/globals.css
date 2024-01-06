@@ -3,35 +3,60 @@
 @tailwind utilities;
 
 @layer base {
-    :root {
-        --color-bg-body: white;
-        --color-bg-from: #fee2e2; /* red 100 */ 
-        --color-bg-via: #f0fdf4; /* green 50 */ 
-        --color-bg-to: #e0e7ff;  /* indigo 100 */
-        --color-text: #4c0519;
-        --color-text-accent: #17a3df; /* sky-400 */
 
-        --color-orange: #f14e32;
-        
-        --color-primary: 246, 226, 246;
-        --color-accent: 249, 168, 212;
+  @media screen {
+    .a4-size {
+      width: 210mm;
+      height: 297mm;
+      overflow-y: scroll;
+      margin: auto;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+      background-color: white;
+      color: black;
+      padding: 0.5cm;
     }
-    
-    .dark {
-        --color-bg-body: black;
-        --color-bg-from: #1e1b4b; /* indigo-950 */
-        --color-bg-via: #6b21a8; /* purple-800 */
-        --color-bg-to: #1e1b4b; /* pink-500 */
-
-        --color-text: white;
-        --color-text-accent: #38bdf8; /* sky-400 */
-    
-        --color-orange: #f14e32;
-
-        --color-primary: 30, 27, 75;
-        --color-accent: 249, 168, 212;     
-     
-        
+    .dark .a4-size {
+      @apply shadow-2xl shadow-green-200
     }
-    
+  }
+
+  @media print {
+    body {
+      width: 210mm;
+      height: 297mm;
+      margin: 0;
+      transform: scale(0.9);
+      size: auto; 
+    }
+
+    .no-print {
+      display: none;
+    }
+  }
+
+
+  :root {
+    --color-bg-body: white;
+    --color-bg-from: #fee2e2;
+    --color-bg-via: #f0fdf4;
+    --color-bg-to: #e0e7ff;
+    --color-text: #4c0519;
+    --color-text-accent: #17a3df;
+    --color-orange: #f14e32;
+    --color-primary: 246, 226, 246;
+    --color-accent: 249, 168, 212;
+  }
+
+  .dark {
+    --color-bg-body: black;
+    --color-bg-from: #1e1b4b;
+    --color-bg-via: #6b21a8;
+    --color-bg-to: #1e1b4b;
+    --color-text: white;
+    --color-text-accent: #38bdf8;
+    --color-orange: #f14e32;
+    --color-primary: 30, 27, 75;
+    --color-accent: 249, 168, 212;
+  }
+
 }

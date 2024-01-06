@@ -20,7 +20,7 @@ function RoundendImage({ src, alt }: { src: string, alt: string }) {
 
 const MediaComponent: React.FC<MediaComponentProps> = ({ section }) => {
     return (
-        <>
+        <div className=''>
             {section.media && (
                 section.media.type === 'video' ? (
                     <div className="relative">
@@ -36,7 +36,7 @@ const MediaComponent: React.FC<MediaComponentProps> = ({ section }) => {
                 )
             ) 
             }
-        </>
+        </div>
     )
 }
 

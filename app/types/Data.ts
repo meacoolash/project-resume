@@ -6,7 +6,7 @@ export const Data: SectionType[] = [
     {
         id: "react",
         title: "React/NodeJS Fullstack",
-        start: "late 2023",
+        start: "Autum 2023",
         end: "2024",
         duration: "1 yr",
         company: null,
@@ -55,7 +55,7 @@ export const Data: SectionType[] = [
     {
         id: "angular17",
         title: "Angular 17 Mentorship",
-        start: "Autumn 2023",
+        start: "Summer 2023",
         end: "?",
         duration: "1 yr",
         company: null,
@@ -209,8 +209,8 @@ export const Data: SectionType[] = [
     {
         "id": "varden",
         "title": "Angular 11",
-        "start": "11/2020",
-        "end": "11/2021",
+        "start": "Nov 2020",
+        "end": "Nov 2021",
         "duration": "1 yr",
         "company": {
             "name": "VARDEN.se (Sweden)",
@@ -270,8 +270,8 @@ export const Data: SectionType[] = [
     {
         "id": "swissre",
         "title": "Angular 8",
-        "start": "12/2019",
-        "end": "12/2020",
+        "start": "Dec 2019",
+        "end": "Dec 2020",
         "duration": "1 yr",
         "company": {
             "name": "SWISS RE",
@@ -302,7 +302,6 @@ export const Data: SectionType[] = [
             "Gained understanding of the environmental domain",
             "Developed a user-friendly Drag and Drop feature from scratch in vanilla JS"
         ],
-        "repositories": [],
         "media": { type: "video", url: "gin.mp4" },
         "live": null,
         "filter": [
@@ -318,8 +317,8 @@ export const Data: SectionType[] = [
     {
         "id": "solar",
         "title": "Angular 6",
-        "start": "08/2018",
-        "end": "01/2020",
+        "start": "Aug 2018",
+        "end": "Jan 2020",
         "duration": "1 yr 6 mos",
         "company": {
             "name": "Solar Turbines (Caterpillar Inc.)",
@@ -350,7 +349,6 @@ export const Data: SectionType[] = [
             "Overcame tight deadlines and resource limitations",
             "Completing an initial version of the project solo that was initially planned for a multi-developer team."
         ],
-        "repositories": [],
         "media": {
             type: "image",
             url: "/solar2.jpg"
@@ -371,8 +369,8 @@ export const Data: SectionType[] = [
     {
         "id": "innogy",
         "title": "AngularJS/Angular 2+",
-        "start": "01/2018",
-        "end": "08/2018",
+        "start": "Jan 2018",
+        "end": "Aug 2018",
         "duration": "8 mos",
         "company": {
             "name": "VSE (Innogy group)",
@@ -424,8 +422,8 @@ export const Data: SectionType[] = [
     {
         "id": "adito-gmbh",
         "title": "JavaScript/SQL",
-        "start": "2017",
-        "end": "2017",
+        "start": "Jan 2017",
+        "end": "Jan 2018",
         "duration": "1 yr",
         "company": {
             "name": "Adito GmbH",

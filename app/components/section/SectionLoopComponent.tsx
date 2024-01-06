@@ -30,7 +30,7 @@ const SectionLoopComponent: React.FC<SectionComponentProps> = ({ filteredData })
     return (
         <div className=''>
             {filteredData.map((section, idx) => (
-                <div key={section.id} className="relative p-6 mb-20 ">
+                <div key={section.id} className={`relative p-6 mb-20`}>
 
                     {idx !== 0 && (
                         <div className={`absolute left-1/2 transform -top-20 w-0.5 h-20 ${connectionLineClass}`}></div>

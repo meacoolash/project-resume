@@ -37,5 +37,5 @@ export interface SectionType {
     tools: string[],
     media: MediaLink | null,
     live: string | null,
-    filter?: FilterType[]
+    filter?: FilterType[],
 }
