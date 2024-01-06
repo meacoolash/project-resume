@@ -22,9 +22,6 @@ export default function Home() {
     <main className='bg-background'>
 
       <HeaderComponent />
-
-
-
       
       <div className='sm:px-10'>
         <div className='py-2'>
