@@ -16,7 +16,6 @@ export default function Home() {
   useEffect(() => {
     const observer = new IntersectionObserver(
       ([entry]) => {
-        console.log(entry.isIntersecting);
         // If the hero section is not intersecting (visible), show the nav
         setShowNav(!entry.isIntersecting);
       },
