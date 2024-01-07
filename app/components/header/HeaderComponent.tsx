@@ -14,7 +14,6 @@ const hoverClass = 'md:hover:text-accent/95 transition-colors duration-200'
 const HeaderComponent: React.FC<HeaderComponentProps> = ({ page }) => {
     const { systemTheme, theme, setTheme } = useTheme();
     const [mounted, setMounted] = useState(false);
-    const [pathname, setPathname] = useState('/');
 
     const toggleTheme = () => {
         if (theme === 'light') {
@@ -24,9 +23,11 @@ const HeaderComponent: React.FC<HeaderComponentProps> = ({ page }) => {
         }
     }
 
-
+    
     useEffect(() => {
+        setTheme('dark');
         setMounted(true);
+    // eslint-disable-next-line react-hooks/exhaustive-deps
     }, []);
 
     if (!mounted) return null;
