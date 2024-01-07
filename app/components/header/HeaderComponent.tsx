@@ -23,11 +23,11 @@ const HeaderComponent: React.FC<HeaderComponentProps> = ({ page }) => {
         }
     }
 
-    
+
     useEffect(() => {
-        setTheme('dark');
         setMounted(true);
-    // eslint-disable-next-line react-hooks/exhaustive-deps
+        theme === 'system' && setTheme('dark');
+        // eslint-disable-next-line react-hooks/exhaustive-deps
     }, []);
 
     if (!mounted) return null;
@@ -52,11 +52,11 @@ const HeaderComponent: React.FC<HeaderComponentProps> = ({ page }) => {
                 <div className={`hidden lg:inline ${hoverClass}`}>
                     {page === 'print' ? (
                         <Link href={'/'} className=''>
-                            <FaDisplay/>
+                            <FaDisplay />
                         </Link>
                     ) : (
                         <Link href={'/print'} className=''>
-                            <FaFilePdf/>
+                            <FaFilePdf />
                         </Link>
 
                     )}
