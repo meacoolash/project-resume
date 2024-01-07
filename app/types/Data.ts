@@ -226,11 +226,6 @@ export const Data: SectionType[] = [
             {
                 "name": "Booking system",
                 "description": "Calendar booking system built from scratch, including API Design and custom styles.",
-                repository:     {
-                    "name": "Booking System",
-                    "description": "Calendar booking system built from scratch, including API Design and custom styles.",
-                    "link": "REQUEST",
-                }
              },
             {
                 "name": "Admin Portal",

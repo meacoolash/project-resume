@@ -61,9 +61,9 @@ const HeaderComponent: React.FC<HeaderComponentProps> = ({ page }) => {
                     )}
                 </div>
 
-                <button className={`${hoverClass}`}>
+                <a href='mailto:someone@example.com' className={`${hoverClass}`}>
                     <FaEnvelope className='' />
-                </button>
+                </a>
             </div>
         </header>
 
