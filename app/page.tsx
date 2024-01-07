@@ -102,6 +102,16 @@ export default function Home() {
           {showNav}
           <SectionLoopComponent filteredData={filteredData} />
         </div>
+
+        <div className="w-12 h-12 mb-12 flex justify-center items-center hover:bg-accent/10 bg-accent/5 shadow-accent shadow-lg transition-all duration-500 hover:shadow-sm hover:shadow-accent rounded-full ml-auto mr-3 relative">
+          <button onClick={scrollToSection} className="flex justify-center items-center w-full h-full">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" className="w-6 h-6 transform rotate-180">
+              <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="1" d="M19 9l-7 7-7-7" />
+            </svg>
+          </button>
+        </div>
+
+
       </div>
 
 
