@@ -62,7 +62,7 @@ const HeaderComponent: React.FC<HeaderComponentProps> = ({ page }) => {
                     )}
                 </div>
 
-                <a href='mailto:someone@example.com' className={`${hoverClass}`}>
+                <a href='mailto:mikulas.stec@gmail.com' className={`${hoverClass}`}>
                     <FaEnvelope className='' />
                 </a>
             </div>
