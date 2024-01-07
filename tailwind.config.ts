@@ -10,7 +10,8 @@ const config: Config = {
   theme: {
     extend: {
       colors: {
-        primary: 'rgba(var(--color-primary) , <alpha-value>)',
+        primary: 'rgba(var(--color-primary), <alpha-value>)',
+        accent: 'rgba(var(--color-accent), <alpha-value>)',
         background: {
           body: 'var(--color-bg-body)',
           from: 'var(--color-bg-from)',
@@ -21,7 +22,6 @@ const config: Config = {
           DEFAULT: 'var(--color-text)', 
           accent: 'var(--color-text-accent)',      
         },
-        accent: 'rgba(var(--color-accent) , <alpha-value>)',
         orange: 'var(--color-orange)',
       },  
       fontFamily: {

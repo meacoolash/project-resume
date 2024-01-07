@@ -11,7 +11,7 @@ interface SectionComponentProps {
 
 
 function alternatedColumnsClass(idx: number): string {
-    return `flex flex-col md:flex-row 
+    return `flex flex-col md:flex-row gap-6
     ${idx % 2 !== 0 && 'md:flex-row-reverse'}`
 }
 
@@ -42,7 +42,7 @@ const SectionLoopComponent: React.FC<SectionComponentProps> = ({ filteredData })
                     </div>
 
                     <div className={alternatedColumnsClass(idx)}>
-                        <div className="w-full md:w-1/2 mx-6 mt-6 relative">
+                        <div className="w-full md:w-1/2 mt-6 relative">
                             <MediaComponent section={section} />
                         </div>
                         <div className="w-full md:w-2/3">

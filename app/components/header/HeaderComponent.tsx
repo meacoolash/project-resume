@@ -9,6 +9,8 @@ interface HeaderComponentProps {
     page?: string;
 }
 
+const hoverClass = 'md:hover:text-accent/95 transition-colors duration-200'
+
 const HeaderComponent: React.FC<HeaderComponentProps> = ({ page }) => {
     const { systemTheme, theme, setTheme } = useTheme();
     const [mounted, setMounted] = useState(false);
@@ -31,14 +33,13 @@ const HeaderComponent: React.FC<HeaderComponentProps> = ({ page }) => {
 
 
     return (
-        <header className='flex justify-between items-center p-4 mb-4 text-xl'>
-            <Link href='/'>
-                <div className='font-signika'>Mikuláš Štec <span>Full-Stack Developer</span></div>
+        <header className='flex justify-between items-center py-4 px-6 text-xl'>
+            <Link href='/' className={`${hoverClass}`}>
+                <div className='font-signika'>Mikuláš Štec <span className='hidden sm:inline-block'>Full-Stack Developer</span></div>
             </Link>
 
-            <div className='flex space-x-4'>
-
-                <button onClick={() => toggleTheme()}>
+            <div className='flex gap-4'>
+                <button className={`${hoverClass}`} onClick={() => toggleTheme()}>
                     {theme === 'dark' ? (
                         <FaSun />
                     ) : (
@@ -46,20 +47,22 @@ const HeaderComponent: React.FC<HeaderComponentProps> = ({ page }) => {
                     )}
 
                 </button>
-                        
-                {page === 'print' ? (
-                    <Link href={'/'} className='flex items-center space-x-2'>
-                        <FaDisplay className='h-4 w-4' />
-                    </Link>
-                ) : (
-                    <Link href={'/print'} className='flex items-center space-x-2'>
-                        <FaFilePdf className='h-4 w-4' />
-                    </Link>
 
-                )}
+                <div className={`hidden lg:inline ${hoverClass}`}>
+                    {page === 'print' ? (
+                        <Link href={'/'} className=''>
+                            <FaDisplay/>
+                        </Link>
+                    ) : (
+                        <Link href={'/print'} className=''>
+                            <FaFilePdf/>
+                        </Link>
 
-                <button className='flex items-center space-x-2'>
-                    <FaEnvelope className='h-4 w-4' />
+                    )}
+                </div>
+
+                <button className={`${hoverClass}`}>
+                    <FaEnvelope className='' />
                 </button>
             </div>
         </header>

@@ -20,11 +20,10 @@ const ContentComponent: React.FC<ContentComponentProps> = ({ section }) => {
                                     <p className='text-xl font-signika font-semibold'>{project.name}</p>
                                     <p>{project.description}</p>
                                     {project.repository && (
-                                        <button className='flex mt-1 p-2 bg-orange text-white rounded'>
+                                        <a href={project.repository.link} target="_blank" rel="noopener noreferrer" className="flex gap-2 mt-1 p-2 justify-center bg-orange text-white rounded w-32">
                                             <FaGithub />
-                                            <span className='pl-2 text-sm'>Public GIT</span>
-                                        </button>
-
+                                            <span className="text-sm">Public GIT</span>
+                                        </a>
                                     )}
                                 </li>
                             ))}
