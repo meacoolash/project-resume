@@ -4,6 +4,7 @@ import TitleComponent from './TitleComponent';
 import ToolsComponent from './ToolsComponent';
 import ContentComponent from './ContentComponent';
 import MediaComponent from './MediaComponent';
+import { InView } from 'react-intersection-observer';
 
 interface SectionComponentProps {
     filteredData: Array<SectionType>;
@@ -36,10 +37,22 @@ const SectionLoopComponent: React.FC<SectionComponentProps> = ({ filteredData })
                         <div className={`absolute left-1/2 transform -top-20 w-0.5 h-20 ${connectionLineClass}`}></div>
                     )}
 
-                    <div className="text-center pb-4 relative">
-                        <TitleComponent section={section} />
-                        <ToolsComponent section={section} />
-                    </div>
+                    <InView triggerOnce threshold={1}>
+                        {({ inView, ref, entry }) => (
+                            <div
+                                ref={ref}
+                                className={inView ?
+                                    'transition-all duration-300'
+                                    : 'opacity-0 -translate-y-12'
+                                }
+                            >
+                                <div className="text-center pb-4 relative">
+                                    <TitleComponent section={section} />
+                                    <ToolsComponent section={section} />
+                                </div>
+                            </div>
+                        )}
+                    </InView>
 
                     <div className={alternatedColumnsClass(idx)}>
                         <div className="w-full md:w-1/2 mt-6 relative">
