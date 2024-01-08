@@ -1,5 +1,5 @@
-import { FilterType } from './FilterType';
-import { SectionType } from './SectionType';
+import { FilterType } from '../types/FilterType';
+import { SectionType } from '../types/SectionType';
 
 export const Data: SectionType[] = [
     //2024

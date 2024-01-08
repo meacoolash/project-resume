@@ -1,5 +1,5 @@
 import React from 'react';
-import { FilterType } from '../types/FilterType';
+import { FilterType } from '../../types/FilterType';
 
 interface FilterComponentProps {
     onFilterChange: (filter: FilterType) => void;

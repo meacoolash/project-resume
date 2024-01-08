@@ -1,6 +1,6 @@
 
 import React from 'react'
-import { Data } from '../types/Data'
+import { Data } from '../data/Data'
 import PrintButtonComponent from './PrintButtonComponent';
 import HeaderComponent from '../components/header/HeaderComponent';
 
@@ -15,7 +15,7 @@ const Print = () => {
 
       <div id='print-resume' className='a4-size text-xs'>
 
-        <div className='flex justify-between text-blue-500'>
+        <div className='flex justify-between text-blue-500 font-bold'>
           <div>Mikuláš Štec - Fullstack Developer</div>
           <div>mikulas@stec.sk</div>
         </div>
@@ -23,7 +23,7 @@ const Print = () => {
         {Data.map((section, idx) => (
           <div key={idx} className='mt-4 mb-2 grid grid-cols-4 border-b'>
             <div className=''>
-              <div className='text-xs'>{section.start} - {section.end}</div>
+              <div className='text-xs font-bold'>{section.start} - {section.end}</div>
               {section.company ? (
                 <div className='text-xs'>{section.company.name}</div  >
               ) : (
@@ -46,8 +46,8 @@ const Print = () => {
           </div>
         ))}
 
-        <div className='mt-10 flex justify-center text-sm'>
-           For more detailed information, please visit <a href='https://stec.sk' className='underline ml-1'>stec.sk</a>           
+        <div className='mt-10 flex justify-center font-bold'>
+           For more detailed information, please visit <a href='https://stec.sk' className='text-blue-500 underline  ml-1'>www.stec.sk</a>           
         </div>
       
       </div>

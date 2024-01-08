@@ -1,11 +1,10 @@
 "use client"
 import React, { useEffect, useRef, useState } from 'react';
-import { Data } from './types/Data'
+import { Data } from './data/Data'
 import { FilterType } from './types/FilterType'
 import SectionLoopComponent from './components/section/SectionLoopComponent';
-import FilterComponent from './components/FilterComponent';
+import FilterComponent from './components/filter/FilterComponent';
 import HeaderComponent from './components/header/HeaderComponent';
-
 
 export default function Home() {
 
