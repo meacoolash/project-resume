@@ -10,13 +10,12 @@ interface SectionComponentProps {
     filteredData: Array<SectionType>;
 }
 
-
 function alternatedColumnsClass(idx: number): string {
     return `flex flex-col md:flex-row gap-6
     ${idx % 2 !== 0 && 'md:flex-row-reverse'}`
 }
 
-const sectionBorderClass = 'shadow-2xl shadow-cyan-200 rounded-3xl bg-green-300/15'
+//POC  const sectionBorderClass = 'shadow-2xl shadow-cyan-200 rounded-3xl bg-green-300/15'
 const connectionLineClass = 'bg-gradient-to-b from-indigo-700/5 via-purple-200 to-indigo-700/5 to-90%'
 
 
@@ -33,10 +32,12 @@ const SectionLoopComponent: React.FC<SectionComponentProps> = ({ filteredData })
             {filteredData.map((section, idx) => (
                 <div key={section.id} className={`relative p-6 mb-20`}>
 
+                    {/* Vertical Line (Timeline visual effect) */}
                     {idx !== 0 && (
                         <div className={`absolute left-1/2 transform -top-20 w-0.5 h-20 ${connectionLineClass}`}></div>
                     )}
 
+                    {/* Title and Tools Animated InView */}        
                     <InView triggerOnce threshold={1}>
                         {({ inView, ref, entry }) => (
                             <div
@@ -54,6 +55,7 @@ const SectionLoopComponent: React.FC<SectionComponentProps> = ({ filteredData })
                         )}
                     </InView>
 
+                    {/* Media and Content */}            
                     <div className={alternatedColumnsClass(idx)}>
                         <div className="w-full md:w-1/2 mt-6 relative">
                             <MediaComponent section={section} />
