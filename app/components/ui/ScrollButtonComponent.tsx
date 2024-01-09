@@ -18,17 +18,26 @@ const ScrollButtonComponent: React.FC<ScrollButtonComponentProps> = ({ scrollToS
     return (
         <>
             {type === 'hero' ? (
-                <div className="w-12 h-12 sm:w-8 sm:h-8 absolute bottom-10 left-1/2">
-                    <button className='-translate-x-8 w-full h-full' onClick={scrollToSection}>
+                <div className="w-8 h-8 absolute bottom-10 left-1/2 hidden sm:visible sm:block">
+                    <button className='-translate-x-2 w-full h-full' onClick={scrollToSection}>
                         {svgShape()}
                     </button>
                 </div>
             ) : (
-                <div className="w-12 h-12 mb-12 flex justify-center items-center hover:bg-accent/10 bg-accent/5 shadow-accent shadow-lg transition-all duration-500 hover:shadow-sm hover:shadow-accent rounded-full ml-auto mr-3 relative">
-                    <button onClick={scrollToSection} className="flex justify-center items-center w-6 h-6 transform rotate-180">
-                        {svgShape()}
-                    </button>
+
+                <div className="relative w-8 h-8 bottom-10 ml-auto mr-3 transform rotate-180">
+                <button className='w-full h-full' onClick={scrollToSection}>
+                    {svgShape()}
+                </button>
                 </div>
+
+                /* POC - shadowed scroll button:
+                <div className="mb-12 flex justify-center items-center hover:bg-accent/10 bg-accent/5 shadow-accent shadow-lg transition-all duration-500 hover:shadow-sm hover:shadow-accent rounded-full ml-auto mr-3 relative">
+                <button onClick={scrollToSection} className="flex justify-center items-center w-6 h-6 transform rotate-180">
+                {svgShape()}
+                </button>
+                </div>
+                */
             )}
         </>
     )
