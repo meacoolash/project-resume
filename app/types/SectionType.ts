@@ -9,8 +9,8 @@ interface Company {
 }
 
 interface Repository { 
-    name: string,
-    description: string,
+    name?: string,
+    description?: string,
     link: string | "REQUEST",
 }
 
@@ -28,8 +28,7 @@ export interface ProjectType {
 export interface SectionType {
     id: string,
     title: string,
-    start: string,
-    end: string,
+    period: string,
     duration: string,
     company: Company | null,
     challenges?: string[],

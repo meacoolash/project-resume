@@ -6,9 +6,8 @@ export const Data: SectionType[] = [
     {
         id: "react",
         title: "React/NodeJS Fullstack",
-        start: "Autum 2023",
-        end: "2024",
-        duration: "1 yr",
+        period: "Autumn 2023 - Ongoing",
+        duration: "",
         company: null,
         projects: [
             {
@@ -23,7 +22,10 @@ export const Data: SectionType[] = [
             },
             {
                 name: "Full-stack simple CRM system",
-                description: "A simple CRM system with a React frontend and a NodeJS/MongoDB backend."
+                description: "A simple CRM system with a React frontend and a NodeJS/MongoDB backend.",
+                repository: {
+                    link: "REQUEST",
+                }
             }
         ],
         tools: [
@@ -31,7 +33,7 @@ export const Data: SectionType[] = [
             "Next.js",
             "Tailwind CSS",
             "NodeJS",
-            "Express",
+            "Cyclic",
             "Express",
             "MongoDB",
             "Jest",
@@ -55,8 +57,7 @@ export const Data: SectionType[] = [
     {
         id: "angular17",
         title: "Angular 17 Mentorship",
-        start: "Summer 2023",
-        end: "?",
+        period: "Summer 2023 - ?",
         duration: "1 yr",
         company: null,
         projects: [
@@ -70,7 +71,7 @@ export const Data: SectionType[] = [
             }
         ],
         tools: [
-            "Angular 17",            
+            "Angular 17",
         ],
         challenges: [
             "Learning about course creation and video production",
@@ -88,14 +89,16 @@ export const Data: SectionType[] = [
     {
         id: "oanda",
         title: "MEAN Stack",
-        start: "2017",
-        end: "2022",
+        period: "2017 - Dec 2022",
         duration: "5 yrs",
         company: null,
         projects: [
             {
                 name: "Stock/Commodities Trading Bot and Analysis Tool",
-                description: "A full-stack trading bot and analysis tool for stock/commodities, focused on both real-time trading and historical market data analysis."
+                description: "A full-stack trading bot and analysis tool for stock/commodities, focused on both real-time trading and historical market data analysis.",
+                repository: {
+                    link: "REQUEST"
+                }
             }
         ],
         tools: [
@@ -140,8 +143,7 @@ export const Data: SectionType[] = [
     {
         id: "uniqa",
         title: "Angular 13",
-        start: "Nov 2021",
-        end: "Dec 2022",
+        period: "Nov 2021 - Dec 2022",
         duration: "1 yr 2 mos",
         company: {
             name: "UNIQA Insurance Group AG (Vienna, Austria)",
@@ -207,49 +209,51 @@ export const Data: SectionType[] = [
 
     // VARDEN 
     {
-        "id": "varden",
-        "title": "Angular 11",
-        "start": "Nov 2020",
-        "end": "Nov 2021",
-        "duration": "1 yr",
-        "company": {
-            "name": "VARDEN.se (Sweden)",
-            "link": null,
-            "logo": null,
-            "type": "contract",
+        id: "varden",
+        title: "Angular 11",
+        period: "Nov 2020 - Nov 2021",
+        duration: "1 yr",
+        company: {
+            name: "VARDEN.se (Sweden)",
+            link: null,
+            logo: null,
+            type: "contract",
         },
-        "projects": [
+        projects: [
             {
-                "name": "Platform",
-                "description": "Swedish online platform for healthcare services. It allows users to search for, compare, and book appointments with various healthcare providers."
+                name: "Platform",
+                description: "Swedish online platform for healthcare services. It allows users to search for, compare, and book appointments with various healthcare providers."
             },
             {
-                "name": "Booking system",
-                "description": "Calendar booking system built from scratch, including API Design and custom styles.",
-             },
+                name: "Booking system",
+                description: "Calendar booking system built from scratch, including API Design and custom styles.",
+                repository: {
+                    link: "REQUEST"
+                }
+            },
             {
-                "name": "Admin Portal",
-                "description": "A custom-built user management tool, where I actively contributed to its architectural design (Greenfield project)."
+                name: "Admin Portal",
+                description: "A custom-built user management tool, where I actively contributed to its architectural design (Greenfield project)."
             }
         ],
-        "tools": [
+        tools: [
             "Angular 11",
             "GitLab CI/CD",
             "Jasmine/Karma",
-            "Scrum",
             "Angular Material",
-            "Custom CSS"
+            "Custom CSS",
+            "Scrum",
         ],
-        "challenges": [
+        challenges: [
             "Developed a booking system from scratch, including an API design and custom styles.",
             "Optimized performance"
         ],
-        "media": {
+        media: {
             type: "video",
             url: "/varden.mp4"
         },
-        "live": null,
-        "filter": [
+        live: null,
+        filter: [
             FilterType.Frontend,
             FilterType.Angular,
             FilterType.CSS,
@@ -263,43 +267,43 @@ export const Data: SectionType[] = [
 
     //SWISSRE
     {
-        "id": "swissre",
-        "title": "Angular 8",
-        "start": "Dec 2019",
-        "end": "Dec 2020",
-        "duration": "1 yr",
-        "company": {
-            "name": "SWISS RE",
-            "link": null,
-            "logo": null,
-            "type": null,
-            "via": {
-                "name": "Riwers s.r.o.",
-                "link": "",
-                "logo": null,
-                "type": "contract",
+        id: "swissre",
+        title: "Angular 8",
+        period: "Dec 2019 - Dec 2020",
+        duration: "1 yr",
+        company: {
+            name: "SWISS RE",
+            link: null,
+            logo: null,
+            type: null,
+            via: {
+                name: "Riwers s.r.o.",
+                link: "",
+                logo: null,
+                type: "contract",
             }
         },
-        "projects": [
+        projects: [
             {
-                "name": "Platform upgrade",
-                "description": "Contributed to the transition of the GIN platform from AngularJS to Angular 8, which serves as a centralized application for mapping weather data related to natural hazards in Switzerland."
+                name: "Platform upgrade",
+                description: "Contributed to the transition of the GIN platform from AngularJS to Angular 8, which serves as a centralized application for mapping weather data related to natural hazards in Switzerland."
             }
         ],
-        "tools": [
+        tools: [
             "AngularJS",
             "Angular 8",
-            "Custom CSS"
+            "Custom CSS",
+            "Scrum"
         ],
-        "challenges": [
+        challenges: [
             "Transitioned existing code to new Angular standards",
             "Implemented numerous complex charts and layers",
             "Gained understanding of the environmental domain",
             "Developed a user-friendly Drag and Drop feature from scratch in vanilla JS"
         ],
-        "media": { type: "video", url: "gin.mp4" },
-        "live": null,
-        "filter": [
+        media: { type: "video", url: "gin.mp4" },
+        live: null,
+        filter: [
             FilterType.Frontend,
             FilterType.Angular,
             FilterType.CSS,
@@ -310,46 +314,47 @@ export const Data: SectionType[] = [
 
     //SOLAR
     {
-        "id": "solar",
-        "title": "Angular 6",
-        "start": "Aug 2018",
-        "end": "Jan 2020",
-        "duration": "1 yr 6 mos",
-        "company": {
-            "name": "Solar Turbines (Caterpillar Inc.)",
-            "link": null,
-            "logo": null,
-            "type": null,
-            "via": {
-                "name": "Ness s.r.o.",
-                "link": "",
-                "logo": null,
-                "type": "perm",
+        id: "solar",
+        title: "Angular 6",
+        period: "Aug 2018 - Jan 2020",
+        duration: "1 yr 6 mos",
+        company: {
+            name: "Solar Turbines (Caterpillar Inc.)",
+            link: null,
+            logo: null,
+            type: null,
+            via: {
+                name: "Ness s.r.o.",
+                link: "",
+                logo: null,
+                type: "perm",
             }
         },
-        "projects": [
+        projects: [
             {
-                "name": "Admin Portal",
-                "description": "Developed an advanced administration system for sales support, focusing on offshore oil platforms equipped with solar turbines."
+                name: "Admin Portal",
+                description: "Developed an advanced administration system for sales support, focusing on offshore oil platforms equipped with solar turbines."
             }
         ],
-        "tools": [
+        tools: [
             "Angular 6",
             "Jasmine",
             "Karma",
             "Cypress",
-            "Angular Material"
+            "Angular Material",
+            "Scrum"
         ],
-        "challenges": [
+        challenges: [
             "Overcame tight deadlines and resource limitations",
-            "Completing an initial version of the project solo that was initially planned for a multi-developer team."
+            "Completing an initial version of the project solo that was initially planned for a multi-developer team.",
+            "Scrum Certification (PSM I) ID461536"
         ],
-        "media": {
+        media: {
             type: "image",
             url: "/solar2.jpg"
         },
-        "live": null,
-        "filter": [
+        live: null,
+        filter: [
             FilterType.Angular,
             FilterType.CSS,
             FilterType.UnitTest,
@@ -362,46 +367,45 @@ export const Data: SectionType[] = [
 
     //INNOGY
     {
-        "id": "innogy",
-        "title": "AngularJS/Angular 2+",
-        "start": "Jan 2018",
-        "end": "Aug 2018",
-        "duration": "8 mos",
-        "company": {
-            "name": "VSE (Innogy group)",
-            "link": null,
-            "logo": null,
-            "type": null,
-            "via": {
-                "name": "Code2b s.r.o.",
-                "link": "",
-                "logo": null,
-                "type": "contract",
+        id: "innogy",
+        title: "AngularJS/Angular 2+",
+        period: "Jan 2018 - Aug 2018 ",
+        duration: "8 mos",
+        company: {
+            name: "VSE (Innogy group)",
+            link: null,
+            logo: null,
+            type: null,
+            via: {
+                name: "Code2b s.r.o.",
+                link: "",
+                logo: null,
+                type: "contract",
             }
         },
-        "projects": [
+        projects: [
             {
-                "name": "Greenfield Angular Apps",
-                "description": "Developed 2 simple applications from scratch"
+                name: "Greenfield Angular Apps",
+                description: "Developed 2 simple applications from scratch"
             },
             {
-                "name": "AngularJS to Angular2+ Migration",
-                "description": "rewrote one complex AngularJS app to Angular 2, including maintenance."
+                name: "AngularJS to Angular2+ Migration",
+                description: "rewrote one complex AngularJS app to Angular 2, including maintenance."
             }
         ],
-        "tools": [
+        tools: [
             "AngularJS",
             "Angular 2",
             "Angular Material",
             "Custom CSS",
             "Bootstrap"
         ],
-        "challenges": [],
-        "media": {
+        challenges: [],
+        media: {
             type: "video",
             url: "/innogy.mp4"
         },
-        "live": null,
+        live: null,
         filter: [
             FilterType.Frontend,
             FilterType.Angular,
@@ -415,40 +419,39 @@ export const Data: SectionType[] = [
 
     //ADITO
     {
-        "id": "adito-gmbh",
-        "title": "JavaScript/SQL",
-        "start": "Jan 2017",
-        "end": "Jan 2018",
-        "duration": "1 yr",
-        "company": {
-            "name": "Adito GmbH",
-            "link": null,
-            "logo": null,
-            "type": "contract",
-            "via": {
-                "name": "Nordlicht s.r.o.",
-                "link": "",
-                "logo": null,
-                "type": "contract",
+        id: "adito-gmbh",
+        title: "JavaScript/SQL",
+        period: "Jan 2017 - Jan 2018",
+        duration: "1 yr",
+        company: {
+            name: "Adito GmbH",
+            link: null,
+            logo: null,
+            type: "contract",
+            via: {
+                name: "Nordlicht s.r.o.",
+                link: "",
+                logo: null,
+                type: "contract",
             }
         },
-        "projects": [
+        projects: [
             {
-                "name": "CRM System Maintenance",
-                "description": "Wrote JavaScript code for SQL operations in a Swing Java client application"
+                name: "CRM System Maintenance",
+                description: "Wrote JavaScript code for SQL operations in a Swing Java client application"
             }
         ],
-        "tools": [
+        tools: [
             "SQL",
             "JavaScript"
         ],
-        "challenges": [],
-        "media": {
+        challenges: [],
+        media: {
             type: "image",
             url: "/adito.jpg"
         },
-        "live": null,
-        "filter": [
+        live: null,
+        filter: [
             FilterType.SQL,
             FilterType.JavaScript,
             FilterType.Scrum
@@ -457,23 +460,25 @@ export const Data: SectionType[] = [
 
     // WEBDEV
     {
-        "id": "webdev",
-        "title": "HTML/CSS/JS WEB",
-        "start": "2014",
-        "end": "2017",
-        "duration": "3 yrs",
-        "company": null,
-        "projects": [
+        id: "webdev",
+        title: "HTML/CSS/JS WEB",
+        period: "2014 - 2017",
+        duration: "3 yrs",
+        company: null,
+        projects: [
             {
-                "name": "Landing Pages Development",
-                "description": "Developed efficient landing pages for various clients using modern web technologies."
+                name: "Landing Pages Development",
+                description: "Developed efficient landing pages for various clients using modern web technologies.",
+                repository: {
+                    link: "REQUEST"
+                }
             },
             {
-                "name": "Exploring Angular and React",
-                "description": "Engaged in self-directed learning to understand the fundamentals of Angular and React. Developed several simple applications by following tutorials and official documentation."
+                name: "Exploring Angular and React",
+                description: "Engaged in self-directed learning to understand the fundamentals of Angular and React. Developed several simple applications by following tutorials and official documentation."
             }
         ],
-        "tools": [
+        tools: [
             "HTML5",
             "CSS3",
             "SASS",
@@ -481,15 +486,14 @@ export const Data: SectionType[] = [
             "PUG",
             "Gulp",
             "UI/UX",
-            "Photoshop"
         ],
-        "challenges": [],
-        "media": {
+        challenges: [],
+        media: {
             type: "video",
             url: "/webdev.mp4"
         },
-        "live": null,
-        "filter": [
+        live: null,
+        filter: [
             FilterType.Frontend,
             FilterType.CSS,
             FilterType.JavaScript,
@@ -501,34 +505,34 @@ export const Data: SectionType[] = [
 
     // WORDPRESS
     {
-        "id": "wordpress",
-        "title": "Wordpress/Magento",
-        "start": "2010",
-        "end": "2014",
-        "duration": "4 yrs",
-        "company": null,
-        "projects": [
+        id: "wordpress",
+        title: "Wordpress/Magento",
+        period: "2010 - 2014",
+        duration: "4 yrs",
+        company: null,
+        projects: [
             {
-                "name": "E-commerce and Blog Development",
-                "description": "Developed webpages, e-commerce sites, and blogs using Wordpress and Magento."
+                name: "E-commerce and Blog Development",
+                description: "Developed webpages, e-commerce sites, and blogs using Wordpress and Magento."
             }
         ],
-        "tools": [
+        tools: [
             "HTML",
             "PHP",
             "CSS",
             "Magento",
             "Woocommerce",
             "MySQL",
-            "Photoshop"
+            "Photoshop",
+            "UI/UX",
         ],
-        "challenges": [],
-        "media": {
+        challenges: [],
+        media: {
             type: "video",
             url: "/wordpress.mp4"
         },
-        "live": null,
-        "filter": [
+        live: null,
+        filter: [
             FilterType.CSS,
             FilterType.PHP,
             FilterType.JavaScript,
@@ -538,89 +542,86 @@ export const Data: SectionType[] = [
 
     // ALLIANZ
     {
-        "id": "allianz",
-        "title": "Lotus Notes",
-        "start": "2006",
-        "end": "2010",
-        "duration": "4 yrs",
-        "company": {
-            "name": "Allianz SP a.s.",
-            "link": null,
-            "logo": null,
-            "type": "perm",
+        id: "allianz",
+        title: "Lotus Notes",
+        period: "2006 - 2010",
+        duration: "4 yrs",
+        company: {
+            name: "Allianz SP a.s.",
+            link: null,
+            logo: null,
+            type: "perm",
         },
-        "projects": [
+        projects: [
             {
-                "name": "Insurance Database Management",
-                "description": "Managed Allianz insurance databases and calculators, and involved in analysis, consulting, and UI/UX."
+                name: "Insurance Database Management",
+                description: "Managed Allianz insurance databases and calculators, and involved in analysis, consulting, and UI/UX."
             }
         ],
-        "tools": [
+        tools: [
             "LotusNotes",
             "LotusScript"
         ],
-        "challenges": [],
-        "media": {
+        challenges: [],
+        media: {
             type: "image",
             url: "/allianz.jpg"
         },
-        "live": null,
-        "filter": [
+        live: null,
+        filter: [
             FilterType.UIUX,
         ],
     },
 
     // TAX
     {
-        "id": "tax",
-        "title": "Informix4GL",
-        "start": "2004",
-        "end": "2006",
-        "duration": "2 yrs",
-        "company": {
-            "name": "Novitech Tax, s.r.o.",
-            "link": null,
-            "logo": null,
-            "type": "perm",
+        id: "tax",
+        title: "Informix4GL",
+        period: "2004 - 2006",
+        duration: "2 yrs",
+        company: {
+            name: "Novitech Tax, s.r.o.",
+            link: null,
+            logo: null,
+            type: "perm",
         },
-        "projects": [
+        projects: [
             {
-                "name": "Tax Information System Optimization",
-                "description": "Developed and optimized Slovakia's tax information system and managed data operations for systems handling millions of rows."
+                name: "Tax Information System Optimization",
+                description: "Developed and optimized Slovakia's tax information system and managed data operations for systems handling millions of rows."
             }
         ],
-        "tools": [
+        tools: [
             "Informix4GL",
             "SQL",
             "Unix Terminals",
             "MS Word Templates"
         ],
-        "challenges": [],
-        "media": {
+        challenges: [],
+        media: {
             type: "image",
             url: "/informix.jpg"
         },
-        "live": null,
-        "filter": [
+        live: null,
+        filter: [
             FilterType.SQL
         ],
     },
 
     // FLASH
     {
-        "id": "flash",
-        "title": "Web Developer",
-        "start": "2003",
-        "end": "2004",
-        "duration": "1 yr",
-        "company": null,
-        "projects": [
+        id: "flash",
+        title: "Web Developer",
+        period: "2003 - 2004",
+        duration: "1 yr",
+        company: null,
+        projects: [
             {
-                "name": "Website and Game Development",
-                "description": "Developed simple websites and games."
+                name: "Website and Game Development",
+                description: "Developed simple websites and games."
             }
         ],
-        "tools": [
+        tools: [
             "HTML",
             "CSS",
             "PHP",
@@ -629,13 +630,13 @@ export const Data: SectionType[] = [
             "Flash",
             "ActionScript"
         ],
-        "challenges": [],
-        "media": {
+        challenges: [],
+        media: {
             type: "video",
             url: "/flash.mp4"
         },
-        "live": null,
-        "filter": [
+        live: null,
+        filter: [
             FilterType.CSS,
             FilterType.PHP,
             FilterType.JavaScript,
@@ -647,61 +648,58 @@ export const Data: SectionType[] = [
 
     // UNIVERSITY
     {
-        "id": "university",
-        "title": "Formal Education",
-        "start": "1999",
-        "end": "2004",
-        "duration": "5 yrs",
-        "company": {
-            "name": "Technical University of Košice, Slovakia",
-            "link": null,
-            "logo": null,
-            "type": null,
+        id: "university",
+        title: "Formal Education",
+        period: "1999 - 2004",
+        duration: "5 yrs",
+        company: {
+            name: "Technical University of Košice, Slovakia",
+            link: null,
+            logo: null,
+            type: null,
         },
-        "projects": [],
-        "tools": [],
-        "challenges": [],
-        "media": {
+        projects: [],
+        tools: [],
+        challenges: [],
+        media: {
             type: "image",
             url: "/university.jpg"
         },
-        "live": null,
+        live: null,
     },
 
     // PROCOM
     {
-        "id": "procom",
-        "title": "PC Configuration",
-        "start": "1997",
-        "end": "1998",
-        "duration": "1 yr",
-        "company": {
-            "name": "ProCom, s.r.o. Košice",
-            "link": null,
-            "logo": null,
-            "type": null,
+        id: "procom",
+        title: "PC Configuration",
+        period: "1997 - 1998",
+        duration: "1 yr",
+        company: {
+            name: "ProCom, s.r.o. Košice",
+            link: null,
+            logo: null,
+            type: null,
         },
-        "projects": [
+        projects: [
             {
-                "name": "PC Configuration",
-                "description": "Configured Windows 95 PCs, according to customer's request"
+                name: "PC Configuration",
+                description: "Configured Windows 95 PCs, according to customer's request"
             }
         ],
-        "tools": [
+        tools: [
             "Windows 95", "Vacuum Cleaner (they were pretty dusty)"
         ],
-        "challenges": [],
-        "media": {
+        challenges: [],
+        media: {
             type: "image",
             url: "/procom.jpg"
         },
-        "live": null
+        live: null
     },
     {
         id: "commodore",
         title: "First Touch",
-        start: "1986",
-        end: "1990",
+        period: "~ 1990",
         duration: "4 yrs",
         company: null,
         projects: [
@@ -724,15 +722,14 @@ export const Data: SectionType[] = [
     {
         id: "life",
         title: "Life",
-        start: "1981",
-        end: "?",
+        period: "1981 - ?",
         duration: "",
         company: null,
         projects: [
-        
+
         ],
         tools: [
-        
+
         ],
         challenges: [],
         media: {

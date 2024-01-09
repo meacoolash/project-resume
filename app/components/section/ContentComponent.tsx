@@ -16,15 +16,20 @@ const ContentComponent: React.FC<ContentComponentProps> = ({ section }) => {
                     <div>
                         <ul className="list-disc list-inside">
                             {section.projects.map((project, projectIdx) => (
-                                <li key={projectIdx} className='list-none pb-2'>
+                                <li key={projectIdx} className='list-none pb-3'>
                                     <p className='text-xl font-signika font-semibold'>{project.name}</p>
-                                    <p>{project.description}</p>
-                                    {project.repository && (
-                                        <a href={project.repository.link} target="_blank" rel="noopener noreferrer" className="flex gap-2 mt-1 p-2 justify-center bg-orange text-white rounded w-32">
-                                            <FaGithub />
-                                            <span className="text-sm">Public GIT</span>
-                                        </a>
-                                    )}
+                                    <p>{project.description}
+                                        {project.repository && project.repository.link && (
+                                            project.repository.link === 'REQUEST' ? (
+                                                <span className="text-accent text-sm"> (private git, on request)</span>
+                                            ) : (
+                                                <a href={project.repository.link} target="_blank" rel="noopener noreferrer" className="flex gap-2 mt-1 p-2 justify-center bg-orange text-white rounded w-32">
+                                                    <FaGithub />
+                                                    <span className="text-sm">Public GIT</span>
+                                                </a>
+                                            )
+                                        )}
+                                    </p>
                                 </li>
                             ))}
                         </ul>
