@@ -699,7 +699,7 @@ export const Data: SectionType[] = [
     {
         id: "commodore",
         title: "First Touch",
-        period: "~ 1990",
+        period: "1990 ~",
         duration: "4 yrs",
         company: null,
         projects: [

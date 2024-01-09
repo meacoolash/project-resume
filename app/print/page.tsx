@@ -29,7 +29,7 @@ const Print = () => {
 
             {/* Column 1 (period/company) */}
             <div>
-              <div className='font-bold'>{section.start} - {section.end}</div>
+              <div className='font-bold'>{section.period}</div>
               <div>
                 {section.company ? section.company.name : 'Personal project'}
               </div>
