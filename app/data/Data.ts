@@ -699,7 +699,7 @@ export const Data: SectionType[] = [
     {
         id: "commodore",
         title: "First Touch",
-        period: "1990 ~",
+        period: "1990 - 1995",
         duration: "4 yrs",
         company: null,
         projects: [
@@ -710,7 +710,8 @@ export const Data: SectionType[] = [
         ],
         tools: [
             "Basic",
-            "Karol"
+            "Karol",
+            "Pascal"
         ],
         challenges: [],
         media: {
