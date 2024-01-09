@@ -18,7 +18,7 @@ const ScrollButtonComponent: React.FC<ScrollButtonComponentProps> = ({ scrollToS
     return (
         <>
             {type === 'hero' ? (
-                <div className="w-8 h-8 absolute bottom-10 left-1/2 hidden sm:visible sm:block">
+                <div className="w-8 h-8 absolute bottom-10 left-1/2">
                     <button className='-translate-x-2 w-full h-full' onClick={scrollToSection}>
                         {svgShape()}
                     </button>
