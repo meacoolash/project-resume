@@ -1,5 +1,4 @@
 export enum FilterType { 
-    All = "All",
     Angular = "Angular",
     React = "React", 
     Frontend = "Frontend", 
@@ -15,4 +14,5 @@ export enum FilterType {
     SQL = "SQL",
     JavaScript = "JavaScript",
     PHP = "PHP",
+    All = "All",
 }

@@ -4,8 +4,8 @@ import { Providers } from './provider'
 import { Montserrat, Inter, Signika_Negative } from 'next/font/google'
 
 const inter = Inter({
-   subsets: ['latin'] 
-  })
+  subsets: ['latin']
+})
 
 const montserrat = Montserrat({
   subsets: ['latin'],
@@ -29,7 +29,12 @@ export default function RootLayout({
 }) {
   return (
     <html suppressHydrationWarning lang="en">
-      <body className={`bg-background-body text-text ${montserrat.variable} ${signika_Negative.variable} ${inter.className}`}>
+      <body className={`
+        bg-background-body text-text 
+        ${montserrat.variable} 
+        ${signika_Negative.variable} 
+        ${inter.className}
+        `}>
         <Providers>
           {children}
         </Providers>
