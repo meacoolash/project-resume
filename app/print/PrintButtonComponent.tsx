@@ -18,7 +18,7 @@ const PrintButtonComponent = () => {
       filename: 'mikulas-stec-resume.pdf',
       image: { type: 'jpeg', quality: 0.98 },
       jsPDF: { format: 'A4', orientation: 'portrait', pagesplit: false },
-    }).save();
+    });
   };
 
   return (
