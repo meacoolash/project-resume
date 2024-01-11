@@ -12,6 +12,7 @@ The CV pulls its data dynamically from `Data.tsx`, making it easy to keep update
 - **Responsive Design:** Ensures a seamless experience across all devices.
 - **Next.js:** Leveraging the power of React.
 - **Tailwind CSS:** A utility-first CSS framework for rapid UI development.
+- **Filtering Capabilities:** Implement a filtering feature to navigate through the CV sections.
 
 ## Get Involved
 Whether you're here to peruse my work or looking for inspiration for your own CV, feel free to dig in. If you find a bug, have a feature request, or want to contribute, your input is welcome! 
@@ -46,7 +47,6 @@ The live version of the CV is deployed on Vercel and connected to a custom domai
 ## Backlog and Future Enhancements
 The Minimum Viable Product (MVP) is now live and undergoing incremental improvements. There are several enhancements on the horizon:
 
-- **Filtering Capabilities:** Implement a filtering feature to navigate through the CV sections.
 - **Email Integration:** Connect an email service to facilitate direct contact through a form on the site.
 - **Expanded Contact Options:** Add more methods of contact and links to social media profiles.
 - **Reviews and Testimonials Section:** Introduce a section to display professional endorsements and feedback.
