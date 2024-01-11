@@ -37,7 +37,7 @@ const HeaderComponent: React.FC<HeaderComponentProps> = ({ page }) => {
         <header className='flex justify-between items-center py-4 px-6 text-xl'>
             <Link href='/' className={`${hoverClass}`}>
                 <div className='font-signika'>
-                    Mikuláš Štec
+                    Mikulas Stec
                     <span className='hidden sm:inline ml-2'>
                         Full-Stack/FE Developer
                         <span className='text-sm'> </span>

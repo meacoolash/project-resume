@@ -20,7 +20,7 @@ const Print = () => {
         {/* header */}
         <div className='mb-3'>
           <div className='flex justify-between text-blue-500 font-bold mb-4'>
-            <div>Mikuláš Štec - Fullstack Developer (FE Heavy)</div>
+            <div>Mikulas Stec - Fullstack Developer (FE Heavy)</div>
             <div>mikulas@stec.sk</div>
           </div>
           <div>
