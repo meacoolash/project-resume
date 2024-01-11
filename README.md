@@ -13,6 +13,8 @@ The CV pulls its data dynamically from `Data.tsx`, making it easy to keep update
 - **Next.js:** Leveraging the power of React.
 - **Tailwind CSS:** A utility-first CSS framework for rapid UI development.
 - **Filtering Capabilities:** Implement a filtering feature to navigate through the CV sections.
+- **Print/PDF Functionality:** Download a streamlined PDF version with html2pdf integration.
+
 
 ## Get Involved
 Whether you're here to peruse my work or looking for inspiration for your own CV, feel free to dig in. If you find a bug, have a feature request, or want to contribute, your input is welcome! 
@@ -50,5 +52,3 @@ The Minimum Viable Product (MVP) is now live and undergoing incremental improvem
 - **Email Integration:** Connect an email service to facilitate direct contact through a form on the site.
 - **Expanded Contact Options:** Add more methods of contact and links to social media profiles.
 - **Reviews and Testimonials Section:** Introduce a section to display professional endorsements and feedback.
-- **Print/PDF Functionality Refactor:** Improve the current print-to-PDF feature for generating downloadable resumes.
-
