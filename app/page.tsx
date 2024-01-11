@@ -6,6 +6,7 @@ import SectionLoopComponent from './components/section/SectionLoopComponent';
 import HeaderComponent from './components/header/HeaderComponent';
 import HeroComponent from './components/HeroComponent';
 import ScrollButtonComponent from './components/ui/ScrollButtonComponent';
+import ActiveFilterButton from './components/filter/ActiveFilterButton';
 
 export default function Home() {
   const [filteredData, setFilteredData] = useState(Data);
@@ -28,7 +29,16 @@ export default function Home() {
   const clearFilter = () => {
     setFilteredData(Data);
     setActiveFilter(FilterType.All);
-    // scrollToSection();
+  }
+
+  const filterAction = () => {
+    if (activeFilter === FilterType.All) {
+      scrollToSection()
+    } else {
+      setTimeout(() => {
+        clearFilter();
+      }, 200)
+    }
   }
 
   const handleFilterChange = (filter: FilterType) => {
@@ -104,12 +114,8 @@ export default function Home() {
             ))}
           </div>
 
-          {showNav && activeFilter !== FilterType.All && (
-            <button className='flex flex-col gap-1 font-monsterrat w-auto rounded-r-xl p-2 pr-4 fixed top-24 bg-primary/50 left-0 text-xs  
-            hover:bg-accent/10 shadow-accent shadow-lg transition-all duration-500 hover:shadow-sm hover:shadow-accent z-50 text-left' onClick={clearFilter}>
-              <p className='text-accent'>{activeFilter}</p>
-              <p>Clear Filter</p>
-            </button>
+          {showNav && (
+            <ActiveFilterButton count={filteredData.length} activeFilter={activeFilter} action={filterAction} />
           )}
         </div>
 
