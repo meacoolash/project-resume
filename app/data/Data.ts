@@ -325,7 +325,6 @@ export const Data: SectionType[] = [
         media: { type: "video", url: "gin.mp4" },
         live: null,
         filter: [
-            FilterType.Frontend,
             FilterType.Angular,
             FilterType.CSS,
             FilterType.UnitTest,
