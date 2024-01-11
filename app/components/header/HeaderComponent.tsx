@@ -36,7 +36,13 @@ const HeaderComponent: React.FC<HeaderComponentProps> = ({ page }) => {
     return (
         <header className='flex justify-between items-center py-4 px-6 text-xl'>
             <Link href='/' className={`${hoverClass}`}>
-                <div className='font-signika'>Mikuláš Štec <span className='hidden sm:inline-block'>Full-Stack Developer</span></div>
+                <div className='font-signika'>
+                    Mikuláš Štec
+                    <span className='hidden sm:inline ml-2'>
+                        Full-Stack/FE Developer
+                        <span className='text-sm'> </span>
+                    </span>
+                </div>
             </Link>
 
             <div className='flex gap-4'>

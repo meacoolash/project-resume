@@ -6,7 +6,7 @@ import HeaderComponent from '../components/header/HeaderComponent';
 const Print = () => {
 
   return (
-    <div className='flex flex-col justify-center font-monsterrat pb-16'>
+    <div className='flex flex-col justify-center pb-16 font-monsterrat min-h-full bg-gradient-to-br from-background-from via-background-via to-background-to'>
 
       {/* HEADER */}
       <div className='no-print'>
@@ -15,17 +15,23 @@ const Print = () => {
       </div>
 
       {/* RESUME */}
-      <div id='print-resume' className='a4-size text-xs'>
+      <div id='print-resume' className='a4-size text-xs text-black'>
 
         {/* header */}
-        <div className='flex justify-between text-blue-500 font-bold'>
-          <div>Mikuláš Štec - Fullstack Developer</div>
-          <div>mikulas@stec.sk</div>
+        <div className='mb-3'>
+          <div className='flex justify-between text-blue-500 font-bold mb-4'>
+            <div>Mikuláš Štec - Fullstack Developer (FE Heavy)</div>
+            <div>mikulas@stec.sk</div>
+          </div>
+          <div>
+            <p>Auto-generated CV from my web profile for a quick overview.</p>
+            <p>For the full experience, filtering options, screen recordings and a work details, please visit <a href='https://stec.sk' className='text-blue-500 underline  ml-1'>www.stec.sk</a></p>
+          </div>
         </div>
 
         {/* content */}
         {Data.map((section, idx) => (
-          <div key={idx} className='mt-4 mb-2 grid grid-cols-4 border-b'>
+          <div key={idx} className='grid grid-cols-4 border-b py-1'>
 
             {/* Column 1 (period/company) */}
             <div>
