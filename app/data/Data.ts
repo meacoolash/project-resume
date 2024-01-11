@@ -6,7 +6,7 @@ export const Data: SectionType[] = [
     {
         id: "react",
         title: "React/NodeJS Fullstack",
-        period: "Autumn 2023 - Ongoing",
+        period: "Nov 2023 - Ongoing",
         duration: "",
         company: null,
         projects: [
@@ -51,13 +51,25 @@ export const Data: SectionType[] = [
             url: "/react.jpg"
         },
         live: null,
+        filter: [
+            FilterType.React,
+            FilterType.NextJS,
+            FilterType.Typescript,
+            FilterType.Node,
+            FilterType.MongoDB,
+            FilterType.CSS,
+            FilterType.Tailwind,
+            FilterType.JavaScript,
+            FilterType.CICD,
+            FilterType.UIUX,
+        ]
     },
 
     // Angular17
     {
         id: "angular17",
         title: "Angular 17 Mentorship",
-        period: "Summer 2023 - ?",
+        period: "Jun 2023 - ?",
         duration: "1 yr",
         company: null,
         projects: [
@@ -83,6 +95,11 @@ export const Data: SectionType[] = [
             url: "/angular.jpg"
         },
         live: null,
+        filter: [
+            FilterType.Angular,
+            FilterType.Typescript,
+            FilterType.JavaScript,
+        ]
     },
 
     //OANDA
@@ -129,14 +146,14 @@ export const Data: SectionType[] = [
         filter: [
             FilterType.Angular,
             FilterType.Node,
+            FilterType.Typescript,
             FilterType.MongoDB,
             FilterType.CSS,
             FilterType.UnitTest,
             FilterType.SocketIO,
             FilterType.JavaScript,
-            FilterType.Frontend,
-            FilterType.Backend,
-            FilterType.UIUX,],
+            FilterType.UIUX,
+        ],
     },
 
     // UNIQA
@@ -198,12 +215,15 @@ export const Data: SectionType[] = [
         live: "https://www.uniqa.at/reiseversicherung/",
         filter: [
             FilterType.Angular,
+            FilterType.Typescript,
             FilterType.CSS,
-            FilterType.UnitTest,
-            FilterType.Scrum,
-            FilterType.E2E,
             FilterType.JavaScript,
-            FilterType.Frontend,
+            FilterType.UnitTest,
+            FilterType.E2E,
+            FilterType.Scrum,
+            FilterType.UIUX,
+            FilterType.CICD
+            
         ],
     },
 
@@ -254,14 +274,15 @@ export const Data: SectionType[] = [
         },
         live: null,
         filter: [
-            FilterType.Frontend,
             FilterType.Angular,
+            FilterType.Typescript,
+            FilterType.JavaScript,
             FilterType.CSS,
             FilterType.UnitTest,
-            FilterType.Scrum,
             FilterType.E2E,
-            FilterType.JavaScript,
+            FilterType.Scrum,
             FilterType.UIUX,
+            FilterType.CICD
         ],
     },
 
@@ -356,10 +377,11 @@ export const Data: SectionType[] = [
         live: null,
         filter: [
             FilterType.Angular,
+            FilterType.Typescript,
+            FilterType.JavaScript,
             FilterType.CSS,
             FilterType.UnitTest,
             FilterType.E2E,
-            FilterType.JavaScript,
             FilterType.Scrum,
             FilterType.UIUX,
         ],
@@ -407,11 +429,11 @@ export const Data: SectionType[] = [
         },
         live: null,
         filter: [
-            FilterType.Frontend,
             FilterType.Angular,
+            FilterType.Typescript,
+            FilterType.JavaScript,
             FilterType.CSS,
             FilterType.UnitTest,
-            FilterType.JavaScript,
             FilterType.Scrum,
             FilterType.UIUX,
         ],
@@ -494,12 +516,12 @@ export const Data: SectionType[] = [
         },
         live: null,
         filter: [
-            FilterType.Frontend,
             FilterType.CSS,
             FilterType.JavaScript,
-            FilterType.UIUX,
-            FilterType.Angular,
+            FilterType.Typescript,
             FilterType.React,
+            FilterType.Angular,
+            FilterType.UIUX,
         ],
     },
 

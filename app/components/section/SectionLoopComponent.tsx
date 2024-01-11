@@ -28,7 +28,7 @@ Refactor if section would be too big or dynamic (CSR)
 
 const SectionLoopComponent: React.FC<SectionComponentProps> = ({ filteredData }) => {
     return (
-        <div className=''>
+        <>
             {filteredData.map((section, idx) => (
                 <div key={section.id} className={`relative p-6 mb-20`}>
 
@@ -66,7 +66,7 @@ const SectionLoopComponent: React.FC<SectionComponentProps> = ({ filteredData })
                     </div>
                 </div>
             ))}
-        </div>
+        </>
     );
 }
 

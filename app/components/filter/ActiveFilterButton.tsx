@@ -4,10 +4,9 @@ import React from 'react'
 interface Props {
     activeFilter: FilterType;
     action: () => void;
-    count: number;
 }
 
-const ActiveFilterButton: React.FC<Props> = ({ activeFilter, action, count }) => {
+const ActiveFilterButton: React.FC<Props> = ({ activeFilter, action }) => {
     return (
         <button className='
         flex flex-col gap-1 w-auto z-50 

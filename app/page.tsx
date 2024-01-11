@@ -7,6 +7,7 @@ import HeaderComponent from './components/header/HeaderComponent';
 import HeroComponent from './components/HeroComponent';
 import ScrollButtonComponent from './components/ui/ScrollButtonComponent';
 import ActiveFilterButton from './components/filter/ActiveFilterButton';
+import FilterComponent from './components/filter/FilterComponent';
 
 export default function Home() {
   const [filteredData, setFilteredData] = useState(Data);
@@ -15,7 +16,6 @@ export default function Home() {
   const [showNav, setShowNav] = useState(false);
   const heroRef = useRef(null);
 
-  /* FILTER DATA POC */
   const filterData = (filter: FilterType) => {
     setFilteredData([]);
     const newData = filter === FilterType.All
@@ -94,38 +94,27 @@ export default function Home() {
       )}
 
       {/* CONTENT */}
-      <div ref={scrollRef} className='pt-16 min-h-screen sm:px-10 w-full flex flex-col items-center'>
+      <div ref={scrollRef} className='min-h-screen sm:px-10 w-full flex flex-col items-center'>
 
         {/* FILTER */}
-        <div className='w-1/2 flex justify-center align-middle font-monsterrat'>
-          <div className='text-2xl font-semibold mr-2'>Filter</div>
-          <div className="flex flex-wrap gap-2">
-            {Object.values(FilterType).map((filter) => (
-              <button
-                key={filter}
-                className={`${activeFilter === filter
-                  ? 'bg-green'
-                  : 'bg-accent/80 text-purple-950 hover:bg-accent/40'
-                  } px-2.5 py-0.5 rounded`}
-                onClick={() => handleFilterChange(filter)}
-              >
-                {filter}
-              </button>
-            ))}
-          </div>
-
+        <div className='hidden md:flex justify-center'>
+          <FilterComponent activeFilter={activeFilter} onFilterChange={handleFilterChange} />
+          {/* ACTIVE FILTER BUTTON */}
           {showNav && (
-            <ActiveFilterButton count={filteredData.length} activeFilter={activeFilter} action={filterAction} />
+            <ActiveFilterButton activeFilter={activeFilter} action={filterAction} />
           )}
         </div>
-
 
         {/* SECTION LOOP */}
         <div className='lg:w-4/5 mt-16'>
           <SectionLoopComponent filteredData={filteredData} />
         </div>
 
-        <ScrollButtonComponent scrollToSection={scrollToSection} type='footer' />
+        {/* SCROLL BUTTON */}
+        {showNav && (
+          <ScrollButtonComponent scrollToSection={scrollToSection} type='footer' />
+        )}
+
       </div>
 
     </main>

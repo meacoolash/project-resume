@@ -1,18 +1,32 @@
+import { FilterType } from '@/app/types/FilterType';
 import React from 'react';
-import { FilterType } from '../../types/FilterType';
+
 
 interface FilterComponentProps {
-    onFilterChange: (filter: FilterType) => void;
-
+  activeFilter: FilterType;
+  onFilterChange: (filter: FilterType) => void;
 }
 
-const FilterComponent: React.FC<FilterComponentProps> = ({ onFilterChange }) => {
-
-    const [activeFilter, setActiveFilter] = React.useState(FilterType.All);
-
-    return (
-      <></>
-    );
+const FilterComponent: React.FC<FilterComponentProps> = ({ activeFilter, onFilterChange }) => {
+  return (
+    <div className='flex justify-center align-middle font-monsterrat text-sm w-1/2 pt-16'>
+      <div className='text-2xl font-semibold mr-2'>Filter</div>
+      <div className="flex flex-wrap gap-2">
+        {Object.values(FilterType).map((filter) => (
+          <button
+            key={filter}
+            className={`${activeFilter === filter
+              ? 'bg-green'
+              : 'bg-accent/80 text-purple-950 hover:bg-accent/40'
+              } px-2.5 py-0.5 rounded`}
+            onClick={() => onFilterChange(filter)}
+          >
+            {filter}
+          </button>
+        ))}
+      </div>
+    </div>
+  );
 };
 
 export default FilterComponent;

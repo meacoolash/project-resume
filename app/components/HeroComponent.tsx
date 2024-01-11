@@ -1,6 +1,7 @@
 import React from 'react'
 import HeaderComponent from './header/HeaderComponent'
 import ScrollButtonComponent from './ui/ScrollButtonComponent'
+import { FaDisplay } from 'react-icons/fa6'
 
 interface HeroComponentProps {
   scrollToSection: () => void
@@ -28,7 +29,17 @@ const HeroComponent: React.FC<HeroComponentProps> = ({ scrollToSection }) => {
       </div>
 
       {/* Scroll to content button */}
-      <ScrollButtonComponent scrollToSection={scrollToSection} type='hero' />
+      <div className='hidden md:block'>
+        <ScrollButtonComponent scrollToSection={scrollToSection} type='hero' />
+      </div>
+
+      <div className='md:hidden flex justify-center mb-2'>
+        <div className='flex flex-col gap-2 items-center w-2/3 text-center text-xs'>
+          <FaDisplay />
+          <p className='text-accent'>Full features including <span className='text-text'>Print and Filter</span> available on desktop.</p>
+        </div>
+      </div>
+
     </div>
   )
 }

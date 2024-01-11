@@ -1,11 +1,12 @@
 export enum FilterType { 
     Angular = "Angular",
-    React = "React", 
-    Frontend = "Frontend", 
-    Backend = "Backend",
+    React = "React",
+    Typescript = "Typescript",
+    NextJS = "NextJS",
     MongoDB = "MongoDB",
     Node = "Node",
     CSS = "CSS",
+    Tailwind = "Tailwind",
     UIUX = "UI/UX",
     UnitTest = "Unit Test",
     SocketIO = "SocketIO",
@@ -14,5 +15,6 @@ export enum FilterType {
     SQL = "SQL",
     JavaScript = "JavaScript",
     PHP = "PHP",
+    CICD = "CI/CD",
     All = "All",
 }
