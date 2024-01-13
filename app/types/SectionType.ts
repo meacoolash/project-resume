@@ -17,6 +17,7 @@ interface Repository {
 interface MediaLink {
     type: "image" | "video",
     url: string,
+    urlThumbnail?: string,
 }
 
 export interface ProjectType { 

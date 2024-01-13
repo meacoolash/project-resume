@@ -210,7 +210,8 @@ export const Data: SectionType[] = [
         ],
         media: {
             type: "video",
-            url: "/uniqa.mp4"
+            url: "/uniqa.mp4",
+            urlThumbnail: "/uniqa.jpg",
         },
         live: "https://www.uniqa.at/reiseversicherung/",
         filter: [
@@ -270,7 +271,8 @@ export const Data: SectionType[] = [
         ],
         media: {
             type: "video",
-            url: "/varden.mp4"
+            url: "/varden.mp4",
+            urlThumbnail: "/varden.jpg"
         },
         live: null,
         filter: [
@@ -322,7 +324,11 @@ export const Data: SectionType[] = [
             "Gained understanding of the environmental domain",
             "Developed a user-friendly Drag and Drop feature from scratch in vanilla JS"
         ],
-        media: { type: "video", url: "gin.mp4" },
+        media: { 
+            type: "video", 
+            url: "gin.mp4",
+            urlThumbnail: "gin.jpg" 
+        },
         live: null,
         filter: [
             FilterType.Angular,
@@ -424,7 +430,8 @@ export const Data: SectionType[] = [
         challenges: [],
         media: {
             type: "video",
-            url: "/innogy.mp4"
+            url: "/innogy.mp4",
+            urlThumbnail: "/innogy.jpg"
         },
         live: null,
         filter: [
@@ -511,7 +518,8 @@ export const Data: SectionType[] = [
         challenges: [],
         media: {
             type: "video",
-            url: "/webdev.mp4"
+            url: "/webdev.mp4",
+            urlThumbnail: "/webdev.jpg"
         },
         live: null,
         filter: [
@@ -550,7 +558,8 @@ export const Data: SectionType[] = [
         challenges: [],
         media: {
             type: "video",
-            url: "/wordpress.mp4"
+            url: "/wordpress.mp4",
+            urlThumbnail: "/wordpress.jpg"
         },
         live: null,
         filter: [
@@ -654,7 +663,8 @@ export const Data: SectionType[] = [
         challenges: [],
         media: {
             type: "video",
-            url: "/flash.mp4"
+            url: "/flash.mp4",
+            urlThumbnail: "/flash.jpg"
         },
         live: null,
         filter: [
