@@ -46,9 +46,9 @@ const Print = () => {
 
             {/* Column 3 (tools) */}
             <div className='col-span-2'>
-              {section.tools && section.tools.length > 0 && (
+              {section.filter && section.filter.length > 0 && (
                 <div className='flex flex-wrap gap-x-2 mb-1'>
-                  {section.tools.map((tool, toolIdx) => (
+                  {section.filter.map((tool, toolIdx) => (
                     <div key={toolIdx}>
                       <span className='font-semibold text-red-700' >{tool},</span>
                     </div>
