@@ -35,7 +35,9 @@ const HeroComponent: React.FC<HeroComponentProps> = ({ scrollToSection }) => {
 
       <div className='md:hidden flex justify-center mb-2'>
         <div className='flex flex-col gap-2 items-center w-2/3 text-center text-xs'>
-          <FaDisplay />
+          <div className='shadow-md shadow-accent/30 text-xl opacity-70'>
+            <FaDisplay />
+            </div>
           <p className='text-accent'>Full features including <span className='text-text'>Print and Filter</span> available on desktop.</p>
         </div>
       </div>
