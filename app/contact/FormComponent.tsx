@@ -2,7 +2,7 @@
 import React from 'react'
 import { useForm, ValidationError } from '@formspree/react';
 
-const FormComponent: React.FC<> = () => {
+const FormComponent = () => {
     const [state, handleSubmit] = useForm("xeqyokrk");
     if (state.succeeded) {
         return <p>Thanks for message!</p>;
