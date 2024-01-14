@@ -18,7 +18,6 @@ function Contact() {
       <div className="flex justify-center mt-24">
         <div className='w-full mx-6 md:w-1/2'>
           <FormComponent />
-          <SocialComponent />
         </div>
       </div>
 
