@@ -12,7 +12,7 @@ function Contact() {
       bg-gradient-to-br from-background-from via-background-via to-background-to'
     >
       <div className='absolute top-0 w-full'>
-        <HeaderComponent/>
+        <HeaderComponent page='contact'/>
       </div>
 
       <div className="flex justify-center mt-24">

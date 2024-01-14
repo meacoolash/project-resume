@@ -1,11 +1,12 @@
 "use client"
 import React, { use, useEffect, useState } from 'react'
-import { FaSun, FaMoon } from 'react-icons/fa'
+import { FaSun, FaMoon, FaHome } from 'react-icons/fa'
 import { FaDisplay } from "react-icons/fa6";
 import { FaRegFilePdf } from "react-icons/fa6";
 import { IoChatbubbleEllipses } from "react-icons/io5";
 import Link from 'next/link'
 import { useTheme } from 'next-themes';
+
 
 interface HeaderComponentProps {
     page?: string;
@@ -70,7 +71,16 @@ const HeaderComponent: React.FC<HeaderComponentProps> = ({ page }) => {
                 </div>
 
                 <Link href={'/contact'} className={`${hoverClass}`}>
-                        <IoChatbubbleEllipses />        
+                {page === 'contact' ? (
+                        <Link href={'/'} className=''>
+                            <FaHome />
+                        </Link>
+                    ) : (
+                        <Link href={'/contact'} className=''>
+                            <IoChatbubbleEllipses  />
+                        </Link>
+
+                    )}
                 </Link>
             </div>
         </header>
