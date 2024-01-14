@@ -9,7 +9,9 @@
     "lint": "next lint"
   },
   "dependencies": {
+    "@formspree/react": "^2.5.1",
     "@nextui-org/react": "^2.2.9",
+    "buffer": "^6.0.3",
     "html2pdf.js": "^0.10.1",
     "next": "14.0.4",
     "next-themes": "^0.2.1",

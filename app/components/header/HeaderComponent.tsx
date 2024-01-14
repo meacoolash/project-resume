@@ -1,7 +1,9 @@
 "use client"
 import React, { use, useEffect, useState } from 'react'
-import { FaEnvelope, FaFilePdf, FaSun, FaHome, FaMoon } from 'react-icons/fa'
+import { FaSun, FaMoon } from 'react-icons/fa'
 import { FaDisplay } from "react-icons/fa6";
+import { FaRegFilePdf } from "react-icons/fa6";
+import { IoChatbubbleEllipses } from "react-icons/io5";
 import Link from 'next/link'
 import { useTheme } from 'next-themes';
 
@@ -52,7 +54,6 @@ const HeaderComponent: React.FC<HeaderComponentProps> = ({ page }) => {
                     ) : (
                         <FaMoon />
                     )}
-
                 </button>
 
                 <div className={`${hoverClass}`}>
@@ -62,18 +63,17 @@ const HeaderComponent: React.FC<HeaderComponentProps> = ({ page }) => {
                         </Link>
                     ) : (
                         <Link href={'/print'} className=''>
-                            <FaFilePdf />
+                            <FaRegFilePdf />
                         </Link>
 
                     )}
                 </div>
 
-                <a href='mailto:mikulas@stec.sk' className={`${hoverClass}`}>
-                    <FaEnvelope className='' />
-                </a>
+                <Link href={'/contact'} className={`${hoverClass}`}>
+                        <IoChatbubbleEllipses />        
+                </Link>
             </div>
         </header>
-
     )
 }
 

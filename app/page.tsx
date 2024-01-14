@@ -8,6 +8,8 @@ import HeroComponent from './components/HeroComponent';
 import ScrollButtonComponent from './components/ui/ScrollButtonComponent';
 import ActiveFilterButton from './components/filter/ActiveFilterButton';
 import FilterComponent from './components/filter/FilterComponent';
+import SocialComponent from './contact/SocialComponent';
+import FormComponent from './contact/FormComponent';
 
 export default function Home() {
   const [filteredData, setFilteredData] = useState(Data);
@@ -115,7 +117,9 @@ export default function Home() {
           <ScrollButtonComponent scrollToSection={scrollToSection} type='footer' />
         )}
 
+
       </div>
+
 
     </main>
   )
