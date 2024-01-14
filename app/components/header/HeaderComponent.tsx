@@ -45,7 +45,7 @@ const HeaderComponent: React.FC<HeaderComponentProps> = ({ page }) => {
                 </div>
             </Link>
 
-            <div className='flex gap-4'>
+            <div className='flex gap-5'>
                 <button className={`${hoverClass}`} onClick={() => toggleTheme()}>
                     {theme === 'dark' ? (
                         <FaSun />
@@ -55,7 +55,7 @@ const HeaderComponent: React.FC<HeaderComponentProps> = ({ page }) => {
 
                 </button>
 
-                <div className={`hidden lg:inline ${hoverClass}`}>
+                <div className={`${hoverClass}`}>
                     {page === 'print' ? (
                         <Link href={'/'} className=''>
                             <FaDisplay />

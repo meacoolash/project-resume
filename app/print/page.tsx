@@ -2,21 +2,29 @@ import React from 'react'
 import { Data } from '../data/Data'
 import PrintButtonComponent from './PrintButtonComponent';
 import HeaderComponent from '../components/header/HeaderComponent';
+import { FaFilePdf } from 'react-icons/fa';
 
 const Print = () => {
 
   return (
-    <div className='flex flex-col justify-center pb-16 font-monsterrat min-h-full bg-gradient-to-br from-background-from via-background-via to-background-to'>
+    <div className='flex flex-col justify-center pb-16 relative
+      font-monsterrat align-top min-h-screen
+      bg-gradient-to-br from-background-from via-background-via to-background-to'
+    >
 
       {/* HEADER */}
       <div className='no-print'>
-        <HeaderComponent page='print' />
-        <PrintButtonComponent />
-      </div>
+        <div className='absolute top-0 w-full'>
+          <HeaderComponent page='print' />
+        </div>
 
-      {/* RESUME */}
-      <div id='print-resume' className='a4-size text-xs text-black'>
+        <div className='mt-20'>
+          <PrintButtonComponent />
+        </div>
+      </div>    
 
+      {/* DESKTOP RESUME */}
+      <div id='print-resume' className='a4-size text-xs text-black hidden md:block'>
         {/* header */}
         <div className='mb-3'>
           <div className='flex justify-between text-blue-500 font-bold mb-4'>
