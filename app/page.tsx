@@ -4,12 +4,17 @@ import { Data } from './data/Data'
 import { FilterType } from './types/FilterType'
 import SectionLoopComponent from './components/section/SectionLoopComponent';
 import HeaderComponent from './components/header/HeaderComponent';
-import HeroComponent from './components/HeroComponent';
+import HeroComponent from './components/hero/HeroComponent';
 import ScrollButtonComponent from './components/ui/ScrollButtonComponent';
 import ActiveFilterButton from './components/filter/ActiveFilterButton';
 import FilterComponent from './components/filter/FilterComponent';
-import SocialComponent from './contact/SocialComponent';
-import FormComponent from './contact/FormComponent';
+
+/* TODO:
+- Doublecheck/Clear Timeouts: Ensure timeouts are cleared during component unmount.
+- Component Breakdown: Refactor Home into smaller components if complexity increases.
+- Scroll Restoration: Implement scroll restoration after filter actions.
+- Doublecheck importance of "use client" for entire component 
+*/
 
 export default function Home() {
   const [filteredData, setFilteredData] = useState(Data);
