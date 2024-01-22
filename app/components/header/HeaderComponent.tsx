@@ -1,12 +1,12 @@
 "use client"
 import React, { use, useEffect, useState } from 'react'
 import { FaSun, FaMoon, FaHome } from 'react-icons/fa'
-import { FaDisplay } from "react-icons/fa6";
-import { FaRegFilePdf } from "react-icons/fa6";
-import { IoChatbubbleEllipses } from "react-icons/io5";
 import Link from 'next/link'
 import { useTheme } from 'next-themes';
-
+import { GrHomeRounded } from "react-icons/gr";
+import { GrDocumentPdf } from "react-icons/gr";
+import { GrChatOption } from "react-icons/gr";
+import { GrDesktop } from "react-icons/gr";
 
 interface HeaderComponentProps {
     page?: string;
@@ -60,11 +60,11 @@ const HeaderComponent: React.FC<HeaderComponentProps> = ({ page }) => {
                 <div className={`${hoverClass}`}>
                     {page === 'print' ? (
                         <Link href={'/'} className=''>
-                            <FaDisplay />
+                            <GrDesktop />
                         </Link>
                     ) : (
                         <Link href={'/print'} className=''>
-                            <FaRegFilePdf />
+                            <GrDocumentPdf />
                         </Link>
 
                     )}
@@ -73,11 +73,11 @@ const HeaderComponent: React.FC<HeaderComponentProps> = ({ page }) => {
                 <Link href={'/contact'} className={`${hoverClass}`}>
                 {page === 'contact' ? (
                         <Link href={'/'} className=''>
-                            <FaHome />
+                            <GrHomeRounded/>
                         </Link>
                     ) : (
                         <Link href={'/contact'} className=''>
-                            <IoChatbubbleEllipses  />
+                            <GrChatOption  />
                         </Link>
 
                     )}
