@@ -1,5 +1,5 @@
-import { FilterType } from '../types/FilterType';
-import { SectionType } from '../types/SectionType';
+import { FilterType } from "@models/FilterType";
+import { SectionType } from "@models/SectionType";
 
 export const Data: SectionType[] = [
     //2024

@@ -1,12 +1,9 @@
 "use client"
-import React, { use, useEffect, useState } from 'react'
-import { FaSun, FaMoon, FaHome } from 'react-icons/fa'
+import { useEffect, useState } from 'react'
+import { FaSun, FaMoon } from 'react-icons/fa'
+import { GrHomeRounded, GrDocumentPdf, GrChatOption, GrDesktop } from "react-icons/gr";
 import Link from 'next/link'
 import { useTheme } from 'next-themes';
-import { GrHomeRounded } from "react-icons/gr";
-import { GrDocumentPdf } from "react-icons/gr";
-import { GrChatOption } from "react-icons/gr";
-import { GrDesktop } from "react-icons/gr";
 
 interface HeaderComponentProps {
     page?: string;
@@ -70,18 +67,17 @@ const HeaderComponent: React.FC<HeaderComponentProps> = ({ page }) => {
                     )}
                 </div>
 
-                <Link href={'/contact'} className={`${hoverClass}`}>
                 {page === 'contact' ? (
-                        <Link href={'/'} className=''>
-                            <GrHomeRounded/>
-                        </Link>
-                    ) : (
-                        <Link href={'/contact'} className=''>
-                            <GrChatOption  />
-                        </Link>
+                    <Link href={'/'} className=''>
+                        <GrHomeRounded />
+                    </Link>
+                ) : (
+                    <Link href={'/contact'} className=''>
+                        <GrChatOption />
+                    </Link>
 
-                    )}
-                </Link>
+                )}
+
             </div>
         </header>
     )

@@ -1,6 +1,6 @@
-import React from 'react'
-import HeaderComponent from '../header/HeaderComponent'
-import ScrollButtonComponent from '../ui/ScrollButtonComponent'
+import HeaderComponent from '@components/header/HeaderComponent'
+import ScrollButtonComponent from '@components/ui/ScrollButtonComponent'
+
 import { FaDisplay } from 'react-icons/fa6'
 
 interface HeroComponentProps {

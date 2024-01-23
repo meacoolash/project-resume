@@ -1,19 +1,23 @@
 "use client"
 import React, { useEffect, useRef, useState } from 'react';
-import { Data } from './data/Data'
-import { FilterType } from './types/FilterType'
-import SectionLoopComponent from './components/section/SectionLoopComponent';
-import HeaderComponent from './components/header/HeaderComponent';
-import HeroComponent from './components/hero/HeroComponent';
-import ScrollButtonComponent from './components/ui/ScrollButtonComponent';
-import ActiveFilterButton from './components/filter/ActiveFilterButton';
-import FilterComponent from './components/filter/FilterComponent';
+import { Data } from '@/app/_data/Data'
+
+import SectionLoopComponent from '@/app/_components/section/SectionLoopComponent';
+import HeaderComponent from '@/app/_components/header/HeaderComponent';
+import HeroComponent from '@/app/_components/hero/HeroComponent';
+import ScrollButtonComponent from '@/app/_components/ui/ScrollButtonComponent';
+import ActiveFilterButton from '@/app/_components/filter/ActiveFilterButton';
+import { FilterType } from '@/app/_models/FilterType';
+import FilterComponent from '@/app/_components/filter/FilterComponent';
+
+
 
 /* TODO:
 - Doublecheck/Clear Timeouts: Ensure timeouts are cleared during component unmount.
 - Component Breakdown: Refactor Home into smaller components if complexity increases.
 - Scroll Restoration: Implement scroll restoration after filter actions.
-- Doublecheck importance of "use client" for entire component 
+- Doublecheck importance of "use client" for entire component. 
+    e.g. IntersectionObserver might go to child components only. 
 */
 
 export default function Home() {

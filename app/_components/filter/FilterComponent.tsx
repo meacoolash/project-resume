@@ -1,6 +1,4 @@
-import { FilterType } from '@/app/types/FilterType';
-import React from 'react';
-
+import { FilterType } from "@models/FilterType";
 
 interface FilterComponentProps {
   activeFilter: FilterType;

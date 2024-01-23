@@ -1,10 +1,10 @@
 import React from 'react';
-import { SectionType } from '../../types/SectionType';
+import { InView } from 'react-intersection-observer';
 import TitleComponent from './TitleComponent';
 import ToolsComponent from './ToolsComponent';
-import ContentComponent from './ContentComponent';
 import MediaComponent from './MediaComponent';
-import { InView } from 'react-intersection-observer';
+import ContentComponent from './ContentComponent';
+import { SectionType } from '@models/SectionType';
 
 interface SectionComponentProps {
     filteredData: Array<SectionType>;

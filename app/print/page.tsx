@@ -1,8 +1,6 @@
-import React from 'react'
-import { Data } from '../data/Data'
 import PrintButtonComponent from './PrintButtonComponent';
-import HeaderComponent from '../components/header/HeaderComponent';
-import { FaFilePdf } from 'react-icons/fa';
+import HeaderComponent from '@components/header/HeaderComponent';
+import { Data } from '@data/Data';
 
 const Print = () => {
 

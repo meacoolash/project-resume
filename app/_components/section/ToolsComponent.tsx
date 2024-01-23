@@ -1,5 +1,5 @@
+import { SectionType } from '@models/SectionType';
 import React from 'react'
-import { SectionType } from '@/app/types/SectionType';
 
 interface ToolsComponentProps {
     section: SectionType;

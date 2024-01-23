@@ -1,4 +1,5 @@
-import { FilterType } from "./FilterType"
+import { FilterType } from "./FilterType";
+
 
 interface Company {
     name: string,

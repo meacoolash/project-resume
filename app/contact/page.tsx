@@ -1,8 +1,7 @@
 "use client";
 import React from 'react';
-import HeaderComponent from '../components/header/HeaderComponent';
 import FormComponent from './FormComponent';
-import SocialComponent from './SocialComponent';
+import HeaderComponent from '@components/header/HeaderComponent';
 
 function Contact() {
   return (

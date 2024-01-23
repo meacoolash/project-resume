@@ -1,6 +1,6 @@
 import React from 'react'
 import CompanyComponent from './CompanyComponent'
-import { SectionType } from '@/app/types/SectionType';
+import { SectionType } from '@models/SectionType';
 
 interface CompanyComponentProps {
     section: SectionType;

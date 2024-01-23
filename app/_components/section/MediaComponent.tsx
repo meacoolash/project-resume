@@ -1,8 +1,8 @@
 "use client"
 import React, { useEffect, useRef } from 'react'
-import { SectionType } from '@/app/types/SectionType';
 import Image from 'next/image';
 import { FaPlay, FaPause } from 'react-icons/fa';
+import { SectionType } from "@models/SectionType";
 
 interface MediaComponentProps {
     section: SectionType;

@@ -1,6 +1,4 @@
-import React from 'react'
-import { ProjectType, SectionType } from '../../types/SectionType'
-import { Project } from 'next/dist/build/swc'
+import { ProjectType } from "@models/SectionType";
 
 interface ProjectsComponentProps {
     projects: ProjectType[]
