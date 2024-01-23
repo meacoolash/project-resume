@@ -18,6 +18,7 @@ const FilterComponent: React.FC<FilterComponentProps> = ({ activeFilter, onFilte
               : 'bg-accent/80 text-purple-950 hover:bg-accent/40'
               } px-2.5 py-0.5 rounded`}
             onClick={() => onFilterChange(filter)}
+            aria-label="Filter"
           >
             {filter}
           </button>

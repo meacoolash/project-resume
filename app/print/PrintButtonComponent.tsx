@@ -35,13 +35,13 @@ const PrintButtonComponent = () => {
       {/* Desktop */}
       <div className='text-xl m-3 gap-4 justify-center md:flex hidden '>
         <Link href='/'><FaArrowLeft /></Link>
-        <button onClick={window.print}><FaPrint /></button>
-        <button onClick={generatePdf}><FaFilePdf /></button>
+        <button onClick={window.print} aria-label='Print'><FaPrint /></button>
+        <button onClick={generatePdf} aria-label='PDF'><FaFilePdf /></button>
       </div>
 
       {/* Mobile */}
       <div className='md:hidden flex justify-center'>
-        <button onClick={generatePdf} className='flex flex-col gap-2 items-center'>
+        <button onClick={generatePdf} aria-label='Generate PDF' className='flex flex-col gap-2 items-center'>
           <div className='text-text text-9xl'><FaFilePdf /></div>
           <div>Generate PDF</div>
         </button>

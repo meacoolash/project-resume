@@ -19,13 +19,13 @@ const ScrollButtonComponent: React.FC<ScrollButtonComponentProps> = ({ scrollToS
         <>
             {type === 'hero' ? (
                 <div className="w-8 h-8 absolute bottom-10 left-1/2">
-                    <button className='-translate-x-2 w-full h-full' onClick={scrollToSection}>
+                    <button className='-translate-x-2 w-full h-full' onClick={scrollToSection} aria-label='Scroll'>
                         {svgShape()}
                     </button>
                 </div>
             ) : (
 
-                <div className="relative w-8 h-8 bottom-10 ml-auto mr-3 transform rotate-180">
+                <div className="relative w-8 h-8 bottom-10 ml-auto mr-3 transform rotate-180"  aria-label='Scroll'>
                 <button className='w-full h-full' onClick={scrollToSection}>
                     {svgShape()}
                 </button>

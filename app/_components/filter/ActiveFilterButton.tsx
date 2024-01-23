@@ -13,7 +13,9 @@ const ActiveFilterButton: React.FC<Props> = ({ activeFilter, action }) => {
         rounded-xl p-2 pr-4 
         bg-primary/80 text-xs
         hover:bg-accent/10 transition-all duration-300 hover:shadow-lg hover:shadow-accent text-left'
-            onClick={action}>
+            onClick={action}
+            aria-label='Filter'    
+            >
             {activeFilter !== FilterType.All ? (
                 <>
                     <p className='text-text-accent'>{activeFilter}</p>

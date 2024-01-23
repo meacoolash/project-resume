@@ -42,7 +42,8 @@ const FormComponent = () => {
 
                 <div className='self-end'>
                     <button type="submit" disabled={state.submitting}
-                        className='border hover:bg-accent/10 rounded-lg p-2 t w-36 self-center mt-6'>
+                        className='border hover:bg-accent/10 rounded-lg p-2 t w-36 self-center mt-6' 
+                        aria-label='Submit form'>
                         Submit
                     </button>
                 </div>

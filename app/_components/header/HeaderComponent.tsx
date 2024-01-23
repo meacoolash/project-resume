@@ -46,7 +46,7 @@ const HeaderComponent: React.FC<HeaderComponentProps> = ({ page }) => {
             </Link>
 
             <div className='flex gap-5'>
-                <button className={`${hoverClass}`} onClick={() => toggleTheme()}>
+                <button className={`${hoverClass}`} onClick={() => toggleTheme()} aria-label='Set Theme'>
                     {theme === 'dark' ? (
                         <FaSun />
                     ) : (
