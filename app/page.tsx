@@ -1,61 +1,23 @@
 "use client"
 import React, { useEffect, useRef, useState } from 'react';
-import { Data } from '@/app/_data/Data'
-
 import SectionLoopComponent from '@/app/_components/section/SectionLoopComponent';
 import HeaderComponent from '@/app/_components/header/HeaderComponent';
 import HeroComponent from '@/app/_components/hero/HeroComponent';
 import ScrollButtonComponent from '@/app/_components/ui/ScrollButtonComponent';
 import ActiveFilterButton from '@/app/_components/filter/ActiveFilterButton';
-import { FilterType } from '@/app/_models/FilterType';
 import FilterComponent from '@/app/_components/filter/FilterComponent';
-
+import useFilter from '@hooks/useFilter';
 
 
 /* TODO:
-- Doublecheck/Clear Timeouts: Ensure timeouts are cleared during component unmount.
-- Component Breakdown: Refactor Home into smaller components if complexity increases.
-- Scroll Restoration: Implement scroll restoration after filter actions.
 - Doublecheck importance of "use client" for entire component. 
     e.g. IntersectionObserver might go to child components only. 
 */
 
 export default function Home() {
-  const [filteredData, setFilteredData] = useState(Data);
-  const [activeFilter, setActiveFilter] = useState(FilterType.All);
-
   const [showNav, setShowNav] = useState(false);
+  const { filteredData, activeFilter, clearFilter, onFilterChange } = useFilter();
   const heroRef = useRef(null);
-
-  const filterData = (filter: FilterType) => {
-    setFilteredData([]);
-    const newData = filter === FilterType.All
-      ? Data
-      : Data.filter((section) => section.filter?.includes(filter));
-    setTimeout(() => {
-      setFilteredData(newData);
-    }, 100)
-  };
-
-  const clearFilter = () => {
-    setFilteredData(Data);
-    setActiveFilter(FilterType.All);
-  }
-
-  const filterAction = () => {
-    if (activeFilter === FilterType.All) {
-      scrollToSection()
-    } else {
-      setTimeout(() => {
-        clearFilter();
-      }, 200)
-    }
-  }
-
-  const handleFilterChange = (filter: FilterType) => {
-    setActiveFilter(filter);
-    filterData(filter);
-  };
 
   useEffect(() => {
     const observer = new IntersectionObserver(
@@ -109,10 +71,10 @@ export default function Home() {
 
         {/* FILTER */}
         <div className='hidden md:flex justify-center'>
-          <FilterComponent activeFilter={activeFilter} onFilterChange={handleFilterChange} />
+          <FilterComponent activeFilter={activeFilter} onFilterChange={onFilterChange} />
           {/* ACTIVE FILTER BUTTON */}
           {showNav && (
-            <ActiveFilterButton activeFilter={activeFilter} action={filterAction} />
+            <ActiveFilterButton activeFilter={activeFilter} action={clearFilter} />
           )}
         </div>
 
@@ -126,10 +88,7 @@ export default function Home() {
           <ScrollButtonComponent scrollToSection={scrollToSection} type='footer' />
         )}
 
-
       </div>
-
-
     </main>
   )
 }

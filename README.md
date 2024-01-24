@@ -33,7 +33,6 @@ There are several enhancements on the horizon:
 
 - **Reviews and Testimonials Section:** Introduce a section to display professional endorsements and feedback.
 - **Filtering data on mobile:** Nice to have, however it's a tricky one from UX perspective
-- **Refactor main page.tsx:** See comments in the code
 - **Review the codebase:** Make the app perfect. Make the world better. But do not forget about finding balance between perfection and progress! 
 
 
