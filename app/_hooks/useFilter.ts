@@ -2,12 +2,14 @@
 import { useEffect, useRef, useState } from 'react';
 import { Data } from '@/app/_data/Data';
 import { FilterType } from '@/app/_models/FilterType';
+import { SectionType } from '@models/SectionType';
+import { UseFilterReturnType } from '@models/UseFilterReturnType';
 
 // TODO: Might be covered by unit tests
 
-const useFilter = () => {
-    const [filteredData, setFilteredData] = useState(Data);
-    const [activeFilter, setActiveFilter] = useState(FilterType.All);
+const useFilter = (): UseFilterReturnType => {
+    const [filteredData, setFilteredData] = useState<SectionType[]>(Data);
+    const [activeFilter, setActiveFilter] = useState<FilterType>(FilterType.All);
 
     const filterTimeoutRef = useRef<NodeJS.Timeout | null>(null);
 
@@ -20,19 +22,19 @@ const useFilter = () => {
         };
     }, []);
 
-  
-    const clearFilter = () => {
+
+    const clearFilter = (): void => {
         onFilterChange(FilterType.All);
     };
 
-    const onFilterChange = (filter: FilterType) => {
+    const onFilterChange = (filter: FilterType): void => {
         setFilteredData([]);
         setActiveFilter(filter);
-        
+
         const newData = filter === FilterType.All
             ? Data
             : Data.filter((section) => section.filter?.includes(filter));
-        
+
         filterTimeoutRef.current = setTimeout(() => {
             setFilteredData(newData);
         }, 100)
