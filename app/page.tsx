@@ -1,5 +1,5 @@
 "use client"
-import React, { useEffect, useRef, useState } from 'react';
+import React, { useRef } from 'react';
 import SectionLoopComponent from '@/app/_components/section/SectionLoopComponent';
 import HeaderComponent from '@/app/_components/header/HeaderComponent';
 import HeroComponent from '@/app/_components/hero/HeroComponent';
@@ -7,43 +7,14 @@ import ScrollButtonComponent from '@/app/_components/ui/ScrollButtonComponent';
 import ActiveFilterButton from '@/app/_components/filter/ActiveFilterButton';
 import FilterComponent from '@/app/_components/filter/FilterComponent';
 import useFilter from '@hooks/useFilter';
-
-
-/* TODO:
-- Doublecheck importance of "use client" for entire component. 
-    e.g. IntersectionObserver might go to child components only. 
-*/
+import useObserver from '@hooks/useObserver';
 
 export default function Home() {
-  const [showNav, setShowNav] = useState(false);
+  
   const { filteredData, activeFilter, clearFilter, onFilterChange } = useFilter();
-  const heroRef = useRef(null);
-
-  useEffect(() => {
-    const observer = new IntersectionObserver(
-      ([entry]) => {
-        // If the hero section is not intersecting (visible), show the nav
-        setShowNav(!entry.isIntersecting);
-      },
-      {
-        root: null,
-        threshold: 0, // trigger callback when hero is completely out of view
-      }
-    );
-
-    const currentHeroRef = heroRef.current;
-
-    if (currentHeroRef) {
-      observer.observe(currentHeroRef);
-    }
-
-    return () => {
-      if (currentHeroRef) {
-        observer.unobserve(currentHeroRef);
-      }
-    };
-  }, []);
-
+  const heroRef: React.MutableRefObject<HTMLDivElement | null> = useRef(null);
+  const { showNav } = useObserver(heroRef);
+ 
   const scrollRef = useRef<HTMLDivElement>(null);
   const scrollToSection = () => {
     if (scrollRef.current) {
