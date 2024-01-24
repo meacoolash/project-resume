@@ -56,11 +56,11 @@ const HeaderComponent: React.FC<HeaderComponentProps> = ({ page }) => {
 
                 <div className={`${hoverClass}`}>
                     {page === 'print' ? (
-                        <Link href={'/'} className=''>
+                        <Link href={'/'} aria-label='Default View' className=''>
                             <GrDesktop />
                         </Link>
                     ) : (
-                        <Link href={'/print'} className=''>
+                        <Link href={'/print'} aria-label='Print View' className=''>
                             <GrDocumentPdf />
                         </Link>
 
@@ -68,11 +68,11 @@ const HeaderComponent: React.FC<HeaderComponentProps> = ({ page }) => {
                 </div>
 
                 {page === 'contact' ? (
-                    <Link href={'/'} className=''>
+                    <Link href={'/'} aria-label='Home' className=''>
                         <GrHomeRounded />
                     </Link>
                 ) : (
-                    <Link href={'/contact'} className=''>
+                    <Link href={'/contact'} aria-label='Contact' className=''>
                         <GrChatOption />
                     </Link>
 
