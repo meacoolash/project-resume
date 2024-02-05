@@ -12,10 +12,10 @@ interface HeaderComponentProps {
 const hoverClass = 'md:hover:text-accent/95 transition-colors duration-200'
 
 const HeaderComponent: React.FC<HeaderComponentProps> = ({ page }) => {
-    const { systemTheme, theme, setTheme } = useTheme();
+    const { theme, setTheme } = useTheme();
     const [mounted, setMounted] = useState(false);
 
-    const toggleTheme = () => {
+    const handleToggleTheme = () => {
         if (theme === 'light') {
             setTheme('dark');
         } else {
@@ -46,7 +46,7 @@ const HeaderComponent: React.FC<HeaderComponentProps> = ({ page }) => {
             </Link>
 
             <div className='flex gap-5'>
-                <button className={`${hoverClass}`} onClick={() => toggleTheme()} aria-label='Set Theme'>
+                <button className={`${hoverClass}`} onClick={() => handleToggleTheme()} aria-label='Set Theme'>
                     {theme === 'dark' ? (
                         <FaSun />
                     ) : (

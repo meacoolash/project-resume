@@ -25,7 +25,7 @@ const MediaComponent: React.FC<MediaComponentProps> = ({ section }) => {
     const [isPlaying, setIsPlaying] = React.useState(false);
     const videoRef = useRef<HTMLVideoElement>(null);
 
-    const togglePlay = () => {
+    const handleTogglePlay = () => {
         isPlaying ? pauseVideo() : playVideo();
     }
 
@@ -58,7 +58,7 @@ const MediaComponent: React.FC<MediaComponentProps> = ({ section }) => {
 
     function VideoButton() {
         return (
-            <button onClick={() => togglePlay()} className='absolute w-full h-full top-0' aria-label='Play/Pause Video'>
+            <button onClick={() => handleTogglePlay()} className='absolute w-full h-full top-0' aria-label='Play/Pause Video'>
                 <div className={`
                 bottom-0 left-0 absolute p-2 flex text-sm align-middle gap-1 items-center
                 text-text bg-primary/70 hover:bg-primary/60 ${isPlaying ? '' : 'shadow-xl'} transition-all duration-100 shadow-accent rounded-bl-xl rounded-tr-xl

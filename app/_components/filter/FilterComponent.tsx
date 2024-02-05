@@ -5,7 +5,7 @@ interface FilterComponentProps {
   onFilterChange: (filter: FilterType) => void;
 }
 
-const FilterComponent: React.FC<FilterComponentProps> = ({ activeFilter, onFilterChange }) => {
+const FilterComponent: React.FC<FilterComponentProps> = ({ activeFilter, onFilterChange: handleFilterChange }) => {
   return (
     <div className='flex justify-center align-middle font-monsterrat text-sm w-1/2 pt-16'>
       <div className='text-2xl font-semibold mr-2'>Filter</div>
@@ -17,7 +17,7 @@ const FilterComponent: React.FC<FilterComponentProps> = ({ activeFilter, onFilte
               ? 'bg-green'
               : 'bg-accent/80 text-purple-950 hover:bg-accent/40'
               } px-2.5 py-0.5 rounded`}
-            onClick={() => onFilterChange(filter)}
+            onClick={() => handleFilterChange(filter)}
             aria-label="Filter"
           >
             {filter}

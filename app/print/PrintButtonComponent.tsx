@@ -11,7 +11,7 @@ const PrintButtonComponent = () => {
 
   if (!mounted) return null;
 
-  const generatePdf = async () => {
+  const handleGeneratePdf = async () => {
     // Dynamically import html2pdf.js only on the client-side. Otherwise it will break the build.
     const html2pdf = (await import('html2pdf.js')).default;
     const element = document.getElementById('print-resume');
@@ -36,12 +36,12 @@ const PrintButtonComponent = () => {
       <div className='text-xl m-3 gap-4 justify-center md:flex hidden '>
         <Link href='/'><FaArrowLeft /></Link>
         <button onClick={window.print} aria-label='Print'><FaPrint /></button>
-        <button onClick={generatePdf} aria-label='PDF'><FaFilePdf /></button>
+        <button onClick={handleGeneratePdf} aria-label='PDF'><FaFilePdf /></button>
       </div>
 
       {/* Mobile */}
       <div className='md:hidden flex justify-center'>
-        <button onClick={generatePdf} aria-label='Generate PDF' className='flex flex-col gap-2 items-center'>
+        <button onClick={handleGeneratePdf} aria-label='Generate PDF' className='flex flex-col gap-2 items-center'>
           <div className='text-text text-9xl'><FaFilePdf /></div>
           <div>Generate PDF</div>
         </button>
