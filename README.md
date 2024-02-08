@@ -6,6 +6,21 @@ Visit the live site: www.stec.sk
 
 The CV pulls its data dynamically from `Data.tsx`, making it easy to keep updated with the latest milestones.
 
+## Run development server
+
+```bash
+npm run dev
+# or
+yarn dev
+# or
+pnpm dev
+# or
+bun dev
+```
+
+Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+
+
 ## Highlights
 
 - **Next.js**
