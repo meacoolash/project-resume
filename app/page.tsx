@@ -38,7 +38,7 @@ export default function Home() {
       )}
 
       {/* CONTENT */}
-      <div ref={scrollRef} className='min-h-screen sm:px-10 w-full flex flex-col items-center'>
+      <div ref={scrollRef} className='min-h-screen sm:px-10 w-full flex flex-col sm:items-center'>
 
         {/* FILTER */}
         <div className='hidden md:flex justify-center'>
