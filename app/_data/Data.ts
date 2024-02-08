@@ -5,14 +5,14 @@ export const Data: SectionType[] = [
     //2024
     {
         id: "react",
-        title: "React/NodeJS Fullstack",
-        period: "Nov 2023 - Ongoing",
+        title: "NextJS Ecosystem & Trends",
+        period: "Oct 2023 - Ongoing",
         duration: "",
         company: null,
         projects: [
             {
-                name: "This Website Portfolio",
-                description: "Next.js portfolio website, an interactive resume.",
+                name: "This Portfolio",
+                description: "NextJS portfolio website, an interactive resume.",
                 repository:
                 {
                     name: "Portfolio",
@@ -21,30 +21,35 @@ export const Data: SectionType[] = [
                 }
             },
             {
-                name: "Full-stack simple CRM system",
-                description: "A simple CRM system with a React frontend and a NodeJS/MongoDB backend.",
+                name: "A simple CRM solution",
+                description: "A streamlined full-stack CRM with NextJS, PostgreSQL, Drizzle ORM, and Zustand for modern small businesses.",
                 repository: {
                     link: "REQUEST",
                 }
-            }
+            },
+            {
+                name: "Contemporary trends and hands-on micro-projects",
+                description: "Several simple full-stack solutions, exploring the latest trends in web development, including AI and cloud technologies.",
+            },
         ],
         tools: [
             "React",
-            "Next.js",
+            "NextJS",
             "Tailwind CSS",
             "NodeJS",
-            "Cyclic",
             "Express",
             "MongoDB",
-            "Jest",
+            "SQL",
+            "Drizzle ORM",
             "Netlify",
             "Vercel",
+            "Open AI"
         ],
         challenges: [
-            "Explore the trends of contemporary web development",
-            "Fully understand the mindset of Next.js, Tailwind CSS, and other modern tools",
-            "Effectively use AI and Copilot to speed up development",
-            "Learn about current cloud technologies and deployment strategies",
+            "Explore the trends of contemporary web development, choose between Express vs NextJS, SQL vs NoSQL, Vercel vs Netlify/Cyclic, Supabase vs Turso vs Neon, Drizzle ORM vs Prisma, Zustand/TanStack vs Redux, Clerk vs NextAuth, etc.",
+            "Fully understand the mindset of NextJS, Tailwind CSS, and other modern tools.",
+            "Effectively use AI and Copilot to speed up development.",
+            "Learn about current cloud technologies and deployment strategies.",
         ],
         media: {
             type: "image",
@@ -57,11 +62,12 @@ export const Data: SectionType[] = [
             FilterType.Typescript,
             FilterType.Node,
             FilterType.MongoDB,
+            FilterType.SQL,
             FilterType.CSS,
             FilterType.Tailwind,
             FilterType.JavaScript,
             FilterType.CICD,
-            FilterType.UIUX,
+            FilterType.UIUX
         ]
     },
 
@@ -86,8 +92,8 @@ export const Data: SectionType[] = [
             "Angular 17",
         ],
         challenges: [
-            "Learning about course creation and video production",
-            "Learning about web builders, SEO, marketing",
+            "Learning about course creation and video production.",
+            "Learning about web builders, SEO, marketing.",
             "While the course for junior developers was a promising project, I realized that my passion lies more in continuing my own education and working on projects, rather than teaching. Despite my love for teaching, I chose to focus on advancing my skills as a full-stack developer. I'm still available to lend a hand and offer guidance, but my primary focus is on my personal growth and work."
         ],
         media: {
@@ -131,12 +137,12 @@ export const Data: SectionType[] = [
             "Jest"
         ],
         challenges: [
-            "Developed a fullstack application from scratch",
-            "Explored socket.io and real time data visualization",
-            "Managed live high - frequency trading operations on a dedicated server",
-            "Overcame the complexities of the OANDA API for trading operations",
-            "Dealt with challenges involving timezones and time- sensitive data processing",
-            "Ended the project in Dec 2023, as trading strategies proved non - profitable"
+            "Develop a fullstack application from scratch.",
+            "Explored socket.io and real time data visualization.",
+            "Manage live high - frequency trading operations on a dedicated server.",
+            "Overcame the complexities of the OANDA API for trading operations.",
+            "Deal with challenges involving timezones and time- sensitive data processing.",
+            "End the project in Dec 2023, as trading strategies proved non - profitable."
         ],
         media: {
             type: "image",
@@ -203,10 +209,10 @@ export const Data: SectionType[] = [
             "Scrum",
         ],
         challenges: [
-            "The tight deadline met with ease.",
-            "Collaborated within monorepo with the other teams",
-            "Learned about Scully, Storyblock, Storybook",
-            "Built complex components based on Angular CDK"
+            "Meet the tight deadline with ease.",
+            "Collaborate within monorepo with the other teams.",
+            "Learn about Scully, Storyblock, Storybook.",
+            "Build complex components based on Angular CDK."
         ],
         media: {
             type: "video",
@@ -319,10 +325,10 @@ export const Data: SectionType[] = [
             "Scrum"
         ],
         challenges: [
-            "Transitioned existing code to new Angular standards",
-            "Implemented numerous complex charts and layers",
-            "Gained understanding of the environmental domain",
-            "Developed a user-friendly Drag and Drop feature from scratch in vanilla JS"
+            "Transition existing code to new Angular standards.",
+            "Implement numerous complex charts and layers.",
+            "Gain understanding of the environmental domain.",
+            "Develop a user-friendly Drag and Drop feature from scratch in vanilla JS."
         ],
         media: { 
             type: "video", 
@@ -371,9 +377,9 @@ export const Data: SectionType[] = [
             "Scrum"
         ],
         challenges: [
-            "Overcame tight deadlines and resource limitations",
-            "Completing an initial version of the project solo that was initially planned for a multi-developer team.",
-            "Scrum Certification (PSM I) ID461536"
+            "Overcame tight deadlines and resource limitations.",
+            "Complete an initial version of the project solo that was initially planned for a multi-developer team.",
+            "Obtain a Scrum Certification (PSM I) ID461536"
         ],
         media: {
             type: "image",
