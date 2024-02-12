@@ -5,7 +5,7 @@ export const Data: SectionType[] = [
     //2024
     {
         id: "react",
-        title: "NextJS Ecosystem & Trends",
+        title: "NextJS Ecosystem",
         period: "Oct 2023 - Ongoing",
         duration: "",
         company: null,
@@ -60,14 +60,14 @@ export const Data: SectionType[] = [
             FilterType.React,
             FilterType.NextJS,
             FilterType.Typescript,
-            FilterType.Node,
-            FilterType.MongoDB,
-            FilterType.SQL,
-            FilterType.CSS,
-            FilterType.Tailwind,
             FilterType.JavaScript,
-            FilterType.CICD,
-            FilterType.UIUX
+            FilterType.Node,
+            FilterType.SQL,
+            FilterType.MongoDB,
+            FilterType.Tailwind,
+            FilterType.CSS,
+            FilterType.UIUX,
+            FilterType.CICD
         ]
     },
 
