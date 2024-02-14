@@ -22,7 +22,7 @@ export const Data: SectionType[] = [
             },
             {
                 name: "A simple CRM solution",
-                description: "A streamlined full-stack CRM with NextJS, PostgreSQL, Drizzle ORM, and Zustand for modern small businesses.",
+                description: "A streamlined full-stack CRM with NextJS, Turso, Drizzle ORM, Zustand, Shadcn/UI and OpenAI for modern small businesses.",
                 repository: {
                     link: "REQUEST",
                 }
@@ -46,7 +46,7 @@ export const Data: SectionType[] = [
             "Open AI"
         ],
         challenges: [
-            "Explore the trends of contemporary web development, choose between Express vs NextJS, SQL vs NoSQL, Vercel vs Netlify/Cyclic, Supabase vs Turso vs Neon, Drizzle ORM vs Prisma, Zustand/TanStack vs Redux, Clerk vs NextAuth, etc.",
+            "Explore the trends of contemporary web development, choose between Express vs NextJS, SQL vs NoSQL, Vercel vs Netlify/Cyclic, Supabase vs Turso vs Neon, Drizzle ORM vs Prisma, Zustand/TanStack vs Redux, Clerk vs NextAuth etc.",
             "Fully understand the mindset of NextJS, Tailwind CSS, and other modern tools.",
             "Effectively use AI and Copilot to speed up development.",
             "Learn about current cloud technologies and deployment strategies.",
