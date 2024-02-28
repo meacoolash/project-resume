@@ -5,7 +5,7 @@ export const Data: SectionType[] = [
     {
         id: "qviks",
         title: "Fullstack CRM (SaaS)",
-        period: "February 2023 - Ongoing",
+        period: "Feb 2023 - Ongoing",
         duration: "",
         company: null,
         projects: [
@@ -25,11 +25,11 @@ export const Data: SectionType[] = [
             "SQLite",
             "Drizzle ORM",
             "Vercel",
-            "Open AI",
             "Tanstack",
+            "Open AI",
         ],
         challenges: [
-            
+
             "Architectural Design: Solo design and implementation of scalable SaaS CRM architecture.",
             "UI/UX Design: End-to-end creation of intuitive interfaces, enhancing user engagement.",
             "Full Stack Development: Independently developed using NextJS for server and client components.",
@@ -50,7 +50,8 @@ export const Data: SectionType[] = [
             FilterType.Tailwind,
             FilterType.CSS,
             FilterType.UIUX,
-            FilterType.CICD
+            FilterType.CICD,
+            FilterType.Solo,
         ]
     },
 
@@ -113,7 +114,8 @@ export const Data: SectionType[] = [
             FilterType.Tailwind,
             FilterType.CSS,
             FilterType.UIUX,
-            FilterType.CICD
+            FilterType.CICD,
+            FilterType.Solo,
         ]
     },
 
@@ -205,6 +207,7 @@ export const Data: SectionType[] = [
             FilterType.SocketIO,
             FilterType.JavaScript,
             FilterType.UIUX,
+            FilterType.Solo,
         ],
     },
 
@@ -273,9 +276,9 @@ export const Data: SectionType[] = [
             FilterType.JavaScript,
             FilterType.UnitTest,
             FilterType.E2E,
-            FilterType.Scrum,
             FilterType.UIUX,
-            FilterType.CICD
+            FilterType.CICD,
+            FilterType.Scrum,
 
         ],
     },
@@ -326,7 +329,7 @@ export const Data: SectionType[] = [
             url: "/varden.mp4",
             urlThumbnail: "/varden.jpg"
         },
-        live: null,
+        live: "http://varden.se",
         filter: [
             FilterType.Angular,
             FilterType.Typescript,
@@ -334,9 +337,9 @@ export const Data: SectionType[] = [
             FilterType.CSS,
             FilterType.UnitTest,
             FilterType.E2E,
-            FilterType.Scrum,
             FilterType.UIUX,
-            FilterType.CICD
+            FilterType.CICD,
+            FilterType.Scrum,
         ],
     },
 
@@ -387,7 +390,8 @@ export const Data: SectionType[] = [
             FilterType.CSS,
             FilterType.UnitTest,
             FilterType.JavaScript,
-            FilterType.Scrum],
+            FilterType.Scrum
+        ],
     },
 
     //SOLAR
@@ -439,8 +443,8 @@ export const Data: SectionType[] = [
             FilterType.CSS,
             FilterType.UnitTest,
             FilterType.E2E,
-            FilterType.Scrum,
             FilterType.UIUX,
+            FilterType.Scrum,
         ],
     },
 
@@ -492,8 +496,8 @@ export const Data: SectionType[] = [
             FilterType.JavaScript,
             FilterType.CSS,
             FilterType.UnitTest,
-            FilterType.Scrum,
             FilterType.UIUX,
+            FilterType.Scrum,
         ],
     },
 
@@ -581,6 +585,7 @@ export const Data: SectionType[] = [
             FilterType.React,
             FilterType.Angular,
             FilterType.UIUX,
+            FilterType.Solo,
         ],
     },
 
@@ -619,6 +624,7 @@ export const Data: SectionType[] = [
             FilterType.PHP,
             FilterType.JavaScript,
             FilterType.UIUX,
+            FilterType.Solo,
         ],
     },
 
@@ -725,6 +731,7 @@ export const Data: SectionType[] = [
             FilterType.JavaScript,
             FilterType.SQL,
             FilterType.UIUX,
+            FilterType.Solo,
         ],
     },
 

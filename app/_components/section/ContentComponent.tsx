@@ -16,11 +16,11 @@ const ContentComponent: React.FC<ContentComponentProps> = ({ section }) => {
                         <ul className="list-disc list-inside">
                             {section.projects.map((project, projectIdx) => (
                                 <li key={projectIdx} className='list-none pb-3'>
-                                    <p className='text-xl font-signika font-semibold'>{project.name}</p>
-                                    <p>{project.description}
+                                    <p className='text-xl font-monsterrat font-semibold tracking-wide'>{project.name}</p>
+                                    <p>{project.description}</p>
                                         {project.repository && project.repository.link && (
                                             project.repository.link === 'REQUEST' ? (
-                                                <span className="text-accent text-sm"> (private git, on request)</span>
+                                                <p className="text-accent text-sm"> (private git, on request)</p>
                                             ) : (
                                                 <a href={project.repository.link} target="_blank" rel="noopener noreferrer" className="flex gap-2 mt-1 p-2 justify-center bg-orange text-white rounded w-32">
                                                     <FaGithub />
@@ -28,7 +28,6 @@ const ContentComponent: React.FC<ContentComponentProps> = ({ section }) => {
                                                 </a>
                                             )
                                         )}
-                                    </p>
                                 </li>
                             ))}
                         </ul>
@@ -46,15 +45,6 @@ const ContentComponent: React.FC<ContentComponentProps> = ({ section }) => {
                     ))}
                 </ul>
             )}
-            {/* PREVIEW */}
-            {section.live && (
-                <div className="pt-4">
-                    <a href={section.live} className="hover:underline">View Live Project</a>
-                </div>
-            )}
-
-
-
         </>
 
 

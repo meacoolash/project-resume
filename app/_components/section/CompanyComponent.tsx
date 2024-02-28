@@ -1,3 +1,4 @@
+import { FilterType } from "@models/FilterType";
 import { SectionType } from "@models/SectionType";
 
 interface CompanyComponentProps {
@@ -9,16 +10,17 @@ const CompanyComponent: React.FC<CompanyComponentProps> = ({ section }) => {
         <div className=''>
             {
                 section.company ? (
-                    <div className='text-text text-sm mt-2 span:text-xl'>
-                        <strong>{section.company.name}</strong>
+                    <div className='text-text'>
+                        <p className="text-text-accent text-sm">Company:</p>
+                        <span className="">{section.company.name}</span>
                         {section.company.via && (
-                            <p className='italic'>contract via {section.company.via.name}</p>
+                            <p className='italic text-sm'>contract via {section.company.via.name}</p>
                         )
                         }
                     </div>
                 ) : (
-                    <div>
-                        Personal Project
+                    <div className="text-xs">
+                        {FilterType.Solo}
                     </div>
                 )
             }

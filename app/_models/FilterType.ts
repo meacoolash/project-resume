@@ -1,4 +1,6 @@
 export enum FilterType { 
+    Solo = "Self-Managed",
+    Scrum = "Scrum Team",
     Angular = "Angular",
     React = "React",
     Typescript = "Typescript",
@@ -10,7 +12,6 @@ export enum FilterType {
     UIUX = "UI/UX",
     UnitTest = "Unit Test",
     SocketIO = "SocketIO",
-    Scrum = "Scrum",
     E2E = "E2E",
     SQL = "SQL",
     JavaScript = "JavaScript",

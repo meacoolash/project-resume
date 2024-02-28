@@ -5,13 +5,15 @@ import ToolsComponent from './ToolsComponent';
 import MediaComponent from './MediaComponent';
 import ContentComponent from './ContentComponent';
 import { SectionType } from '@models/SectionType';
+import CompanyComponent from './CompanyComponent';
+import { RiExternalLinkLine } from "react-icons/ri";
 
 interface SectionComponentProps {
     filteredData: Array<SectionType>;
 }
 
 function alternatedColumnsClass(idx: number): string {
-    return `flex flex-col md:flex-row gap-6
+    return `flex flex-col md:flex-row gap-6 mt-6
     ${idx % 2 !== 0 && 'md:flex-row-reverse'}`
 }
 
@@ -37,7 +39,7 @@ const SectionLoopComponent: React.FC<SectionComponentProps> = ({ filteredData })
                         <div className={`absolute left-1/2 transform -top-20 w-0.5 h-20 ${connectionLineClass}`}></div>
                     )}
 
-                    {/* Title and Tools Animated InView */}        
+                    {/* Title and Tools Animated InView */}
                     <InView triggerOnce threshold={1}>
                         {({ inView, ref, entry }) => (
                             <div
@@ -55,13 +57,24 @@ const SectionLoopComponent: React.FC<SectionComponentProps> = ({ filteredData })
                         )}
                     </InView>
 
-                    {/* Media and Content */}            
+                    {/* Media and Content */}
                     <div className={alternatedColumnsClass(idx)}>
-                        <div className="w-full md:w-1/2 mt-6 relative">
+                        <div className="w-full md:w-1/2 relative">
                             <MediaComponent section={section} />
                         </div>
-                        <div className="w-full md:w-2/3">
+                        <div className="w-full md:w-2/3 flex flex-col">
+                            <CompanyComponent section={section} />
                             <ContentComponent section={section} />
+
+                            {/* PREVIEW */}
+                            {section.live && (
+                                <div className="pt-4">
+                                    <a href={section.live} target='_blank' className="hover:underline flex align-middle items-center gap-2">
+                                        View Live Project <RiExternalLinkLine className='text-xl' />
+                                    </a>
+                                </div>
+                            )}
+
                         </div>
                     </div>
                 </div>

@@ -23,7 +23,7 @@ export default function Home() {
   };
 
   return (
-    <main className='min-h-full bg-gradient-to-br from-background-from via-background-via to-background-to'>
+    <main className='min-h-full bg-gradient-to-br from-background-from via-background-via to-background-to font-sans'>
 
       {/* HERO */}
       <div ref={heroRef}>
