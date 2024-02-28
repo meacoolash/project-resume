@@ -6,7 +6,7 @@ export const Data: SectionType[] = [
         id: "qviks",
         print: true,
         title: "Fullstack CRM (SaaS)",
-        period: "Feb 2023 - Ongoing",
+        period: "Feb 2024 - Ongoing",
         duration: "",
         company: null,
         info: "As a solo developer and a product owner, I am building a CRM from scratch as my free-time activity.",
