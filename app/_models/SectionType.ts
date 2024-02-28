@@ -30,6 +30,7 @@ export interface ProjectType {
 export interface SectionType {
     id: string,
     title: string,
+    role?: string,
     period: string,
     duration: string,
     company: Company | null,
@@ -39,4 +40,6 @@ export interface SectionType {
     media: MediaLink | null,
     live: string | null,
     filter?: FilterType[],
+    print: boolean,
+    info: string,
 }

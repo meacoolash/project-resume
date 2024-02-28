@@ -4,10 +4,13 @@ import { SectionType } from "@models/SectionType";
 export const Data: SectionType[] = [
     {
         id: "qviks",
+        print: true,
         title: "Fullstack CRM (SaaS)",
         period: "Feb 2023 - Ongoing",
         duration: "",
         company: null,
+        info: "As a solo developer and a product owner, I am building a CRM from scratch as my free-time activity.",
+        role: "Concept-to-deployment",
         projects: [
             {
                 name: "Qviks CRM",
@@ -59,10 +62,13 @@ export const Data: SectionType[] = [
     //2024
     {
         id: "react",
-        title: "NextJS Ecosystem",
+        print: true,
+        title: "JavaScript Ecosystem",
         period: "Oct 2023 - Ongoing",
         duration: "",
         company: null,
+        info: "NextJS interactive resume and several micro-projects, exploring the latest trends in web development",
+        role: "Hands-on Trends",
         projects: [
             {
                 name: "This Portfolio",
@@ -122,10 +128,13 @@ export const Data: SectionType[] = [
     // Angular17
     {
         id: "angular17",
+        print: true,
         title: "Angular 17 Mentorship",
-        period: "Jun 2023 - ?",
+        period: "Jun 2023 - Sep 2023",
         duration: "1 yr",
         company: null,
+        info: "Mentorship of junior developers trought spiralcoder.com",
+        role: "Mentor",
         projects: [
             {
                 name: "Angular 17",
@@ -159,10 +168,13 @@ export const Data: SectionType[] = [
     //OANDA
     {
         id: "oanda",
+        print: true,
         title: "MEAN Stack",
         period: "2017 - Dec 2022",
         duration: "5 yrs",
         company: null,
+        info: "A full-stack trading bot and analysis tool for stock/commodities.",
+        role: "Full stack",
         projects: [
             {
                 name: "Stock/Commodities Trading Bot and Analysis Tool",
@@ -214,6 +226,7 @@ export const Data: SectionType[] = [
     // UNIQA
     {
         id: "uniqa",
+        print: true,
         title: "Angular 13",
         period: "Nov 2021 - Dec 2022",
         duration: "1 yr 2 mos",
@@ -229,6 +242,8 @@ export const Data: SectionType[] = [
                 type: "contract",
             },
         },
+        info: "Travel insurance calculator, Landing Page and CMS",
+        role: "FE developer in Scrum",
         projects: [
             {
                 name: "Calculator Application",
@@ -286,6 +301,7 @@ export const Data: SectionType[] = [
     // VARDEN 
     {
         id: "varden",
+        print: true,
         title: "Angular 11",
         period: "Nov 2020 - Nov 2021",
         duration: "1 yr",
@@ -295,6 +311,8 @@ export const Data: SectionType[] = [
             logo: null,
             type: "contract",
         },
+        info: "Developing Platform, Booking system and Admin portal.",
+        role: "FE developer in Scrum",
         projects: [
             {
                 name: "Platform",
@@ -346,6 +364,7 @@ export const Data: SectionType[] = [
     //SWISSRE
     {
         id: "swissre",
+        print: true,
         title: "Angular 8",
         period: "Dec 2019 - Dec 2020",
         duration: "1 yr",
@@ -361,6 +380,8 @@ export const Data: SectionType[] = [
                 type: "contract",
             }
         },
+        info: "Contributed to the transition of the GIN platform from AngularJS.",
+        role: "FE developer in Scrum",
         projects: [
             {
                 name: "Platform upgrade",
@@ -397,6 +418,7 @@ export const Data: SectionType[] = [
     //SOLAR
     {
         id: "solar",
+        print: true,
         title: "Angular 6",
         period: "Aug 2018 - Jan 2020",
         duration: "1 yr 6 mos",
@@ -412,6 +434,8 @@ export const Data: SectionType[] = [
                 type: "perm",
             }
         },
+        info: "Developed an advanced administration system.",
+        role: "FE developer in Scrum",
         projects: [
             {
                 name: "Admin Portal",
@@ -451,6 +475,7 @@ export const Data: SectionType[] = [
     //INNOGY
     {
         id: "innogy",
+        print: true,
         title: "AngularJS/Angular 2+",
         period: "Jan 2018 - Aug 2018 ",
         duration: "8 mos",
@@ -466,6 +491,8 @@ export const Data: SectionType[] = [
                 type: "contract",
             }
         },
+        info: "AngularJS + 2 simple greenfield apps.",
+        role: "FE Developer in Scrum",
         projects: [
             {
                 name: "Greenfield Angular Apps",
@@ -504,6 +531,7 @@ export const Data: SectionType[] = [
     //ADITO
     {
         id: "adito-gmbh",
+        print: true,
         title: "JavaScript/SQL",
         period: "Jan 2017 - Jan 2018",
         duration: "1 yr",
@@ -519,6 +547,8 @@ export const Data: SectionType[] = [
                 type: "contract",
             }
         },
+        info: "Wrote JavaScript code for SQL operations in a Swing Java client application",
+        role: "Developer in Scrum", 
         projects: [
             {
                 name: "CRM System Maintenance",
@@ -545,10 +575,13 @@ export const Data: SectionType[] = [
     // WEBDEV
     {
         id: "webdev",
+        print: true,
         title: "HTML/CSS/JS WEB",
         period: "2014 - 2017",
         duration: "3 yrs",
         company: null,
+        info: "Developed efficient landing pages for various clients.",
+        role: "Web Developer",
         projects: [
             {
                 name: "Landing Pages Development",
@@ -592,10 +625,13 @@ export const Data: SectionType[] = [
     // WORDPRESS
     {
         id: "wordpress",
+        print: true,
         title: "Wordpress/Magento",
         period: "2010 - 2014",
+        info: "Developed webpages, e-commerce sites, and blogs using Wordpress and Magento.",
         duration: "4 yrs",
         company: null,
+        role: "Wordpress developer",
         projects: [
             {
                 name: "E-commerce and Blog Development",
@@ -631,6 +667,7 @@ export const Data: SectionType[] = [
     // ALLIANZ
     {
         id: "allianz",
+        print: true,
         title: "Lotus Notes",
         period: "2006 - 2010",
         duration: "4 yrs",
@@ -640,6 +677,8 @@ export const Data: SectionType[] = [
             logo: null,
             type: "perm",
         },
+        info: "Managed Allianz insurance databases and calculators",
+        role: "Lotus Notes Developer",
         projects: [
             {
                 name: "Insurance Database Management",
@@ -664,8 +703,10 @@ export const Data: SectionType[] = [
     // TAX
     {
         id: "tax",
+        print: true,
         title: "Informix4GL",
         period: "2004 - 2006",
+        info: "Developed and optimized Slovakia's tax information system",
         duration: "2 yrs",
         company: {
             name: "Novitech Tax, s.r.o.",
@@ -673,6 +714,7 @@ export const Data: SectionType[] = [
             logo: null,
             type: "perm",
         },
+        role: "SQL developer",
         projects: [
             {
                 name: "Tax Information System Optimization",
@@ -699,8 +741,10 @@ export const Data: SectionType[] = [
     // FLASH
     {
         id: "flash",
+        print: true,
         title: "Web Developer",
         period: "2003 - 2004",
+        info: "Developed simple websites and games.",
         duration: "1 yr",
         company: null,
         projects: [
@@ -709,6 +753,7 @@ export const Data: SectionType[] = [
                 description: "Developed simple websites and games."
             }
         ],
+        role: "Web Developer",
         tools: [
             "HTML",
             "CSS",
@@ -739,8 +784,10 @@ export const Data: SectionType[] = [
     // UNIVERSITY
     {
         id: "university",
+        print: false,
         title: "Formal Education",
         period: "1999 - 2004",
+        info: "",
         duration: "5 yrs",
         company: {
             name: "Technical University of Košice, Slovakia",
@@ -761,7 +808,9 @@ export const Data: SectionType[] = [
     // PROCOM
     {
         id: "procom",
+        print: false,
         title: "PC Configuration",
+        info:"",
         period: "1997 - 1998",
         duration: "1 yr",
         company: {
@@ -788,8 +837,10 @@ export const Data: SectionType[] = [
     },
     {
         id: "commodore",
+        print: false,
         title: "First Touch",
         period: "1990 - 1995",
+        info: "",
         duration: "4 yrs",
         company: null,
         projects: [
@@ -812,8 +863,10 @@ export const Data: SectionType[] = [
     },
     {
         id: "life",
+        print: false,
         title: "Life",
         period: "1981 - ?",
+        info: "",
         duration: "",
         company: null,
         projects: [
