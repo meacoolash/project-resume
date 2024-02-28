@@ -2,6 +2,59 @@ import { FilterType } from "@models/FilterType";
 import { SectionType } from "@models/SectionType";
 
 export const Data: SectionType[] = [
+    {
+        id: "qviks",
+        title: "Fullstack CRM (SaaS)",
+        period: "February 2023 - Ongoing",
+        duration: "",
+        company: null,
+        projects: [
+            {
+                name: "Qviks CRM",
+                description: "AI-powered CRM designed for solo professionals. Simple to use. Seamlessly integrates with email marketing.",
+                repository: {
+                    link: "REQUEST"
+                }
+            },
+        ],
+        tools: [
+            "NextJS",
+            "Tailwind CSS",
+            "Shadcn/ui",
+            "Turso",
+            "SQLite",
+            "Drizzle ORM",
+            "Vercel",
+            "Open AI",
+            "Tanstack",
+        ],
+        challenges: [
+            
+            "Architectural Design: Solo design and implementation of scalable SaaS CRM architecture.",
+            "UI/UX Design: End-to-end creation of intuitive interfaces, enhancing user engagement.",
+            "Full Stack Development: Independently developed using NextJS for server and client components.",
+            "Lifecycle Management: Managed concept-to-deployment, including CI/CD, as a solo developer."
+
+        ],
+        media: {
+            type: "image",
+            url: "/qviks.jpg"
+        },
+        live: "https://qviks.com",
+        filter: [
+            FilterType.React,
+            FilterType.NextJS,
+            FilterType.Typescript,
+            FilterType.JavaScript,
+            FilterType.SQL,
+            FilterType.Tailwind,
+            FilterType.CSS,
+            FilterType.UIUX,
+            FilterType.CICD
+        ]
+    },
+
+
     //2024
     {
         id: "react",
@@ -18,13 +71,6 @@ export const Data: SectionType[] = [
                     name: "Portfolio",
                     description: "Next.js portfolio website, an interactive resume.",
                     link: "https://github.com/meacoolash/project-resume"
-                }
-            },
-            {
-                name: "A simple CRM solution",
-                description: "A streamlined full-stack CRM with NextJS, Turso, Drizzle ORM, Zustand, Shadcn/UI and OpenAI for modern small businesses.",
-                repository: {
-                    link: "REQUEST",
                 }
             },
             {
@@ -219,7 +265,7 @@ export const Data: SectionType[] = [
             url: "/uniqa.mp4",
             urlThumbnail: "/uniqa.jpg",
         },
-        live: "https://www.uniqa.at/reiseversicherung/",
+        live: "https://reiseversicherung.uniqa.at/",
         filter: [
             FilterType.Angular,
             FilterType.Typescript,
@@ -230,7 +276,7 @@ export const Data: SectionType[] = [
             FilterType.Scrum,
             FilterType.UIUX,
             FilterType.CICD
-            
+
         ],
     },
 
@@ -330,10 +376,10 @@ export const Data: SectionType[] = [
             "Gain understanding of the environmental domain.",
             "Develop a user-friendly Drag and Drop feature from scratch in vanilla JS."
         ],
-        media: { 
-            type: "video", 
+        media: {
+            type: "video",
             url: "gin.mp4",
-            urlThumbnail: "gin.jpg" 
+            urlThumbnail: "gin.jpg"
         },
         live: null,
         filter: [
