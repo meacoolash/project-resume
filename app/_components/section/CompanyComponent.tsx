@@ -7,9 +7,9 @@ interface CompanyComponentProps {
 
 const CompanyComponent: React.FC<CompanyComponentProps> = ({ section }) => {
     return (
-        <div className=''>
+        <>
             {
-                section.company ? (
+                section.company && (
                     <div className='text-text'>
                         <p className="text-text-accent text-sm">Company:</p>
                         <span className="">{section.company.name}</span>
@@ -18,13 +18,15 @@ const CompanyComponent: React.FC<CompanyComponentProps> = ({ section }) => {
                         )
                         }
                     </div>
-                ) : (
+                )
+
+                /* : (
                     <div className="text-xs">
                         {FilterType.Solo}
                     </div>
-                )
+                ) */
             }
-        </div>
+        </>
     )
 }
 

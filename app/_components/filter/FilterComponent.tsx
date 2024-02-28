@@ -10,7 +10,9 @@ const FilterComponent: React.FC<FilterComponentProps> = ({ activeFilter, onFilte
     <div className='flex justify-center align-middle font-monsterrat text-sm w-1/2 pt-16'>
       <div className='text-2xl font-semibold mr-2'>Filter</div>
       <div className="flex flex-wrap gap-2">
-        {Object.values(FilterType).map((filter) => (
+        {Object.values(FilterType)
+        .filter((filter) => filter !== FilterType.Solo)
+        .map((filter) => (
           <button
             key={filter}
             className={`${activeFilter === filter
