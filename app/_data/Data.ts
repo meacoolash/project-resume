@@ -5,12 +5,12 @@ export const Data: SectionType[] = [
     {
         id: "qviks",
         print: true,
-        title: "Fullstack CRM (SaaS)",
+        title: "NextJS Fullstack",
         period: "Feb 2024 - Ongoing",
         duration: "",
         company: null,
-        info: "As a solo developer and a product owner, I am building a CRM from scratch as my free-time activity.",
-        role: "Concept-to-deployment",
+        info: "As a solo developer and a product owner, I am building a CRM from scratch. Concept-to-deployment SaaS application.",
+        role: "",
         projects: [
             {
                 name: "Qviks CRM",
@@ -63,12 +63,12 @@ export const Data: SectionType[] = [
     {
         id: "react",
         print: true,
-        title: "JavaScript Ecosystem",
+        title: "React Ecosystem",
         period: "Oct 2023 - Ongoing",
         duration: "",
         company: null,
-        info: "NextJS interactive resume and several micro-projects, exploring the latest trends in web development",
-        role: "Hands-on Trends",
+        info: "Develop an interactive resume using NextJS, along with numerous small projects to explore and compare latest web technologies, focusing on AI integration and cloud services.",
+        role: "",
         projects: [
             {
                 name: "This Portfolio",
@@ -129,12 +129,12 @@ export const Data: SectionType[] = [
     {
         id: "angular17",
         print: true,
-        title: "Angular 17 Mentorship",
+        title: "Angular 17",
         period: "Jun 2023 - Sep 2023",
         duration: "1 yr",
         company: null,
         info: "Mentorship of junior developers trought spiralcoder.com",
-        role: "Mentor",
+        role: "",
         projects: [
             {
                 name: "Angular 17",
@@ -174,7 +174,7 @@ export const Data: SectionType[] = [
         duration: "5 yrs",
         company: null,
         info: "A full-stack trading bot and analysis tool for stock/commodities.",
-        role: "Full stack",
+        role: "",
         projects: [
             {
                 name: "Stock/Commodities Trading Bot and Analysis Tool",
@@ -243,7 +243,7 @@ export const Data: SectionType[] = [
             },
         },
         info: "Travel insurance calculator, Landing Page and CMS",
-        role: "FE developer in Scrum",
+        role: "FE Developer in Scrum",
         projects: [
             {
                 name: "Calculator Application",
@@ -312,7 +312,7 @@ export const Data: SectionType[] = [
             type: "contract",
         },
         info: "Developing Platform, Booking system and Admin portal.",
-        role: "FE developer in Scrum",
+        role: "FE Developer in Scrum",
         projects: [
             {
                 name: "Platform",
@@ -381,7 +381,7 @@ export const Data: SectionType[] = [
             }
         },
         info: "Contributed to the transition of the GIN platform from AngularJS.",
-        role: "FE developer in Scrum",
+        role: "FE Developer in Scrum",
         projects: [
             {
                 name: "Platform upgrade",
@@ -435,7 +435,7 @@ export const Data: SectionType[] = [
             }
         },
         info: "Developed an advanced administration system.",
-        role: "FE developer in Scrum",
+        role: "FE Developer in Scrum",
         projects: [
             {
                 name: "Admin Portal",
@@ -476,8 +476,8 @@ export const Data: SectionType[] = [
     {
         id: "innogy",
         print: true,
-        title: "AngularJS/Angular 2+",
-        period: "Jan 2018 - Aug 2018 ",
+        title: "AngularJS/Angular 5",
+        period: "Jan 2018 - Aug 2018",
         duration: "8 mos",
         company: {
             name: "VSE (Innogy group)",
@@ -491,7 +491,7 @@ export const Data: SectionType[] = [
                 type: "contract",
             }
         },
-        info: "AngularJS + 2 simple greenfield apps.",
+        info: "AngularJS + 2 simple greenfield apps in Angular 5",
         role: "FE Developer in Scrum",
         projects: [
             {
@@ -500,7 +500,7 @@ export const Data: SectionType[] = [
             },
             {
                 name: "AngularJS to Angular2+ Migration",
-                description: "rewrote one complex AngularJS app to Angular 2, including maintenance."
+                description: "rewrote one complex AngularJS app to Angular 4+, including maintenance."
             }
         ],
         tools: [
@@ -548,7 +548,7 @@ export const Data: SectionType[] = [
             }
         },
         info: "Wrote JavaScript code for SQL operations in a Swing Java client application",
-        role: "Developer in Scrum", 
+        role: "JS/SQL Developer in Scrum", 
         projects: [
             {
                 name: "CRM System Maintenance",
@@ -576,12 +576,12 @@ export const Data: SectionType[] = [
     {
         id: "webdev",
         print: true,
-        title: "HTML/CSS/JS WEB",
+        title: "Web",
         period: "2014 - 2017",
         duration: "3 yrs",
         company: null,
         info: "Developed efficient landing pages for various clients.",
-        role: "Web Developer",
+        role: "",
         projects: [
             {
                 name: "Landing Pages Development",
@@ -626,12 +626,12 @@ export const Data: SectionType[] = [
     {
         id: "wordpress",
         print: true,
-        title: "Wordpress/Magento",
+        title: "Wordpress",
         period: "2010 - 2014",
         info: "Developed webpages, e-commerce sites, and blogs using Wordpress and Magento.",
         duration: "4 yrs",
         company: null,
-        role: "Wordpress developer",
+        role: "",
         projects: [
             {
                 name: "E-commerce and Blog Development",
@@ -742,18 +742,18 @@ export const Data: SectionType[] = [
     {
         id: "flash",
         print: true,
-        title: "Web Developer",
+        title: "Web",
         period: "2003 - 2004",
-        info: "Developed simple websites and games.",
+        info: "Developed simple websites and Flash games.",
         duration: "1 yr",
         company: null,
         projects: [
             {
                 name: "Website and Game Development",
-                description: "Developed simple websites and games."
+                description: "Developed simple websites and Flash games."
             }
         ],
-        role: "Web Developer",
+        role: "",
         tools: [
             "HTML",
             "CSS",
@@ -789,13 +789,13 @@ export const Data: SectionType[] = [
         period: "1999 - 2004",
         info: "",
         duration: "5 yrs",
-        company: {
-            name: "Technical University of Košice, Slovakia",
-            link: null,
-            logo: null,
-            type: null,
-        },
-        projects: [],
+        company: null,
+        projects: [
+            {
+                name: "Master's degree",
+                description: "Technical University of Košice, Slovakia",
+            }
+        ],
         tools: [],
         challenges: [],
         media: {

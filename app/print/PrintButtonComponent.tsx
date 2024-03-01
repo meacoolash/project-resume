@@ -2,6 +2,7 @@
 import React, { useEffect, useState } from 'react';
 import { FaArrowLeft, FaPrint, FaFilePdf } from 'react-icons/fa';
 import Link from 'next/link';
+import { pages } from 'next/dist/build/templates/app-page';
 
 const PrintButtonComponent = () => {
   const [mounted, setMounted] = useState(false);
@@ -23,8 +24,14 @@ const PrintButtonComponent = () => {
       
       html2pdf(clonedElement, {
         filename: 'mikulas-stec-resume.pdf',
-        image: { type: 'jpeg', quality: 0.98 },
-        jsPDF: { format: 'A4', orientation: 'portrait', pagesplit: false },
+        image: { type: 'jpeg', quality: 1 },
+        html2canvas: {
+          dpi: 192,
+          scale:4,
+          letterRendering: true,
+          useCORS: true
+        },
+        jsPDF: { unit: 'mm', format: 'A4', orientation: 'portrait', pagesplit: false}
       });
     }
   };
@@ -33,10 +40,10 @@ const PrintButtonComponent = () => {
     <>
     
       {/* Desktop */}
-      <div className='text-xl m-3 gap-4 justify-center md:flex hidden '>
-        <Link href='/'><FaArrowLeft /></Link>
-        <button onClick={window.print} aria-label='Print'><FaPrint /></button>
-        <button onClick={handleGeneratePdf} aria-label='PDF'><FaFilePdf /></button>
+      <div className='m-3 gap-4 justify-center md:flex hidden hover:opacity-90 '>
+        <button onClick={handleGeneratePdf} aria-label='PDF' className='flex gap-2'><FaFilePdf className='text-3xl' />
+        <div className='text-xl'>Generate and download PDF</div>
+        </button>
       </div>
 
       {/* Mobile */}

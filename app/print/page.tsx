@@ -23,15 +23,15 @@ const Print = () => {
       </div>
 
       {/* DESKTOP RESUME */}
-      <div id='print-resume' className='a4-size text-xs text-black hidden md:block'>
+      <div id='print-resume' className='a4-size text-xs hidden md:block text-gray-500'>
         {/* header */}
         <div className='mb-3'>
-          <div className='flex justify-between text-blue-500 font-bold mb-4'>
+          <div className='flex justify-between text-blue-500 font-semibold mb-1 text-sm'>
             <div>Mikulas Stec - Fullstack Developer (FE Heavy)</div>
             <div>mikulas@stec.sk</div>
           </div>
           <div>
-            <p>Auto-generated CV from my web profile for a quick overview.</p>
+            <p>Auto-generated CV for a quick overview.</p>
             <p>For the full experience, filtering options, previews and details, please visit <a href='https://stec.sk' className='text-blue-500 underline  ml-1'>www.stec.sk</a></p>
           </div>
         </div>
@@ -40,30 +40,27 @@ const Print = () => {
         {Data
           .filter((section) => section.print)
           .map((section, idx) => (
-            <div key={idx} className='border-b py-1'>
-              <div className='grid grid-cols-4'>
+            <div key={idx} className=''>
+              <div className='grid grid-cols-4 border-b py-2'>
 
-                {/* Column 1 (period/company) */}
+                {/* Column 1 */}
                 <div>
-                  <p className='font-semibold'>{section.role}</p>
+                  <p className='font-semibold text-black'>{section.title}</p>
                   <div className=''>{section.period}</div>
                 </div>
 
-                {/* Column 2 (title) */}
+                {/* Column 2 */}
                 <div className=''>
-                  <p className='font-semibold'>{section.title}</p>
+                  <p className='font-semibold'>{section.role}</p>
                   {section.company && (
                     <div>{section.company.name}</div>
                   )}
-                  {/* {!section.company && (
-                    <div className='text-gray-400 text-xs'>{FilterType.Solo}</div>
-                  )} */}
                 </div>
 
                 {/* Column 3 (tools) */}
                 <div className='col-span-2'>
                   {section.filter && section.filter.length > 0 && (
-                    <div className='flex flex-wrap gap-x-3 mb-1'>
+                    <div className='flex flex-wrap gap-x-3 '>
                       {section.filter
                         .filter((tool) => tool !== FilterType.Solo)
                         .map((tool, toolIdx) => (
@@ -83,7 +80,7 @@ const Print = () => {
           ))}
 
         {/* footer */}
-        <div className='mt-10 flex justify-center font-bold'>
+        <div className='mt-6 flex justify-center '>
           For more detailed information, please visit <a href='https://stec.sk' className='text-blue-500 underline  ml-1'>www.stec.sk</a>
         </div>
 
