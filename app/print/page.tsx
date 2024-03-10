@@ -3,8 +3,7 @@ import HeaderComponent from '@components/header/HeaderComponent';
 import { Data } from '@data/Data';
 import { FilterType } from '@models/FilterType';
 
-const Print = () => {
-
+const Print = async () => {
   return (
     <div className='flex flex-col justify-center pb-16 relative
       font-monsterrat align-top min-h-screen

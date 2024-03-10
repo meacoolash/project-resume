@@ -6,6 +6,7 @@ import { pages } from 'next/dist/build/templates/app-page';
 
 const PrintButtonComponent = () => {
   const [mounted, setMounted] = useState(false);
+  const [progress, setProgress] = useState(false);
   useEffect(() => {
     setMounted(true);
   }, []);
@@ -13,36 +14,40 @@ const PrintButtonComponent = () => {
   if (!mounted) return null;
 
   const handleGeneratePdf = async () => {
+    setProgress(true);
     // Dynamically import html2pdf.js only on the client-side. Otherwise it will break the build.
     const html2pdf = (await import('html2pdf.js')).default;
     const element = document.getElementById('print-resume');
 
     if (element) {
       // Clone the element so HTML2ODF is working even if original elemnt is hidden
-      const clonedElement  = element.cloneNode(true) as HTMLElement;
+      const clonedElement = element.cloneNode(true) as HTMLElement;
       clonedElement.style.display = 'block';
-      
+
       html2pdf(clonedElement, {
         filename: 'mikulas-stec-resume.pdf',
         image: { type: 'jpeg', quality: 1 },
         html2canvas: {
           dpi: 192,
-          scale:4,
+          scale: 4,
           letterRendering: true,
           useCORS: true
         },
-        jsPDF: { unit: 'mm', format: 'A4', orientation: 'portrait', pagesplit: false}
+        jsPDF: { unit: 'mm', format: 'A4', orientation: 'portrait', pagesplit: false }
       });
     }
+    setProgress(false)
   };
 
   return (
     <>
-    
       {/* Desktop */}
       <div className='m-3 gap-4 justify-center md:flex hidden hover:opacity-90 '>
         <button onClick={handleGeneratePdf} aria-label='PDF' className='flex gap-2'><FaFilePdf className='text-3xl' />
-        <div className='text-xl'>Generate and download PDF</div>
+
+          <div className='text-xl'>
+            {progress ? 'Generating PDF ...' : 'Generate and download PDF'}
+          </div>
         </button>
       </div>
 
