@@ -9,7 +9,7 @@ export const Data: SectionType[] = [
         period: "Feb 2024 - Ongoing",
         duration: "",
         company: null,
-        info: "As a solo developer and a product owner, I am building a CRM from scratch. Concept-to-deployment SaaS application.",
+        info: "As a solo developer, I am building a CRM from scratch. Concept-to-deployment SaaS scalable application.",
         role: "",
         projects: [
             {
@@ -34,7 +34,7 @@ export const Data: SectionType[] = [
         challenges: [
 
             "Architectural Design: Solo design and implementation of scalable SaaS CRM architecture.",
-            "UI/UX Design: End-to-end creation of intuitive interfaces, enhancing user engagement.",
+            "UI/UX Design: Creation of intuitive interfaces, enhancing user engagement. Using Shadcn/ui and Tailwind CSS along with animations and transitions.",
             "Full Stack Development: Independently developed using NextJS for server and client components.",
             "Lifecycle Management: Managed concept-to-deployment, including CI/CD, as a solo developer."
 
