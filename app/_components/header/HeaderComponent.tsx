@@ -1,9 +1,10 @@
 "use client"
 import { useEffect, useState } from 'react'
 import { FaSun, FaMoon } from 'react-icons/fa'
-import { GrHomeRounded, GrDocumentPdf, GrChatOption, GrDesktop } from "react-icons/gr";
+import { GrHomeRounded, GrDocumentPdf, GrChatOption, GrDesktop, GrBlockQuote } from "react-icons/gr";
 import Link from 'next/link'
 import { useTheme } from 'next-themes';
+import { TbHeartStar } from "react-icons/tb";
 
 interface HeaderComponentProps {
     page?: string;
@@ -46,6 +47,7 @@ const HeaderComponent: React.FC<HeaderComponentProps> = ({ page }) => {
             </Link>
 
             <div className='flex gap-5'>
+
                 <button className={`${hoverClass}`} onClick={() => handleToggleTheme()} aria-label='Set Theme'>
                     {theme === 'dark' ? (
                         <FaSun />
@@ -63,7 +65,18 @@ const HeaderComponent: React.FC<HeaderComponentProps> = ({ page }) => {
                         <Link href={'/print'} aria-label='Print View' className=''>
                             <GrDocumentPdf />
                         </Link>
+                    )}
+                </div>
 
+                 <div className={`${hoverClass}`}>
+                    {page === 'testimonials' ? (
+                        <Link href={'/'} aria-label='Default View' className=''>
+                            <GrHomeRounded />
+                        </Link>
+                    ) : (
+                        <Link href={'/testimonials'} aria-label='Print View' className=''>
+                            <TbHeartStar />
+                        </Link>
                     )}
                 </div>
 
