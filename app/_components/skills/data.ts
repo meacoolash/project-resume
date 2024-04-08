@@ -72,7 +72,7 @@ export const SkillsData: Skill[] = [
     },
     {
         label: "Zustand",
-        rate: 4,
+        rate: 3,
         desc: "Primary state tool in NextJS projects. I prefer it over Redux for its simplicity."
     },
     {

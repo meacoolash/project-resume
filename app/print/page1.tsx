@@ -1,18 +1,30 @@
+/* eslint-disable @next/next/no-img-element */
 import { Data } from "@data/Data";
 import { FilterType } from "@models/FilterType";
+import FooterPrintComponent from "./FooterComponent";
 
 export default function Page1() {
     return (
-        <div className="h-[292mm]">
+        <div className="h-[292mm] relative">
+
             {/* header */}
             <div className='mb-3'>
                 <div className='flex justify-between text-blue-500 font-semibold mb-1 text-sm'>
                     <div>Mikulas Stec - Fullstack Developer (FE Heavy)</div>
-                    <div>mikulas@stec.sk</div>
+
+                    <div className="flex gap-4">
+                        <div className="flex flex-col items-end">
+                            <div>mikulas@stec.sk</div>
+                            <div>+421 903 988 101</div>
+                        </div>
+
+                        <img src={'/profile_200x200.jpg'} alt={'Mikulas Stec profile picture'} width="50" height="50" className="rounded-lg shadow-sm shadow-black object-cover" />
+
+                    </div>
                 </div>
-                <div>
+                <div className="-mt-6">
                     <p>Auto-generated CV for a quick overview.</p>
-                    <p>For the full experience, filtering options, previews and details, please visit <a href='https://stec.sk' className='text-blue-500 underline  ml-1'>www.stec.sk</a></p>
+                    <p>For the full experience, filtering options and project details, please visit <a href='https://stec.sk' className='text-blue-500 underline  ml-1'>www.stec.sk</a></p>
                 </div>
             </div>
 
@@ -59,22 +71,9 @@ export default function Page1() {
 
                 ))}
 
-            {/* footer */}
-            <div className='mt-6 flex justify-between '>
-                <div>
-                    generated on {new Date().toLocaleDateString()}
-                </div>
-                <div>
-                    For more detailed information, please visit <a href='https://stec.sk' className='text-blue-500 underline'>www.stec.sk</a>
-                </div>
+            <div className="absolute bottom-4 right-0 w-full">
+                <FooterPrintComponent />
             </div>
-
-
-
-
-
-
-
 
         </div>
     )

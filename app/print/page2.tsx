@@ -1,5 +1,7 @@
 import { SkillsData } from "@components/skills/data";
 import { TiStarFullOutline, TiStarOutline } from "react-icons/ti";
+import FooterPrintComponent from "./FooterComponent";
+import Image from 'next/image';
 
 const StartRating = ({ rating }: { rating: number }) => {
     return (
@@ -14,7 +16,8 @@ const StartRating = ({ rating }: { rating: number }) => {
 
 export default function Page2() {
     return (
-        <div className="h-[292mm] flex flex-col gap-3 mt-4">
+        <div className="h-[292mm] flex flex-col gap-3 mt-4 relative">
+            <div className="absolute top-0 right-2">page 2</div>
             <h2 className="text-sm text-black font-semibold text-center">Skills</h2>
             <div className="flex flex-col gap-1">
                 {SkillsData.map((skill, idx) => (
@@ -28,23 +31,13 @@ export default function Page2() {
                                 <div className="text-xs">{skill.desc}</div>
                             </div>
                         </div>
-
                     </div>
                 ))}
             </div>
 
 
             {/* footer */}
-            <div className='mt-6 flex justify-between '>
-                <div>
-                    generated on {new Date().toLocaleDateString()}
-                </div>
-                <div>
-                    For more detailed information, please visit <a href='https://stec.sk' className='text-blue-500 underline'>www.stec.sk</a>
-                </div>
-            </div>
-
-
+            <FooterPrintComponent />
 
 
         </div>
