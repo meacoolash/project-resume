@@ -35,9 +35,9 @@
 /* PRINT PAGE ONLY */
 @layer base {
   @media screen {
-    .a4-size {
+    .print-document-pages {
       width: 210mm;
-      height: 296mm;
+      height: 592mm;
       overflow-y: scroll;
       margin: auto;
       box-shadow: 0 0 10px rgba(30, 10, 20, 0.5);
@@ -46,7 +46,7 @@
       padding: 0.5cm;
     }
 
-    .dark .a4-size {
+    .dark .print-document-pages {
       @apply shadow-xl shadow-violet-200
     }
   }

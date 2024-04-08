@@ -1,8 +1,6 @@
 "use client"
 import React, { useEffect, useState } from 'react';
 import { FaArrowLeft, FaPrint, FaFilePdf } from 'react-icons/fa';
-import Link from 'next/link';
-import { pages } from 'next/dist/build/templates/app-page';
 
 const PrintButtonComponent = () => {
   const [mounted, setMounted] = useState(false);
