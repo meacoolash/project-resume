@@ -67,7 +67,7 @@ const HeaderComponent: React.FC<HeaderComponentProps> = ({ page }) => {
                 <div className={page === 'testimonials' ? 'text-accent/95' : ''}>
                     <Link href={'/testimonials'} aria-label='Print View' className={`${hoverClass}`}>
                         <TbHeartStar />
-                        <span className='text-xs md:block'>Praise</span>
+                        <span className='text-xs md:block'>Reviews</span>
                     </Link>
                 </div>
 
