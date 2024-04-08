@@ -8,13 +8,14 @@ import ActiveFilterButton from '@/app/_components/filter/ActiveFilterButton';
 import FilterComponent from '@/app/_components/filter/FilterComponent';
 import useFilter from '@hooks/useFilter';
 import useObserver from '@hooks/useObserver';
+import SkillsComponent from '@components/skills/SkillsComponent';
 
 export default function Home() {
-  
+
   const { filteredData, activeFilter, clearFilter, onFilterChange } = useFilter();
   const heroRef: React.MutableRefObject<HTMLDivElement | null> = useRef(null);
   const { showNav } = useObserver(heroRef);
- 
+
   const scrollRef = useRef<HTMLDivElement>(null);
   const scrollToSection = () => {
     if (scrollRef.current) {

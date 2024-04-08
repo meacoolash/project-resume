@@ -5,6 +5,7 @@ import { GrHomeRounded, GrDocumentPdf, GrChatOption, GrDesktop, GrBlockQuote } f
 import Link from 'next/link'
 import { useTheme } from 'next-themes';
 import { TbHeartStar } from "react-icons/tb";
+import { GiSkills } from "react-icons/gi";
 
 interface HeaderComponentProps {
     page?: string;
@@ -35,7 +36,7 @@ const HeaderComponent: React.FC<HeaderComponentProps> = ({ page }) => {
 
 
     return (
-        <header className='flex justify-between items-center py-4 px-6 text-xl'>
+        <header className='flex justify-between items-center py-4 px-2 md:px-6 text-xl'>
             <Link href='/' className={`${hoverClass}`}>
                 <div className='font-signika'>
                     Mikulas Stec
@@ -57,13 +58,13 @@ const HeaderComponent: React.FC<HeaderComponentProps> = ({ page }) => {
                 </button>
 
                 <div className={`${hoverClass}`}>
-                    {page === 'print' ? (
+                    {page === 'skills' ? (
                         <Link href={'/'} aria-label='Default View' className=''>
-                            <GrDesktop />
+                            <GrHomeRounded />
                         </Link>
                     ) : (
-                        <Link href={'/print'} aria-label='Print View' className=''>
-                            <GrDocumentPdf />
+                        <Link href={'/skills'} aria-label='Print View' className=''>
+                            <GiSkills />
                         </Link>
                     )}
                 </div>
@@ -79,6 +80,19 @@ const HeaderComponent: React.FC<HeaderComponentProps> = ({ page }) => {
                         </Link>
                     )}
                 </div>
+
+                <div className={`${hoverClass}`}>
+                    {page === 'print' ? (
+                        <Link href={'/'} aria-label='Default View' className=''>
+                            <GrHomeRounded />
+                        </Link>
+                    ) : (
+                        <Link href={'/print'} aria-label='Print View' className=''>
+                            <GrDocumentPdf />
+                        </Link>
+                    )}
+                </div>
+
 
                 {page === 'contact' ? (
                     <Link href={'/'} aria-label='Home' className=''>
