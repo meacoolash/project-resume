@@ -24,9 +24,15 @@ const PrintButtonComponent = () => {
       const clonedElement = element.cloneNode(true) as HTMLElement;
       clonedElement.style.display = 'block';
 
+      const currentDate = new Date();
+      const yy = currentDate.getFullYear().toString().slice(2);
+      const mm = ('0' + (currentDate.getMonth() + 1)).slice(-2);
+      const dd = ('0' + currentDate.getDate()).slice(-2);
+      const formattedDate = `${yy}${mm}${dd}`;
+
       html2pdf(clonedElement, {
-        filename: 'mikulas-stec-resume.pdf',
-        image: { type: 'jpeg', quality: 1 },
+        filename: `mikulas-stec-cv_${formattedDate}.pdf`,
+        image: { type: 'jpeg', quality: .9 },
         html2canvas: {
           dpi: 192,
           scale: 4,
