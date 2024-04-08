@@ -4,6 +4,8 @@ import { Data } from '@data/Data';
 import { FilterType } from '@models/FilterType';
 import Page1 from './page1';
 import Page2 from './page2';
+import { FaDisplay } from 'react-icons/fa6';
+import Link from 'next/link';
 
 const Print = async () => {
   return (
@@ -18,9 +20,24 @@ const Print = async () => {
           <HeaderComponent page='print' />
         </div>
 
-        <div className='mt-20'>
+        <div className='mt-20 hidden md:block'>
           <PrintButtonComponent />
         </div>
+
+        <div className='md:hidden flex justify-center mb-2'>
+          <div className='flex flex-col gap-2 items-center w-2/3 text-center text-sm'>
+            <div className='shadow-md shadow-accent/30 text-xl opacity-70'>
+              <FaDisplay />
+            </div>
+            <p className="text-accent">
+              Full features including <span className="text-text">PDF generation</span> are currently available only on desktop.</p>
+            <p className="text-accent">Feel free to <Link href='/contact' className='text-text'>contact me</Link> and I’ll be happy to provide it.</p>
+
+
+          </div>
+        </div>
+
+
       </div>
 
       {/* DESKTOP RESUME */}
