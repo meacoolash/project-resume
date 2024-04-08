@@ -50,6 +50,8 @@ export default function Home() {
           )}
         </div>
 
+            <div id="timeline_start"></div>
+
         {/* SECTION LOOP */}
         <div className='lg:w-4/5 mt-16'>
           <SectionLoopComponent filteredData={filteredData} />
