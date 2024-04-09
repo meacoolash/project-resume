@@ -30,7 +30,7 @@ const PrintButtonComponent = () => {
 
       html2pdf(clonedElement, {
         filename: `mikulas-stec-cv_${formattedDate}.pdf`,
-        image: { type: 'jpeg', quality: .9 },
+        image: { type: 'jpeg', quality: .8 },
         html2canvas: {
           dpi: 192,
           scale: 4,
