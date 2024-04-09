@@ -91,9 +91,14 @@ export const SkillsData: Skill[] = [
         desc: "Comfortable writing tests, occasionally challenged by complex async features."
     },
     {
+        label: "Cypress",
+        rate: 2,
+        desc: "We had covered Cypress in a few projects, but I never wrote tests by myself. I could manage with ease if needed."
+    },
+    {
         label: "SQL",
         rate: 2,
-        desc: "Periodically revisited, able to perform basic queries and design databases."
+        desc: "Periodically revisited, able to perform basic queries and design databases. Currently working mainly trough Drizzle ORM."
     },
     {
         label: "MongoDB",
