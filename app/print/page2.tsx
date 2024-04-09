@@ -19,11 +19,11 @@ export default function Page2() {
         <div className="h-[292mm] flex flex-col gap-3 mt-4 relative">
             <div className="absolute top-0 right-2">page 2</div>
             <h2 className="text-sm text-black font-semibold text-center">Skills</h2>
-            <div className="flex flex-col gap-1">
+            <div className="flex flex-col gap">
                 {SkillsData.map((skill, idx) => (
                     <div key={idx} className="">
                         <div className="w-full flex">
-                            <div className="w-1/6 space-y-1.5">
+                            <div className="w-1/6 space-y-1">
                                 <div className='text-sm text-black font-semibold'>{skill.label}</div>
                                 <StartRating rating={skill.rate}></StartRating>
                             </div>
@@ -35,10 +35,10 @@ export default function Page2() {
                 ))}
             </div>
 
-
             {/* footer */}
-            <FooterPrintComponent />
-
+            <div className="absolute bottom-4 right-0 w-full">
+                <FooterPrintComponent />
+            </div>
 
         </div>
     )
