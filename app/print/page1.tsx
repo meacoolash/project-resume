@@ -18,7 +18,7 @@ export default function Page1() {
                             <div>+421 903 988 101</div>
                         </div>
 
-                        <img src={'/profile_200x200.jpg'} alt={'Mikulas Stec profile picture'} width="50" height="50" className="rounded-lg shadow-sm shadow-black object-cover" />
+                        <img src={'/profile_200x200.jpg'} alt={'Mikulas Stec profile picture'} width="50" height="50" className="rounded-full shadow-sm shadow-black object-cover" />
 
                     </div>
                 </div>

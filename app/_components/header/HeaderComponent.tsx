@@ -1,7 +1,8 @@
 "use client"
 import { useEffect, useState } from 'react'
 import { FaSun, FaMoon } from 'react-icons/fa'
-import { GrHomeRounded, GrDocumentPdf, GrChatOption, GrDesktop, GrBlockQuote } from "react-icons/gr";
+import { GrHomeRounded, GrDocumentPdf, GrChatOption, GrDesktop, GrBlockQuote, GrArchive,
+    GrIteration} from "react-icons/gr";
 import Link from 'next/link'
 import { useTheme } from 'next-themes';
 import { TbHeartStar } from "react-icons/tb";
@@ -50,12 +51,12 @@ const HeaderComponent: React.FC<HeaderComponentProps> = ({ page }) => {
 
             <div className='flex gap-4 md:gap-6'>
 
-               {/*  <div className={page === '' ? 'text-accent/95 hidden sm:block' : 'hidden sm:block'}>
-                    <Link href={'/#timeline_start'} aria-label='Print View' className={`${hoverClass}`}>
-                        <MdOutlineSwitchAccessShortcut />
-                        <span className='text-xs hidden md:block'>Timeline</span>
+                <div className={page === undefined ? 'text-accent/95' : ''}>
+                    <Link href={'/'} aria-label='Print View' className={`${hoverClass}`}>
+                        <GrIteration />
+                        <span className='text-xs'>Work</span>
                     </Link>
-                </div> */}
+                </div> 
 
                 <div className={page === 'skills' ? 'text-accent/95' : ''}>
                     <Link href={'/skills'} aria-label='Print View' className={`${hoverClass}`}>
@@ -67,7 +68,7 @@ const HeaderComponent: React.FC<HeaderComponentProps> = ({ page }) => {
                 <div className={page === 'testimonials' ? 'text-accent/95' : ''}>
                     <Link href={'/testimonials'} aria-label='Print View' className={`${hoverClass}`}>
                         <TbHeartStar />
-                        <span className='text-xs md:block'>Reviews</span>
+                        <span className='text-xs md:block'>Trust</span>
                     </Link>
                 </div>
 
@@ -81,7 +82,7 @@ const HeaderComponent: React.FC<HeaderComponentProps> = ({ page }) => {
                 <div className={page === 'contact' ? 'text-accent/95' : ''}>
                     <Link href={'/contact'} aria-label='Print View' className={`${hoverClass}`}>
                         <GrChatOption />
-                        <span className='text-xs md:block'>Contact</span>
+                        <span className='text-xs md:block'>Talk</span>
                     </Link>
                 </div>
 
