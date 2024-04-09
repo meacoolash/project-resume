@@ -1,8 +1,10 @@
 "use client"
 import { useEffect, useState } from 'react'
 import { FaSun, FaMoon } from 'react-icons/fa'
-import { GrHomeRounded, GrDocumentPdf, GrChatOption, GrDesktop, GrBlockQuote, GrArchive,
-    GrIteration} from "react-icons/gr";
+import {
+    GrHomeRounded, GrDocumentPdf, GrChatOption, GrDesktop, GrBlockQuote, GrArchive,
+    GrIteration
+} from "react-icons/gr";
 import Link from 'next/link'
 import { useTheme } from 'next-themes';
 import { TbHeartStar } from "react-icons/tb";
@@ -56,7 +58,7 @@ const HeaderComponent: React.FC<HeaderComponentProps> = ({ page }) => {
                         <GrIteration />
                         <span className='text-xs'>Work</span>
                     </Link>
-                </div> 
+                </div>
 
                 <div className={page === 'skills' ? 'text-accent/95' : ''}>
                     <Link href={'/skills'} aria-label='Print View' className={`${hoverClass}`}>
@@ -86,14 +88,15 @@ const HeaderComponent: React.FC<HeaderComponentProps> = ({ page }) => {
                     </Link>
                 </div>
 
-                <button className={`${hoverClass}`} onClick={() => handleToggleTheme()} aria-label='Set Theme'>
-                    {theme === 'dark' ? (
-                        <FaSun />
-                    ) : (
-                        <FaMoon />
-                    )}
-                    <span className='text-xs'></span>
-                </button>
+                <div className='md:text-2xl'>
+                    <button className={`${hoverClass}`} onClick={() => handleToggleTheme()} aria-label='Set Theme'>
+                        {theme === 'dark' ? (
+                            <FaSun />
+                        ) : (
+                            <FaMoon />
+                        )}
+                    </button>
+                </div>
 
             </div>
         </header>
