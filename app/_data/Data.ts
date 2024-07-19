@@ -34,6 +34,7 @@ export const Data: SectionType[] = [
             "Docker",
             "AWS",
             "IoT",
+            "WebSocket",
         ],
         challenges: [
 
@@ -63,6 +64,7 @@ export const Data: SectionType[] = [
             FilterType.AWS,
             FilterType.DevOps,
             FilterType.Lead,
+            FilterType.SocketIO
         ]
     },
     {
