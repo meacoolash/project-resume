@@ -3,13 +3,76 @@ import { SectionType } from "@models/SectionType";
 
 export const Data: SectionType[] = [
     {
+        id: "unicorn",
+        print: true,
+        title: "Software Architect",
+        period: "Apr 2024 - Ongoing",
+        duration: "",
+        company: {
+            name: "Unicorn.com",
+            link: "https://www.unicorn.com/",
+            logo: null,
+            type: null,
+        },
+        info: "Responsible for a greenfield project - a Warehouse Management System (WMS) incorporating IoT technologies.",
+        role: "Software Architect/Lead",
+        projects: [
+            {
+                name: "SySEL WMS",
+                description: "Responsible for designing and implementing solutions for a greenfield project developing a Warehouse Management System (WMS) as a responsive web and mobile application for warehouse operations, incorporating IoT technologies.",
+                repository: {
+                    link: "REQUEST"
+                }
+            },
+        ],
+        tools: [
+            "NextJS",
+            "NestJS",
+            "Tailwind CSS",
+            "Postgres",
+            "TypeORM",
+            "Docker",
+            "AWS",
+            "IoT",
+        ],
+        challenges: [
+
+            "Architectural Design",
+            "Full Stack Development",
+            "Lifecycle Management",
+            "IoT Integration",
+            "Team Management",
+
+        ],
+        media: {
+            type: "image",
+            url: "/unicorn.jpg"
+        },
+        live: null,
+        filter: [
+            FilterType.NextJS,
+            FilterType.NestJS,
+            FilterType.React,
+            FilterType.Typescript,
+            FilterType.JavaScript,
+            FilterType.SQL,
+            FilterType.Tailwind,
+            FilterType.CSS,
+            FilterType.CICD,
+            FilterType.Docker,
+            FilterType.AWS,
+            FilterType.DevOps,
+            FilterType.Lead,
+        ]
+    },
+    {
         id: "qviks",
         print: true,
         title: "NextJS Fullstack",
         period: "Feb 2024 - Ongoing",
         duration: "",
         company: null,
-        info: "As a solo developer, I am building a CRM from scratch. Concept-to-deployment SaaS scalable application.",
+        info: "Concept-to-deployment SaaS CRM Scalable application.",
         role: "",
         projects: [
             {
@@ -64,10 +127,10 @@ export const Data: SectionType[] = [
         id: "react",
         print: true,
         title: "React Ecosystem",
-        period: "Oct 2023 - Ongoing",
+        period: "Oct 2023 - Feb 2024",
         duration: "",
         company: null,
-        info: "Develop an interactive resume using NextJS, along with numerous small projects to explore and compare latest web technologies, focusing on AI integration and cloud services.",
+        info: "Numerous small projects to explore and compare latest web technologies, focusing on AI integration and cloud services.",
         role: "",
         projects: [
             {
@@ -547,8 +610,8 @@ export const Data: SectionType[] = [
                 type: "contract",
             }
         },
-        info: "Wrote JavaScript code for SQL operations in a Swing Java client application",
-        role: "JS/SQL Developer in Scrum", 
+        info: "Wrote JavaScript code for SQL operations",
+        role: "JS/SQL Developer in Scrum",
         projects: [
             {
                 name: "CRM System Maintenance",
@@ -628,7 +691,7 @@ export const Data: SectionType[] = [
         print: true,
         title: "Wordpress",
         period: "2010 - 2014",
-        info: "Developed webpages, e-commerce sites, and blogs using Wordpress and Magento.",
+        info: "Developed webpages, e-commerce sites and blogs.",
         duration: "4 yrs",
         company: null,
         role: "",
@@ -810,7 +873,7 @@ export const Data: SectionType[] = [
         id: "procom",
         print: false,
         title: "PC Configuration",
-        info:"",
+        info: "",
         period: "1997 - 1998",
         duration: "1 yr",
         company: {

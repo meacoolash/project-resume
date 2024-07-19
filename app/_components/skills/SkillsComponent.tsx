@@ -20,7 +20,7 @@ export default function SkillsComponent() {
             {SkillsData.map((skill, idx) => (
                 <div key={idx} className="">
                     <div className="grid grid-cols-4">
-                    <div className="col-1">
+                        <div className="col-1">
                             <div className='md:text-xl'>{skill.label}</div>
                         </div>
                         <div className="col-span-3">

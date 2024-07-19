@@ -1,4 +1,4 @@
-export enum FilterType { 
+export enum FilterType {
     Solo = "Self-Managed",
     Scrum = "Scrum Team",
     Angular = "Angular",
@@ -17,5 +17,10 @@ export enum FilterType {
     JavaScript = "JavaScript",
     PHP = "PHP",
     CICD = "CI/CD",
+    NestJS = "NestJS",
+    Docker = "Docker",
+    AWS = "AWS",
+    DevOps = "DevOps",
+    Lead = "Lead",
     All = "All",
 }

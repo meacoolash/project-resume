@@ -9,8 +9,6 @@ import Link from 'next/link'
 import { useTheme } from 'next-themes';
 import { TbHeartStar } from "react-icons/tb";
 import { GiSkills } from "react-icons/gi";
-import { FcTimeline } from "react-icons/fc";
-import { MdOutlineRoute, MdOutlineSwitchAccessShortcut } from "react-icons/md";
 
 interface HeaderComponentProps {
     page?: string;
@@ -46,7 +44,7 @@ const HeaderComponent: React.FC<HeaderComponentProps> = ({ page }) => {
                 <div className='font-signika text-xl'>
                     Mikulas Stec
                     <span className='hidden sm:inline ml-2'>
-                        Full-Stack/FE Developer
+                        - Fullstack Developer
                     </span>
                 </div>
             </Link>

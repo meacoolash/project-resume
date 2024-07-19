@@ -16,16 +16,6 @@ export const SkillsData: Skill[] = [
         desc: "Certified Scrum developer. Experienced in multiple Scrum teams."
     },
     {
-        label: "Angular",
-        rate: 5,
-        desc: "7 years of professional development. With a solid grasp on its architecture and ecosystem."
-    },
-    {
-        label: "Angular Material",
-        rate: 5,
-        desc: "Regularly used in projects. Familiar with creating custom components."
-    },
-    {
         label: "TypeScript",
         rate: 4,
         desc: "Main programming language since 2017. Still acquiring some top-advanced techniques and OOP principles."
@@ -34,6 +24,11 @@ export const SkillsData: Skill[] = [
         label: "JavaScript",
         rate: 4,
         desc: "Strong proficiency, always polishing to match evolving standards and performance optimizations."
+    },
+    {
+        label: "Angular",
+        rate: 5,
+        desc: "7 years of professional development. With a solid grasp on its architecture and ecosystem, Angular Material and CDK included."
     },
     {
         label: "RxJS",
@@ -47,13 +42,18 @@ export const SkillsData: Skill[] = [
     },
     {
         label: "React",
-        rate: 3,
+        rate: 4,
         desc: "Experience since 2016, pivoted more towards React and NextJS in Autumn'23."
     },
     {
         label: "NextJS",
-        rate: 3,
+        rate: 5,
         desc: "Started with NextJS in 2023, building full-stack apps, comfortable with its features and ecosystem."
+    },
+    {
+        label: "NestJS",
+        rate: 4,
+        desc: "Comfortable with its architecture, proficient in building RESTful APIs."
     },
     {
         label: "Tailwind",
@@ -67,12 +67,12 @@ export const SkillsData: Skill[] = [
     },
     {
         label: "Redux",
-        rate: 2,
+        rate: 3,
         desc: "Basic understanding, prefer Zustand for its simplicity."
     },
     {
         label: "Zustand",
-        rate: 3,
+        rate: 4,
         desc: "Primary state tool in NextJS projects. I prefer it over Redux for its simplicity."
     },
     {
@@ -83,7 +83,7 @@ export const SkillsData: Skill[] = [
     {
         label: "UI/UX",
         rate: 3,
-        desc: "Strong UI design skills, with a foundation in UX principles."
+        desc: "Strong UI design skills, with a foundation in UX principles. Familiar with Figma."
     },
     {
         label: "Unit Tests",
@@ -97,8 +97,8 @@ export const SkillsData: Skill[] = [
     },
     {
         label: "SQL",
-        rate: 2,
-        desc: "Periodically revisited, able to perform basic queries and design databases. Currently working mainly trough Drizzle ORM."
+        rate: 4,
+        desc: "Periodically revisited. Currently working mainly trough Drizzle ORM and TypeORM"
     },
     {
         label: "MongoDB",
@@ -107,18 +107,18 @@ export const SkillsData: Skill[] = [
     },
     {
         label: "CI/CD",
-        rate: 2,
+        rate: 3,
         desc: "Familiar with setup and concepts of CI/CD pipelines."
     },
     {
         label: "NodeJS",
-        rate: 2,
+        rate: 3,
         desc: "Experienced for backend development in personal projects."
     },
     {
-        label: "Docker, AWS, Kubernetes",
-        rate: 1,
-        desc: "Worked on projects with these but I never done anything by myself. I've got an idea and willing to learn if there is a need."
+        label: "Docker, AWS",
+        rate: 2,
+        desc: "Worked on projects with these and I've done basic setup."
     },
     {
         label: "Blockchain",

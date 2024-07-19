@@ -10,7 +10,7 @@ export default function Page1() {
             {/* header */}
             <div className='mb-3'>
                 <div className='flex justify-between text-blue-500 font-semibold mb-1 text-sm'>
-                    <div>Mikulas Stec - Fullstack Developer (FE Heavy)</div>
+                    <div>Mikulas Stec - Fullstack Developer</div>
 
                     <div className="flex gap-4">
                         <div className="flex flex-col items-end">
