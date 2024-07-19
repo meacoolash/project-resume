@@ -19,7 +19,7 @@ export const Data: SectionType[] = [
         projects: [
             {
                 name: "SySEL WMS",
-                description: "Responsible for designing and implementing solutions for a greenfield project developing a Warehouse Management System (WMS) as a responsive web and mobile application for warehouse operations, incorporating IoT technologies.",
+                description: "Responsible for designing and implementing solutions for a greenfield project developing a Warehouse Management System (WMS) as a web and mobile application for warehouse operations, incorporating IoT technologies.",
                 repository: {
                     link: "REQUEST"
                 }
