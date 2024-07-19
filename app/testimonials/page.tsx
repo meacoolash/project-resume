@@ -25,6 +25,15 @@ export default function TestimonialsPage() {
                             <TiStarFullOutline />
                         </div>
                     </h1>
+
+                    <div>
+                        <p>&quot;I enjoy being on a team with someone with such a <span className="text-accent not-italic">positive attitude</span> and I really like your approach to using Next.js.
+                            Thanks to your guidance, I&apos;m improving my skills in writing more <span className="text-accent not-italic">comprehensible and cleaner code</span>.&quot;</p>
+
+                        <p className="not-italic mt-1 text-right">Jakub, Unicorn 2024</p>
+                    </div>
+
+
                     <div>
                         <p>&quot;Dear Miki,</p>
                         <p>I would like to thank you for your <span className="text-accent not-italic">advice and guidance</span>, you may not even know it, but working with you
